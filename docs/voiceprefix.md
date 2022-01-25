@@ -1,6 +1,7 @@
 # VoicePrefix
 <p>Check the prefix of an NPC's voice
-<p>Possible Prefixes are from 'scripts/Sentences' folder
+<p>The voice prefix can be found in the related NPC's sentence script located in "Postal III\p3\scripts\Sentences". Everything
+before the underscore is the voice prefix.
 <pre><code class="language-js">
 // If we don't use the "whore" npc voice prefix
 // say a "sentence" type voice line about a cop going crazy

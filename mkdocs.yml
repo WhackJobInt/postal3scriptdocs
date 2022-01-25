@@ -34,7 +34,7 @@ nav:
         - 'VoicePrefix': 'voiceprefix.md'
     - 'Functions (WIP)':
         - 'Effect': 'TBD.md'
-        - 'Say': 'TBD.md'
+        - 'Say': 'say.md'
         - 'FireEvent, FireEventEX, FireUser, FireInput, AreaEvent, EntFireUser, EntFireInput': 'TBD.md'
         - 'State, Pattern, ExecutePattern': 'TBD.md'
         - 'SetSquad, SetSquadRelation, RemoveSquadRelation, RallySquad, DesertSquad': 'TBD.md'
