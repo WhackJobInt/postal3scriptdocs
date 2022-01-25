@@ -13,10 +13,9 @@ Const KARMA_FULL,100
 </code></pre>
 <p><code class="language-js">PlayerKarma hide</code> -- Hides the karma icon
 <p><code class="language-js">PlayerKarma show</code> -- Shows the karma icon
-<p><code class="language-js">PlayerKarma good</code> -- Player is now on good path
-<p><code class="language-js">PlayerKarma evil</code> -- Player is now on evil path
-<p><code class="language-js">PlayerKarma +-*/='value'</code> -- Modifies the karma value
-<p>'good' and 'evil' is completely unused
+<p><code class="language-js">PlayerKarma good</code> -- Player is now on good path (unused)
+<p><code class="language-js">PlayerKarma evil</code> -- Player is now on evil path (unused)
+<p><code class="language-js">PlayerKarma +-*/=[value]</code> -- Modifies the karma's value
 <h1>Example</h1>
 <pre><code class="language-js">
 // from ai_mission_sbe.p3s

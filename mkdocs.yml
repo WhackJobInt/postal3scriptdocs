@@ -67,7 +67,7 @@ nav:
         - 'AddFluid (TBD)': 'TBD.md'
     - 'Mission Functions':
         - 'AttributeProgressBar (TBD)': 'TBD.md'
-        - 'MissionLog, MissionSave, MissionBriefing (TBD)': 'TBD.md'
+        - 'MissionLog, MissionSave, MissionBriefing': 'missionlog_save_briefing.md'
         - 'ShowMessage, ShowHint': 'showmessage_showhint.md'
         - 'EndMission': 'endmission.md'
         - 'PlayerKarma': 'playerkarma.md'
