@@ -31,7 +31,7 @@ nav:
         - 'Ammo(tbd)': 'TBD.md'
         - 'Ignore(tbd)': 'TBD.md'
         - 'Karma(tbd)': 'TBD.md'
-        - 'VoicePrefix(tbd)': 'TBD.md'
+        - 'VoicePrefix': 'voiceprefix.md'
     - 'Functions (WIP)':
         - 'Effect': 'TBD.md'
         - 'Say': 'TBD.md'

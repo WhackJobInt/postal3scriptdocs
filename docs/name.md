@@ -1,5 +1,5 @@
 # Name
-<p>The name of any specified entity
+<p>The name of a specified entity
 <pre><code class="language-js">
 // If the name of our targeted entity is "npc_jen"
 IfAttr "Name:target == String:npc_jen Block begin"
