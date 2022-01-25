@@ -1,7 +1,7 @@
 # What is Postal3Script?
 
 <p>Postal3Script, or P3S, is a scripting language developed for Postal 3, designed to handle most of the NPC AI and mission scripting.
-It allows for a much easier and faster time doing mission and AI rather than messing around in C++ and doing mission logic entirely through map entities.
+It allows for a much easier and faster time doing missions and AI rather than messing around in C++ and doing logic entirely through map entities in Hammer.
 <p>With Postal3Script, you can easily do many things that you normally would not be able to do without the source code of the game due to the many useful functions that are interfaced.
 <p>P3S script files are located in "/Postal III/p3/scripts" and use the ".p3s" file extension. To load and be able to use a p3s script, you must add it to a manifest, in "ai_scripts.txt", found in the previously mentioned folder.
 <p>Changes to p3s scripts will automatically hotload when the map restarts, so you can just use the "restart" console command without ever having to exit and reload the game.
