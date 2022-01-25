@@ -69,7 +69,7 @@ nav:
         - 'AttributeProgressBar (TBD)': 'TBD.md'
         - 'MissionLog, MissionSave, MissionBriefing (TBD)': 'TBD.md'
         - 'ShowMessage, ShowHint (TBD)': 'TBD.md'
-        - 'EndMission (TBD)': 'TBD.md'
+        - 'EndMission': 'endmission.md'
         - 'PlayerKarma': 'playerkarma.md'
         - 'PlayVideo': 'playvideo.md'
         - 'OpenDialog': 'opendialog.md'
