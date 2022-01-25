@@ -65,12 +65,12 @@ nav:
         - 'StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern (TBD)': 'TBD.md'
         - 'TravelByPathTrack (TBD)': 'TBD.md'
         - 'AddFluid (TBD)': 'TBD.md'
-    - 'Mission Functions (WIP)':
+    - 'Mission Functions':
         - 'AttributeProgressBar (TBD)': 'TBD.md'
         - 'MissionLog, MissionSave, MissionBriefing (TBD)': 'TBD.md'
         - 'ShowMessage, ShowHint (TBD)': 'TBD.md'
         - 'EndMission (TBD)': 'TBD.md'
         - 'PlayerKarma (TBD)': 'TBD.md'
-        - 'PlayVideo (TBD)': 'TBD.md'
+        - 'PlayVideo': 'playvideo.md'
         - 'OpenDialog': 'opendialog.md'
 theme: readthedocs
