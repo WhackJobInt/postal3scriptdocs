@@ -1,6 +1,6 @@
 # Say
 <p>Make an NPC say a specified "sentence" type voice line
-<p>Uses the name of the sentence in the related NPC's sentence script located in "Postal III\p3\scripts\Sentences". The voice prefix is not required to be used. GAY_ONFIRE can lose the "GAY_" part, and instead just be ONFIRE for example.
+<p>Uses the name of the sentence in the related NPC's sentence script located in "Postal III\p3\scripts\Sentences". The voice prefix is not required, "GAY_ONFIRE" can lose the "GAY_" part and instead just be "ONFIRE" for example...
 <p>
 If you want the player to say something you must EntFireInput logic_playerproxy to do a generic say instead, like this: "EntFireInput proxy,Say:SENTENCENAME".
 <pre><code class="language-js">
