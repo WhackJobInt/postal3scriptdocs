@@ -23,7 +23,7 @@ nav:
         - 'Object': 'object.md'
         - 'DistTo(tbd)': 'TBD.md'
         - 'AngleTo(tbd)': 'TBD.md'
-        - 'Visible(tbd)': 'TBD.md'
+        - 'Visible': 'visible.md'
         - 'HasWeapon(tbd)': 'TBD.md'
         - 'RelationTo(tbd)': 'TBD.md'
         - 'Relation(tbd)': 'TBD.md'
