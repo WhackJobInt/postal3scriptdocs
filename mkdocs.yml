@@ -21,7 +21,7 @@ nav:
         - 'String(tbd)': 'TBD.md'
         - 'Timer(tbd)': 'TBD.md'
         - 'Object': 'object.md'
-        - 'DistTo(tbd)': 'TBD.md'
+        - 'DistTo': 'distto.md'
         - 'AngleTo(tbd)': 'TBD.md'
         - 'Visible': 'visible.md'
         - 'HasWeapon(tbd)': 'TBD.md'
