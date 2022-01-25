@@ -70,7 +70,7 @@ nav:
         - 'MissionLog, MissionSave, MissionBriefing (TBD)': 'TBD.md'
         - 'ShowMessage, ShowHint (TBD)': 'TBD.md'
         - 'EndMission (TBD)': 'TBD.md'
-        - 'PlayerKarma (TBD)': 'TBD.md'
+        - 'PlayerKarma': 'playerkarma.md'
         - 'PlayVideo': 'playvideo.md'
         - 'OpenDialog': 'opendialog.md'
 theme: readthedocs
