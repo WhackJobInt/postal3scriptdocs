@@ -4,14 +4,14 @@
 <p>
 If you want the player to say something you must EntFireInput logic_playerproxy to do a generic say instead, like this: "EntFireInput proxy,Say:SENTENCENAME".
 <pre><code class="language-js">
-// Say a single sentence voiceline...
+// Say a voice line...
+Say ZOMB_MOAN
+
+// Pick and say one of these voice lines randomly...
 Say ZOMB_MOAN,ZOMB_CURSE,ZOMB_HIT
 
-// Say a random voice line out of these...
-Say ZOMB_MOAN,ZOMB_CURSE,ZOMB_HIT
-
-// Say a random voice line out of these, and specify an optional sentence
-// priority parameter (NOTE: Might need to factcheck this) - Tim 
+// Pick and say one of these voice lines randomly, and specify the optional sentence
+// priority parameter (TODO: Need to make sure that is actually what that parameter even is) - Tim 
 // SENTENCE PRIORITY PARAMETERS
 // SENTENCE_PRIORITY_NORMAL = 0,
 // SENTENCE_PRIORITY_MEDIUM = 1,
