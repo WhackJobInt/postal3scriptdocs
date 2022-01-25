@@ -1,7 +1,7 @@
 site_name: Postal3Script
-site_author: Whackjob Interactive
+site_author: WhackJob Interactive
 site_description: Postal3Script
-copyright: Written by Kizoky and Pseudonym_Tim <br>© Whackjob Interactive 2022<br>ㅤ
+copyright: Written by Kizoky and Pseudonym_Tim <br>© WhackJob Interactive 2022<br>ㅤ
 site_url: https://kizoky.github.io/postal3script
 nav:
     - 'Postal3Script (WIP)':
@@ -68,7 +68,7 @@ nav:
     - 'Mission Functions':
         - 'AttributeProgressBar (TBD)': 'TBD.md'
         - 'MissionLog, MissionSave, MissionBriefing (TBD)': 'TBD.md'
-        - 'ShowMessage, ShowHint (TBD)': 'TBD.md'
+        - 'ShowMessage, ShowHint': 'showmessage_showhint.md'
         - 'EndMission': 'endmission.md'
         - 'PlayerKarma': 'playerkarma.md'
         - 'PlayVideo': 'playvideo.md'
