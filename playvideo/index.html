@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <meta name="author" content="WhackJob Interactive">
-  <link rel="canonical" href="https://kizoky.github.io/postal3script/faction/">
+  <link rel="canonical" href="https://kizoky.github.io/postal3script/playvideo/">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Faction - Postal3Script</title>
+  <title>PlayVideo - Postal3Script</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Faction";
-    var mkdocs_page_input_path = "faction.md";
-    var mkdocs_page_url = "/postal3script/faction/";
+    var mkdocs_page_name = "PlayVideo";
+    var mkdocs_page_input_path = "playvideo.md";
+    var mkdocs_page_url = "/postal3script/playvideo/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
@@ -69,12 +69,10 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Object Categories (WIP)</span></p>
-                <ul class="current">
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../manner/">Manner</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Faction</a>
-    <ul class="current">
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../faction/">Faction</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../TBD/">ItemType (TBD)</a>
                     </li>
@@ -175,7 +173,7 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Mission Functions</span></p>
-                <ul>
+                <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../attributeprogressbar/">AttributeProgressBar</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../missionlog_save_briefing/">MissionLog, MissionSave, MissionBriefing</a>
@@ -186,7 +184,9 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../playerkarma/">PlayerKarma</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../playvideo/">PlayVideo</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">PlayVideo</a>
+    <ul class="current">
+    </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../opendialog/">OpenDialog</a>
                     </li>
@@ -212,11 +212,11 @@
     
       
         
-          <li>Object Categories (WIP) &raquo;</li>
+          <li>Mission Functions &raquo;</li>
         
       
     
-    <li>Faction</li>
+    <li>PlayVideo</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -228,47 +228,33 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="faction">Faction</h1>
-<p>Factions/Squads in Postal III are Half-Life 2 squads
-<p>One Squad can hold 32 NPCs in one map, if it's higher than 32, problems might occur.
+                <h1 id="playvideo">PlayVideo</h1>
+<p>Plays a .bik movie from "Postal III/p3/media" folder
+<h1>Syntax</h1>
+<p><code class="language-js">PlayVideo 'filename', 'fade_in_time', 'fade_out_time', 'console_command(s) to execute after Video finished playing'</code>
+<h1>Technical Details</h1>
+<p>Will execute "p3_playvideo" or "p3_playvideo_exitcommand" console commands
+<p>Syntax for "p3_playvideo_exitcommand" is 'filename', 'exitcommand', 'fadein', 'fadeout'
+<p>Syntax for "p3_playvideo" is 'filename', 'fadein', 'fadeout'
+<h1>Example</h1>
 <pre><code class="language-js">
-st_FactionTutorial
-{
-    Group Neutral
-    Patterns
-    {
-        pt_default
-        {
-            actions
-            {
-                // Here you can find all the Factions defined in Vanilla Postal III
-                IfAttr "ea_faction == Faction:Police Return 1"
-                IfAttr "ea_faction == Faction:Zealots Return 1"
-                IfAttr "ea_faction == Faction:Citizens Return 1"
-                IfAttr "ea_faction == Faction:Hobos Return 1"
-                IfAttr "ea_faction == Faction:Animals Return 1"
-                IfAttr "ea_faction == Faction:Player Return 1"
-                IfAttr "ea_faction == Faction:LaserDot Return 1"
-                IfAttr "ea_faction == Faction:Effects Return 1"
-                IfAttr "ea_faction == Faction:Items Return 1"
-                IfAttr "ea_faction == Faction:Taliban Return 1"
-                IfAttr "ea_faction == Faction:Venezuela Return 1"
-                IfAttr "ea_faction == Faction:ZombieBoss Return 1" // used by flag_zombie (Boss NPCs)
+// Fades in and fades out in 1.5 seconds
+PlayVideo placeholder, 1.5, 1.5
 
-                // Factions are independent from Squads
+// Fades in and fades out in 1 second
+PlayVideo thebigrevenge, 1, 1
 
-                // Setting a Squad in an NPC
-                SetSquad tutorial_squad
-                // Making another Squad an enemy
-                SetSquadRelation player_squad:enemy
+// Alternative (requires pcc entity in the level)
+EntFireInput "pcc,Command:playvideo thebigrevenge"
 
-                // You can also do value after declaring enemy (todo: what does it do?)
-                SetSquadRelation player_squad:enemy:4
-            }
-        }
-    }
-}
+// Another alternative
+// Will play music, and text after video had ended
+EntFireInput "pcc,Command:playgamesound Music.IntroStinger"
+EntFireInput "pcc,Command:video_exitcmd notimportant gameui_show_p3_briefdlg #CR_MONDAY_BRIEFING"
 </code></pre>
+<h1>Issues</h1>
+<p>* Depending on which command will you use for video playing, it will become unskippable.
+<p>* Postal3Script is too slow to play an intro movie on the beginning of a map, causing it you to see the map for a brief second before eventually playing the movie.
               
             </div>
           </div>
@@ -276,10 +262,10 @@ st_FactionTutorial
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../TBD/" class="btn btn-neutral float-right" title="ItemType (TBD)">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../opendialog/" class="btn btn-neutral float-right" title="OpenDialog">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../manner/" class="btn btn-neutral" title="Manner"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../playerkarma/" class="btn btn-neutral" title="PlayerKarma"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -307,10 +293,10 @@ st_FactionTutorial
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../manner/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../playerkarma/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../TBD/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../opendialog/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

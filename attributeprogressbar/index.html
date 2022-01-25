@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <meta name="author" content="WhackJob Interactive">
-  <link rel="canonical" href="https://kizoky.github.io/postal3script/faction/">
+  <link rel="canonical" href="https://kizoky.github.io/postal3script/attributeprogressbar/">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Faction - Postal3Script</title>
+  <title>AttributeProgressBar - Postal3Script</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Faction";
-    var mkdocs_page_input_path = "faction.md";
-    var mkdocs_page_url = "/postal3script/faction/";
+    var mkdocs_page_name = "AttributeProgressBar";
+    var mkdocs_page_input_path = "attributeprogressbar.md";
+    var mkdocs_page_url = "/postal3script/attributeprogressbar/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
@@ -69,12 +69,10 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Object Categories (WIP)</span></p>
-                <ul class="current">
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../manner/">Manner</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Faction</a>
-    <ul class="current">
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../faction/">Faction</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../TBD/">ItemType (TBD)</a>
                     </li>
@@ -175,8 +173,10 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Mission Functions</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../attributeprogressbar/">AttributeProgressBar</a>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">AttributeProgressBar</a>
+    <ul class="current">
+    </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../missionlog_save_briefing/">MissionLog, MissionSave, MissionBriefing</a>
                     </li>
@@ -212,11 +212,11 @@
     
       
         
-          <li>Object Categories (WIP) &raquo;</li>
+          <li>Mission Functions &raquo;</li>
         
       
     
-    <li>Faction</li>
+    <li>AttributeProgressBar</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -228,46 +228,29 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="faction">Faction</h1>
-<p>Factions/Squads in Postal III are Half-Life 2 squads
-<p>One Squad can hold 32 NPCs in one map, if it's higher than 32, problems might occur.
+                <h1 id="attributeprogressbar">AttributeProgressBar</h1>
+<p>Adds a HUD on the screen with name, and value
+<p>Mainly used for displaying Health for Bosses, Allies from missions
+<p>Uses .res files from "Postal III/p3/resource/UI/Hud/" folder
+<h1>Syntax</h1>
+<p><code class="language-js">AttributeProgressBar "[panel], show, [attribute]"</code> -- Shows or creates Progress Bar
+<p><code class="language-js">AttributeProgressBar "[panel], show, [attribute], show_value"</code> -- Shows or creates Progress Bar with Attribute's value shown
+<p><code class="language-js">AttributeProgressBar "[panel], hide"</code> -- Hides Progress Bar
+<h1>Example</h1>
 <pre><code class="language-js">
-st_FactionTutorial
-{
-    Group Neutral
-    Patterns
-    {
-        pt_default
-        {
-            actions
-            {
-                // Here you can find all the Factions defined in Vanilla Postal III
-                IfAttr "ea_faction == Faction:Police Return 1"
-                IfAttr "ea_faction == Faction:Zealots Return 1"
-                IfAttr "ea_faction == Faction:Citizens Return 1"
-                IfAttr "ea_faction == Faction:Hobos Return 1"
-                IfAttr "ea_faction == Faction:Animals Return 1"
-                IfAttr "ea_faction == Faction:Player Return 1"
-                IfAttr "ea_faction == Faction:LaserDot Return 1"
-                IfAttr "ea_faction == Faction:Effects Return 1"
-                IfAttr "ea_faction == Faction:Items Return 1"
-                IfAttr "ea_faction == Faction:Taliban Return 1"
-                IfAttr "ea_faction == Faction:Venezuela Return 1"
-                IfAttr "ea_faction == Faction:ZombieBoss Return 1" // used by flag_zombie (Boss NPCs)
+// from ai_cashmart_npc.p3s, Helicopter from Cashmart
+SetAttr "flag_zombie 1"
+TargetEntByName gameplay
+TargetToMem msGP
+SetAttr "ea_dmg_absorb 95"
+TargetPlayer 1
+FireInput self,StartHunt
 
-                // Factions are independent from Squads
+// Show the Panel on spawn
+// "./Postal III/p3/resource/UI/Hud/HeliHealthPanel.res"
+AttributeProgressBar "HeliHealthPanel,show,ea_health"
 
-                // Setting a Squad in an NPC
-                SetSquad tutorial_squad
-                // Making another Squad an enemy
-                SetSquadRelation player_squad:enemy
-
-                // You can also do value after declaring enemy (todo: what does it do?)
-                SetSquadRelation player_squad:enemy:4
-            }
-        }
-    }
-}
+Timer tShout,5:2
 </code></pre>
               
             </div>
@@ -276,10 +259,10 @@ st_FactionTutorial
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../TBD/" class="btn btn-neutral float-right" title="ItemType (TBD)">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../missionlog_save_briefing/" class="btn btn-neutral float-right" title="MissionLog, MissionSave, MissionBriefing">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../manner/" class="btn btn-neutral" title="Manner"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../TBD/" class="btn btn-neutral" title="AddFluid (TBD)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -307,10 +290,10 @@ st_FactionTutorial
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../manner/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../TBD/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../TBD/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../missionlog_save_briefing/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

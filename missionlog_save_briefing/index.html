@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <meta name="author" content="WhackJob Interactive">
-  <link rel="canonical" href="https://kizoky.github.io/postal3script/faction/">
+  <link rel="canonical" href="https://kizoky.github.io/postal3script/missionlog_save_briefing/">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Faction - Postal3Script</title>
+  <title>MissionLog, MissionSave, MissionBriefing - Postal3Script</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Faction";
-    var mkdocs_page_input_path = "faction.md";
-    var mkdocs_page_url = "/postal3script/faction/";
+    var mkdocs_page_name = "MissionLog, MissionSave, MissionBriefing";
+    var mkdocs_page_input_path = "missionlog_save_briefing.md";
+    var mkdocs_page_url = "/postal3script/missionlog_save_briefing/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
@@ -69,12 +69,10 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Object Categories (WIP)</span></p>
-                <ul class="current">
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../manner/">Manner</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Faction</a>
-    <ul class="current">
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../faction/">Faction</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../TBD/">ItemType (TBD)</a>
                     </li>
@@ -175,10 +173,12 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Mission Functions</span></p>
-                <ul>
+                <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../attributeprogressbar/">AttributeProgressBar</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../missionlog_save_briefing/">MissionLog, MissionSave, MissionBriefing</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">MissionLog, MissionSave, MissionBriefing</a>
+    <ul class="current">
+    </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../showmessage_showhint/">ShowMessage, ShowHint</a>
                     </li>
@@ -212,11 +212,11 @@
     
       
         
-          <li>Object Categories (WIP) &raquo;</li>
+          <li>Mission Functions &raquo;</li>
         
       
     
-    <li>Faction</li>
+    <li>MissionLog, MissionSave, MissionBriefing</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -228,46 +228,97 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="faction">Faction</h1>
-<p>Factions/Squads in Postal III are Half-Life 2 squads
-<p>One Squad can hold 32 NPCs in one map, if it's higher than 32, problems might occur.
+                <h1 id="-missionlog">- MissionLog</h1>
+<p>Adds missions/jobs/objectives on the Player's mission log
+<h1>Syntax</h1>
+<p><code class="language-js">MissionLog clear_all</code> -- Clears all objectives from the log
+<p><code class="language-js">MissionLog add_primary, [obj], [text/string]</code> -- Adds primary objective to the log
+<p><code class="language-js">MissionLog add_secondary, [obj], [text/string]</code> -- Adds secondary objective to the log
+<p><code class="language-js">MissionLog done, [obj1], [obj2], ..</code> -- Objective(s) marked as done
+<p><code class="language-js">MissionLog fail, [obj1], [obj2], ..</code> -- Objective(s) marked as failed
+<p><code class="language-js">MissionLog removed, [obj1], [obj2], ..</code> -- Objective(s) removed without a trace
+<p><code class="language-js">MissionLog disable</code> -- Mission log is disabled
+<p><code class="language-js">MissionLog enable</code> -- Mission log is enabled
+<h1>Example</h1>
 <pre><code class="language-js">
-st_FactionTutorial
+// from ai_mission_jwb.p3s
+st_start
 {
-    Group Neutral
-    Patterns
+    group Neutral
+    patterns 
     {
         pt_default
         {
             actions
             {
-                // Here you can find all the Factions defined in Vanilla Postal III
-                IfAttr "ea_faction == Faction:Police Return 1"
-                IfAttr "ea_faction == Faction:Zealots Return 1"
-                IfAttr "ea_faction == Faction:Citizens Return 1"
-                IfAttr "ea_faction == Faction:Hobos Return 1"
-                IfAttr "ea_faction == Faction:Animals Return 1"
-                IfAttr "ea_faction == Faction:Player Return 1"
-                IfAttr "ea_faction == Faction:LaserDot Return 1"
-                IfAttr "ea_faction == Faction:Effects Return 1"
-                IfAttr "ea_faction == Faction:Items Return 1"
-                IfAttr "ea_faction == Faction:Taliban Return 1"
-                IfAttr "ea_faction == Faction:Venezuela Return 1"
-                IfAttr "ea_faction == Faction:ZombieBoss Return 1" // used by flag_zombie (Boss NPCs)
+                PlayerKarma hide
 
-                // Factions are independent from Squads
+                EntFireInput "lpp,GiveWeapon:p3_weapon_taser"
+                EntFireInput "pcc,Command:use p3_weapon_taser"
 
-                // Setting a Squad in an NPC
-                SetSquad tutorial_squad
-                // Making another Squad an enemy
-                SetSquadRelation player_squad:enemy
+                ExecutePattern .xpt_show_momleft
+                ExecutePattern st_util.xpt_ShowMissionDesc
 
-                // You can also do value after declaring enemy (todo: what does it do?)
-                SetSquadRelation player_squad:enemy:4
+                // Adds the objective to the Player's log "Jen must survive"
+                MissionLog add_primary,JenSurvive,#P3_JWB_PRIMARY_JEN
+
+                ExecutePattern .xpt_secondary
+                ShowMessage #P3_JWB_START
+                ShowMessage #P3_JWB_HELPER01
+
+                Pattern pt_loop
+            }
+        }
+
+        // All Soccer Moms have left
+        pt_end
+        {
+            actions
+            {
+                // Objectives marked as done
+                MissionLog done,MomsLeft
+                MissionLog done,JenSurvive
+
+                SetAttr "NonLethalDone 1"
+                IfAttr "PoliceIsHere == 1 RemoveAttr NonLethalDone"
+
+                // Player didn't harm anyone
+                CheckAttr "NonLethalDone MissionLog done,NonLethal"
+
+                EntFireInput fade_in,fade
+                Wait 1
+                EntFireInput "pcc,Command:video_exitcmd jwb_3 p3_end_mission"
             }
         }
     }
 }
+</code></pre>
+
+<br><h1>- MissionSave</h1>
+<p>Unused Postal3Script function
+<p>Not recommended to use
+<h1>Syntax</h1>
+<p><code class="language-js">MissionSave [string]</code> -- Saves the game
+<h2>Technical Details</h2>
+<p>When "MissionSave" is called in p3s, it will do "save P3M_[string] mission [string]" in console, where [string] is replaced with the parameter.
+<p>It was to be used or related to 'MissionLog', but it looks like it's underdeveloped.
+<h1>Example</h1>
+<pre><code class="language-js">
+// This will create a p3m_b4_zombie_ambush.sav and .tga file in the SAVE folder
+MissionSave b4_zombie_ambush
+</code></pre>
+
+<br><h1>- MissionBriefing</h1>
+<p>Unused Postal3Script function
+<p>Shows a message on the screen with black background, with a "Press ENTER to continue" prompt.
+<p>Equivalent to "gameui_show_p3_briefdlg [string]" console command, which was also used ONLY in the Paradise Bridge level.
+<h1>Example</h1>
+<pre><code class="language-js">
+// This will show the very first text screen of Paradise Bridge level
+MissionBriefing "#P3_PDB_T01_ONSCREEN"
+
+// This will do the same, but after the pdb_00.bik stopped playing after execution
+EntFireInput "pcc,Command:video_exitcmd pdb_00 gameui_show_p3_briefdlg #P3_PDB_T01_ONSCREEN"
 </code></pre>
               
             </div>
@@ -276,10 +327,10 @@ st_FactionTutorial
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../TBD/" class="btn btn-neutral float-right" title="ItemType (TBD)">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../showmessage_showhint/" class="btn btn-neutral float-right" title="ShowMessage, ShowHint">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../manner/" class="btn btn-neutral" title="Manner"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../attributeprogressbar/" class="btn btn-neutral" title="AttributeProgressBar"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -307,10 +358,10 @@ st_FactionTutorial
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../manner/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../attributeprogressbar/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../TBD/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../showmessage_showhint/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
