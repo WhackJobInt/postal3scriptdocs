@@ -66,7 +66,7 @@ nav:
         - 'TravelByPathTrack (TBD)': 'TBD.md'
         - 'AddFluid (TBD)': 'TBD.md'
     - 'Mission Functions':
-        - 'AttributeProgressBar (TBD)': 'TBD.md'
+        - 'AttributeProgressBar': 'attributeprogressbar.md'
         - 'MissionLog, MissionSave, MissionBriefing': 'missionlog_save_briefing.md'
         - 'ShowMessage, ShowHint': 'showmessage_showhint.md'
         - 'EndMission': 'endmission.md'
