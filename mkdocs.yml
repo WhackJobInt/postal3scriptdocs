@@ -13,7 +13,7 @@ nav:
         - 'Events(tbd)': 'TBD.md'
     - 'Attribute Checking':
         - 'IfAttr, SetAttr, CheckAttr, ChangeAttr, RemoveAttr': 'attributes.md'
-        - 'Engine Attributes (ea_* ..)': 'spclattributes.md'
+        - 'Embedded Attributes': 'embedattributes.md'
     - 'Object Categories':
         - 'Manner': 'manner.md'
         - 'Faction': 'faction.md'

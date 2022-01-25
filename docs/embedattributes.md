@@ -1,9 +1,12 @@
-# Engine Attributes
-<p>Some of the engine's internal variables are exposed to Postal3Script, e.g. Health.
-<p>These special Attributes are named as ea_*
-<p>These attributes are heavily tied to the engine, breaking or changing them in an unnatural way is not advised.
+# Embedded Attributes
+<p>Instead of unexposed C++ variables in the source code, there are attributes that are already "embedded" and read from a related Postal3Script for given entities.
+<p>For example, "ea_health" is the health of the entity that uses the assigned p3s behaviour, or the health of a set target, and can be read, changed, and set using the various "Attr" statements.
+<p>Embedded Attributes are have the "ea_" prefix.
+<p>There are a variety of attributes and they each serve their own purposes.
+
+<h2>Embedded Attribute Example</h2>
 <pre><code class="language-js">
-st_SpecialAttrTutorial
+st_EmbeddedAttrTutorial
 {
 	Group Neutral
 	Patterns
@@ -12,7 +15,7 @@ st_SpecialAttrTutorial
 		{
 			actions
 			{
-				// Special damage absorptions
+				// Embedded damage absorptions
 				SetAttr "ea_dmg_absorb 70"
 				SetAttr "ea_bulletdmg_absorb 90"
 				SetAttr "ea_clubdmg_absorb 70"
