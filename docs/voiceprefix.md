@@ -1,5 +1,6 @@
 # VoicePrefix
-<p>Check the prefix of an npc's voice
+<p>Check the prefix of an NPC's voice
+<p>Possible Prefixes are from 'scripts/Sentences' folder
 <pre><code class="language-js">
 // If we don't use the "whore" npc voice prefix
 // say a "sentence" type voice line about a cop going crazy
