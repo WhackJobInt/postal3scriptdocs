@@ -72,5 +72,5 @@ nav:
         - 'EndMission (TBD)': 'TBD.md'
         - 'PlayerKarma (TBD)': 'TBD.md'
         - 'PlayVideo (TBD)': 'TBD.md'
-        - 'OpenDialog  (TBD)': 'TBD.md'
+        - 'OpenDialog': 'opendialog.md'
 theme: readthedocs
