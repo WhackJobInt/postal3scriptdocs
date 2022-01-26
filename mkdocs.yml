@@ -58,7 +58,7 @@ nav:
         - 'Hit (TBD)': 'TBD.md'
         - 'Arm (TBD)': 'TBD.md'
         - 'AssistTarget, AssistEnemy, ArrestTarget, BusyTarget, CheckTarget, CheckLOS (TBD)': 'TBD.md'
-        - 'NPC (TBD)': 'TBD.md'
+        - 'NPC': 'NPC.md'
         - 'Push': 'push.md'
         - 'StunOut': 'stunout.md'
         - 'EnableGibs': 'enablegibs.md'
