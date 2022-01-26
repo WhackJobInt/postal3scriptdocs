@@ -62,7 +62,7 @@ nav:
         - 'Push (TBD)': 'TBD.md'
         - 'StunOut (TBD)': 'TBD.md'
         - 'EnableGibs (TBD)': 'TBD.md'
-        - 'StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern (TBD)': 'TBD.md'
+        - 'StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern': 'activitypattern_funcs.md'
         - 'TravelByPathTrack': 'travelbypathtrack.md'
         - 'AddFluid': 'addfluid.md'
     - 'Mission Functions':
