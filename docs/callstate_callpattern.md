@@ -1,5 +1,5 @@
 <h1>Note: It's advised to not use these functions</h1>
-<br><h1>- CallState</h1>
+<h1>- CallState</h1>
 <p>Unused Postal3Script function
 <p>Superseded by State
 <h1>Syntax</h1>

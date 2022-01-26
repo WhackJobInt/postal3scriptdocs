@@ -1,6 +1,5 @@
 <h1>Note: It's advised to not use these functions</h1>
-<p>They are old functions from a time where ExecutePattern didn't exist, use them at your own risk.
-<br><br><h1>- StoreActivityPattern</h1>
+<h1>- StoreActivityPattern</h1>
 <p>Unused Postal3Script function
 <p>Stores an Activity Pattern
 <h1>Syntax</h1>
