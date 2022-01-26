@@ -2,6 +2,7 @@
 <p>A Timer to wait before execution
 <h1>Syntax</h1>
 <p><code class="language-js">Wait [float]</code> -- Wait before executing
+<p><code class="language-js">Wait [float]:[float]</code> -- Randomized waiting time
 <h1>Example</h1>
 <pre><code class="language-js">
 // from ai_mission_aa.p3s
