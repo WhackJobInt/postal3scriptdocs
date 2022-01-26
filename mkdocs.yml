@@ -57,7 +57,7 @@ nav:
         - 'EnterVehicle (TBD)': 'TBD.md'
         - 'Hit (TBD)': 'TBD.md'
         - 'Arm (TBD)': 'TBD.md'
-        - 'AssistTarget, AssistEnemy, ArrestTarget, BusyTarget, CheckTarget, CheckLOS (TBD)': 'TBD.md'
+        - 'AssistTarget, AssistEnemy, ArrestTarget, BusyTarget, CheckTarget, CheckLOS': 'assisttarget_enemy.md'
         - 'NPC': 'NPC.md'
         - 'Push': 'push.md'
         - 'StunOut': 'stunout.md'
