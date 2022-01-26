@@ -60,7 +60,7 @@ nav:
         - 'AssistTarget, AssistEnemy, ArrestTarget, BusyTarget, CheckTarget, CheckLOS (TBD)': 'TBD.md'
         - 'NPC (TBD)': 'TBD.md'
         - 'Push (TBD)': 'TBD.md'
-        - 'StunOut (TBD)': 'TBD.md'
+        - 'StunOut': 'stunout.md'
         - 'EnableGibs': 'enablegibs.md'
         - 'StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern': 'activitypattern_funcs.md'
         - 'TravelByPathTrack': 'travelbypathtrack.md'
