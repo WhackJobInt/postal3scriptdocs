@@ -55,7 +55,7 @@ nav:
         - 'Weapon, Reload, ThrowGrenade (TBD)': 'TBD.md'
         - 'Relationship (TBD)': 'TBD.md'
         - 'EnterVehicle (TBD)': 'TBD.md'
-        - 'Hit (TBD)': 'TBD.md'
+        - 'Hit': 'hit.md'
         - 'AssistTarget, AssistEnemy, ArrestTarget, BusyTarget, CheckTarget, CheckLOS': 'assisttarget_enemy.md'
         - 'NPC': 'NPC.md'
         - 'Push': 'push.md'
