@@ -63,7 +63,7 @@ nav:
         - 'StunOut (TBD)': 'TBD.md'
         - 'EnableGibs (TBD)': 'TBD.md'
         - 'StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern (TBD)': 'TBD.md'
-        - 'TravelByPathTrack (TBD)': 'TBD.md'
+        - 'TravelByPathTrack': 'travelbypathtrack.md'
         - 'AddFluid': 'addfluid.md'
     - 'Mission Functions':
         - 'AttributeProgressBar': 'attributeprogressbar.md'
