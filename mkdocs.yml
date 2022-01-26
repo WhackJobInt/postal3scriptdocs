@@ -61,7 +61,7 @@ nav:
         - 'NPC (TBD)': 'TBD.md'
         - 'Push (TBD)': 'TBD.md'
         - 'StunOut (TBD)': 'TBD.md'
-        - 'EnableGibs (TBD)': 'TBD.md'
+        - 'EnableGibs': 'enablegibs.md'
         - 'StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern': 'activitypattern_funcs.md'
         - 'TravelByPathTrack': 'travelbypathtrack.md'
         - 'AddFluid': 'addfluid.md'
