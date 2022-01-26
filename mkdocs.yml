@@ -4,17 +4,17 @@ site_description: Postal3Script
 copyright: Written by Kizoky and Pseudonym_Tim <br>© WhackJob Interactive 2022<br>ㅤ
 site_url: https://kizoky.github.io/postal3script
 nav:
-    - 'Postal3Script (WIP)':
+    - '-- Postal3Script (WIP) --':
         - 'What is Postal3Script?': 'index.md'
         - 'Structure (TBD)': 'TBD.md'
         - 'States (TBD)': 'TBD.md'
         - 'Patterns (TBD)': 'TBD.md'
         - 'Blocks (TBD)': 'TBD.md'
         - 'Events (TBD)': 'TBD.md'
-    - 'Attribute Checking':
+    - '-- Attribute Checking --':
         - 'IfAttr, SetAttr, CheckAttr, ChangeAttr, RemoveAttr': 'attributes.md'
         - 'Embedded Attributes': 'embedattributes.md'
-    - 'Object Categories (WIP)':
+    - '-- Object Categories (WIP) --':
         - 'Manner': 'manner.md'
         - 'Faction': 'faction.md'
         - 'ItemType (TBD)': 'TBD.md'
@@ -32,24 +32,16 @@ nav:
         - 'Ignore (TBD)': 'TBD.md'
         - 'Karma (TBD)': 'TBD.md'
         - 'VoicePrefix': 'voiceprefix.md'
-    - 'Functions (WIP)':
+    - '-- Functions (WIP) --':
         - 'Effect (TBD)': 'TBD.md'
         - 'Say': 'say.md'
         - 'FireEvent, FireEventEX, FireUser, FireInput, AreaEvent, EntFireUser, EntFireInput (TBD)': 'TBD.md'
-        - 'State, Pattern, ExecutePattern (TBD)': 'TBD.md'
         - 'SetSquad, SetSquadRelation, RemoveSquadRelation, RallySquad, DesertSquad (TBD)': 'TBD.md'
-        - 'SetHintGroup, SetAreaGroup, SetLeanGroup, AvoidProhibitedArea (TBD)': 'TBD.md'
         - 'TargetEnemy, TargetPlayer, TargetCaller, TargetItem, TargetAnchor, TargetVehicle, TargetHostage, TargetCrosshair, TargetEntByName, ResetTarget, IgnoreTarget, SetTarget (TBD)': 'TBD.md'
         - 'TargetToMem, TargetFromMem, CallerToMem, ClearMem, SendTarget2Caller (TBD)': 'TBD.md'
-        - 'SetActPack (TBD)': 'TBD.md'
-        - 'FreeMovement, FreeMovementParams, MoveToLean, MoveToTarget, MoveToTargetLKP, MoveToNode (TBD)': 'TBD.md'
-        - 'Wait, WaitForEnd, Repeat (TBD)': 'TBD.md'
         - 'Gesture, ResetGesture, ResetSequence (TBD)': 'TBD.md'
-        - 'Turn, TurnSpeed (TBD)': 'TBD.md'
         - 'Aim, Senses, Snatch, Unsnatch, Crouch, Face, Lean, Follow, LookAt, HolsterWeapon, Anchor, Busy, Fear, Hate, CatDervish, PlayerFriendly, LookOut (TBD)': 'TBD.md'
         - 'Headblob (TBD)': 'TBD.md'
-        - 'StateMatrix (TBD)': 'TBD.md'
-        - 'CallState, CallPattern (TBD)': 'TBD.md'
         - 'EmitSound (TBD)': 'TBD.md'
         - 'Item, SpawnItem (TBD)': 'TBD.md'
         - 'Relationship (TBD)': 'TBD.md'
@@ -58,14 +50,24 @@ nav:
         - 'NPC': 'NPC.md'
         - 'StunOut': 'stunout.md'
         - 'EnableGibs': 'enablegibs.md'
-        - 'StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern': 'activitypattern_funcs.md'
-        - 'TravelByPathTrack': 'travelbypathtrack.md'
         - 'AddFluid': 'addfluid.md'
-    - 'Attack Functions':
+    - '-- State Functions --':
+        - 'State, Pattern, ExecutePattern (TBD)': 'TBD.md'
+        - 'Wait, WaitForEnd, Repeat (TBD)': 'TBD.md'
+        - 'StateMatrix (TBD)': 'TBD.md'
+        - 'CallState, CallPattern (TBD)': 'TBD.md'
+        - 'StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern': 'activitypattern_funcs.md'
+    - '-- Movement Functions --':
+        - 'TravelByPathTrack': 'travelbypathtrack.md'
+        - 'Turn, TurnSpeed (TBD)': 'TBD.md'
+        - 'FreeMovement, FreeMovementParams, MoveToLean, MoveToTarget, MoveToTargetLKP, MoveToNode (TBD)': 'TBD.md'
+        - 'SetActPack (TBD)': 'TBD.md'
+        - 'SetHintGroup, SetAreaGroup, SetLeanGroup, AvoidProhibitedArea (TBD)': 'TBD.md'
+    - '-- Attack Functions --':
         - 'Hit': 'hit.md'
         - 'Push': 'push.md'
         - 'Weapon, Reload, ThrowGrenade (TBD)': 'TBD.md'
-    - 'Mission Functions':
+    - '-- Mission Functions --':
         - 'AttributeProgressBar': 'attributeprogressbar.md'
         - 'MissionLog, MissionSave, MissionBriefing': 'missionlog_save_briefing.md'
         - 'ShowMessage, ShowHint': 'showmessage_showhint.md'
@@ -73,6 +75,6 @@ nav:
         - 'PlayerKarma': 'playerkarma.md'
         - 'PlayVideo': 'playvideo.md'
         - 'OpenDialog': 'opendialog.md'
-    - 'Deleted Functions':
+    - '-- Deleted Functions --':
         - 'Arm': 'arm.md'
 theme: readthedocs
