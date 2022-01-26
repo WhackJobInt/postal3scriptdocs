@@ -66,7 +66,7 @@ nav:
     - '-- Attack Functions --':
         - 'Hit': 'hit.md'
         - 'Push': 'push.md'
-        - 'Weapon, Reload, ThrowGrenade (TBD)': 'TBD.md'
+        - 'Weapon, Reload, ThrowGrenade': 'weapon_reload_throwgrenade.md'
     - '-- Mission Functions --':
         - 'AttributeProgressBar': 'attributeprogressbar.md'
         - 'MissionLog, MissionSave, MissionBriefing': 'missionlog_save_briefing.md'
