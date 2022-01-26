@@ -58,7 +58,7 @@ nav:
         - 'CallState, CallPattern': 'callstate_callpattern.md'
         - 'StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern': 'activitypattern_funcs.md'
     - '-- Movement Functions --':
-        - 'Move, MoveToLean, MoveToTarget, MoveToTargetLKP, MoveToNode (TBD)': 'TBD.md'
+        - 'Move, MoveToLean, MoveToTarget, MoveToTargetLKP': 'movement_funcs.md'
         - 'FreeMovement, FreeMovementParams (TBD)': 'TBD.md'
         - 'TravelByPathTrack': 'travelbypathtrack.md'
         - 'SetHintGroup, SetAreaGroup, SetLeanGroup, AvoidProhibitedArea (TBD)': 'TBD.md'
