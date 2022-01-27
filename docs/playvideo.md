@@ -1,7 +1,7 @@
 # PlayVideo
-<p>Plays a .bik movie from "Postal III/p3/media" folder
+<p>Plays a .bik video located in "Postal III\p3_english\media".
 <h1>Syntax</h1>
-<p><code class="language-js">PlayVideo 'filename', 'fade_in_time', 'fade_out_time', 'console_command(s) to execute after Video finished playing'</code>
+<p><code class="language-js">PlayVideo [filename], [fade_in_time], [fade_out_time], [console_command(s) to execute after video is finished playing]</code>
 <h1>Technical Details</h1>
 <p>Will execute "p3_playvideo" or "p3_playvideo_exitcommand" console commands
 <p>Syntax for "p3_playvideo_exitcommand" is 'filename', 'exitcommand', 'fadein', 'fadeout'
@@ -22,6 +22,6 @@ EntFireInput "pcc,Command:playvideo thebigrevenge"
 EntFireInput "pcc,Command:playgamesound Music.IntroStinger"
 EntFireInput "pcc,Command:video_exitcmd notimportant gameui_show_p3_briefdlg #CR_MONDAY_BRIEFING"
 </code></pre>
-<h1>Issues</h1>
+<h1>Notes/Issues</h1>
 <p>* Depending on which command will you use for video playing, it will become unskippable.
 <p>* Postal3Script is too slow to play an intro movie on the beginning of a map, causing it you to see the map for a brief second before eventually playing the movie.
