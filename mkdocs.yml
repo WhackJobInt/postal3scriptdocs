@@ -46,7 +46,7 @@ nav:
         - 'Anchor, TargetAnchor (TBD)': 'TBD.md'
     - '-- NPC Functions --':
         - 'Say': 'say.md'
-        - 'EmitSound (TBD)': 'TBD.md'
+        - 'EmitSound': 'emitsound.md'
         - 'Gesture, ResetGesture, ResetSequence (TBD)': 'TBD.md'
         - 'Headblob': 'headblob.md'
         - 'NPC': 'NPC.md'
