@@ -68,7 +68,7 @@ nav:
         - 'TargetEnemy, TargetPlayer, TargetCaller, TargetItem, TargetVehicle, TargetHostage, TargetCrosshair, TargetEntByName, ResetTarget, IgnoreTarget, SetTarget (TBD)': 'TBD.md'
         - 'TargetToMem, TargetFromMem, CallerToMem, ClearMem, SendTarget2Caller (TBD)': 'TBD.md'
         - 'AssistTarget, AssistEnemy, ArrestTarget, BusyTarget, CheckTarget, CheckLOS': 'assisttarget_enemy.md'
-        - 'Relationship (TBD)': 'TBD.md'
+        - 'Relationship': 'relationship.md'
     - '-- Movement Functions --':
         - 'Move, MoveToLean, MoveToTarget, MoveToTargetLKP': 'movement_funcs.md'
         - 'FreeMovement, FreeMovementParams': 'freemovement.md'
