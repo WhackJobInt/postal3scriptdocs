@@ -54,7 +54,7 @@ nav:
         - 'Aim, Face (TBD)': 'TBD.md'
         - 'Snatch, Unsnatch (TBD)': 'TBD.md'
         - 'Senses, LookAt, LookOut (TBD)': 'TBD.md'
-        - 'Crouch, Lean (TBD)': 'TBD.md'
+        - 'Crouch, Lean': 'crouch_lean.md'
         - 'Busy, Fear, Hate': 'busy_fear_hate.md'
         - 'Follow, PlayerFriendly': 'follow_playerfriendly.md'
         - 'CatDervish': 'catdervish.md'
