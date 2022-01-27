@@ -75,7 +75,7 @@ nav:
         - 'TravelByPathTrack': 'travelbypathtrack.md'
         - 'SetHintGroup, SetAreaGroup, SetLeanGroup, AvoidProhibitedArea (TBD)': 'TBD.md'
         - 'Turn, TurnSpeed': 'turn_turnspeed.md'
-        - 'SetActPack (TBD)': 'TBD.md'
+        - 'SetActPack': 'setactpack.md'
     - '-- Attack Functions --':
         - 'Hit': 'hit.md'
         - 'Push': 'push.md'
