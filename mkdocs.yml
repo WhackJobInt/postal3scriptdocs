@@ -69,7 +69,7 @@ nav:
         - 'SendTarget2Caller (TBD)': 'TBD.md'
         - 'CheckTarget, CheckLOS': 'checktarget_checklos.md'
         - 'ResetTarget, IgnoreTarget, SetTarget (TBD)': 'TBD.md'
-        - 'TargetEnemy, TargetPlayer, TargetCaller, TargetItem, TargetVehicle, TargetHostage, TargetCrosshair (TBD)': 'TBD.md'
+        - 'TargetEnemy, TargetPlayer, TargetCaller, TargetItem, TargetVehicle, TargetHostage, TargetCrosshair': 'targetfunctions.md'
         - 'TargetToMem, TargetFromMem, CallerToMem, ClearMem': 'targetmemory.md'
         - 'AssistTarget, AssistEnemy, ArrestTarget, BusyTarget': 'assisttarget_enemy.md'
         - 'Relationship': 'relationship.md'
