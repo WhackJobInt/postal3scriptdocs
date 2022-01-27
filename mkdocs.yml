@@ -32,6 +32,12 @@ nav:
         - 'Ignore (TBD)': 'TBD.md'
         - 'Karma (TBD)': 'TBD.md'
         - 'VoicePrefix': 'voiceprefix.md'
+    - '-- State Functions --':
+        - 'State, Pattern, ExecutePattern': 'func_state_pattern_executepattern.md'
+        - 'Wait, WaitForEnd, Repeat': 'wait_waitforend_repeat.md'
+        - 'StateMatrix': 'statematrix.md'
+        - 'CallState, CallPattern': 'callstate_callpattern.md'
+        - 'StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern': 'activitypattern_funcs.md'
     - '-- Misc Functions --':
         - 'Effect (TBD)': 'TBD.md'
         - 'FireEvent, FireEventEX, FireUser, FireInput, AreaEvent, EntFireUser, EntFireInput (TBD)': 'TBD.md'
@@ -55,18 +61,16 @@ nav:
         - 'StunOut': 'stunout.md'
         - 'EnableGibs': 'enablegibs.md'
         - 'EnterVehicle (TBD)': 'TBD.md'
-    - '-- State Functions --':
-        - 'State, Pattern, ExecutePattern': 'func_state_pattern_executepattern.md'
-        - 'Wait, WaitForEnd, Repeat': 'wait_waitforend_repeat.md'
-        - 'StateMatrix': 'statematrix.md'
-        - 'CallState, CallPattern': 'callstate_callpattern.md'
-        - 'StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern': 'activitypattern_funcs.md'
     - '-- Squad Functions --':
         - 'SetSquad, SetSquadRelation, RemoveSquadRelation (TBD)': 'TBD.md'
         - 'RallySquad, DesertSquad (TBD)': 'TBD.md'
     - '-- Targeting Functions --':
-        - 'TargetEnemy, TargetPlayer, TargetCaller, TargetItem, TargetVehicle, TargetHostage, TargetCrosshair, TargetEntByName, ResetTarget, IgnoreTarget, SetTarget (TBD)': 'TBD.md'
-        - 'TargetToMem, TargetFromMem, CallerToMem, ClearMem, SendTarget2Caller (TBD)': 'TBD.md'
+        - 'TargetEntByName (TBD)': 'TBD.md'
+        - 'SendTarget2Caller (TBD)': 'TBD.md'
+        - 'CheckTarget, CheckLOS': 'checktarget_checklos.md'
+        - 'ResetTarget, IgnoreTarget, SetTarget (TBD)': 'TBD.md'
+        - 'TargetEnemy, TargetPlayer, TargetCaller, TargetItem, TargetVehicle, TargetHostage, TargetCrosshair (TBD)': 'TBD.md'
+        - 'TargetToMem, TargetFromMem, CallerToMem, ClearMem (TBD)': 'TBD.md'
         - 'AssistTarget, AssistEnemy, ArrestTarget, BusyTarget, CheckTarget, CheckLOS': 'assisttarget_enemy.md'
         - 'Relationship': 'relationship.md'
     - '-- Movement Functions --':
