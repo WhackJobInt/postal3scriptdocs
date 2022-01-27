@@ -52,7 +52,7 @@ nav:
         - 'NPC': 'NPC.md'
     - '-- NPC Behavior Functions --':
         - 'Aim, Face (TBD)': 'TBD.md'
-        - 'Snatch, Unsnatch (TBD)': 'TBD.md'
+        - 'Snatch, Unsnatch': 'snatch_unsnatch.md'
         - 'Senses, LookAt, LookOut': 'senses_lookat_lookout.md'
         - 'Crouch, Lean': 'crouch_lean.md'
         - 'Busy, Fear, Hate': 'busy_fear_hate.md'
