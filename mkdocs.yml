@@ -71,7 +71,7 @@ nav:
         - 'Relationship (TBD)': 'TBD.md'
     - '-- Movement Functions --':
         - 'Move, MoveToLean, MoveToTarget, MoveToTargetLKP': 'movement_funcs.md'
-        - 'FreeMovement, FreeMovementParams (TBD)': 'TBD.md'
+        - 'FreeMovement, FreeMovementParams': 'freemovement.md'
         - 'TravelByPathTrack': 'travelbypathtrack.md'
         - 'SetHintGroup, SetAreaGroup, SetLeanGroup, AvoidProhibitedArea': 'sethint_area_leangroup_avoidarea.md'
         - 'Turn, TurnSpeed': 'turn_turnspeed.md'
