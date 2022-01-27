@@ -42,11 +42,8 @@ nav:
         - 'Say': 'say.md'
         - 'EmitSound (TBD)': 'TBD.md'
         - 'Gesture, ResetGesture, ResetSequence (TBD)': 'TBD.md'
-        - 'NPC': 'NPC.md'
-        - 'StunOut': 'stunout.md'
-        - 'EnableGibs': 'enablegibs.md'
         - 'Headblob (TBD)': 'TBD.md'
-        - 'EnterVehicle (TBD)': 'TBD.md'
+        - 'NPC': 'NPC.md'
     - '-- NPC Behavior Functions --':
         - 'Aim, Face (TBD)': 'TBD.md'
         - 'Snatch, Unsnatch (TBD)': 'TBD.md'
@@ -55,6 +52,9 @@ nav:
         - 'Busy, Fear, Hate (TBD)': 'TBD.md'
         - 'Follow, PlayerFriendly (TBD)': 'TBD.md'
         - 'CatDervish (TBD)': 'TBD.md'
+        - 'StunOut': 'stunout.md'
+        - 'EnableGibs': 'enablegibs.md'
+        - 'EnterVehicle (TBD)': 'TBD.md'
     - '-- State Functions --':
         - 'State, Pattern, ExecutePattern': 'func_state_pattern_executepattern.md'
         - 'Wait, WaitForEnd, Repeat': 'wait_waitforend_repeat.md'
