@@ -63,7 +63,7 @@ nav:
         - 'EnterVehicle (TBD)': 'TBD.md'
     - '-- Squad Functions --':
         - 'SetSquad, SetSquadRelation, RemoveSquadRelation': 'setsquad_relation.md'
-        - 'RallySquad, DesertSquad (TBD)': 'TBD.md'
+        - 'RallySquad': 'rallysquad.md'
     - '-- Targeting Functions --':
         - 'TargetEntByName': 'targetentbyname.md'
         - 'SendTarget2Caller': 'sendtarget2caller.md'
@@ -95,4 +95,5 @@ nav:
     - '-- Deleted Functions --':
         - 'Arm': 'arm.md'
         - 'HolsterWeapon': 'holsterweapon.md'
+        - 'DesertSquad': 'desertsquad.md'
 theme: readthedocs
