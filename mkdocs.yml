@@ -57,7 +57,7 @@ nav:
         - 'Crouch, Lean (TBD)': 'TBD.md'
         - 'Busy, Fear, Hate (TBD)': 'TBD.md'
         - 'Follow, PlayerFriendly (TBD)': 'TBD.md'
-        - 'CatDervish (TBD)': 'TBD.md'
+        - 'CatDervish': 'catdervish.md'
         - 'StunOut': 'stunout.md'
         - 'EnableGibs': 'enablegibs.md'
         - 'EnterVehicle': 'entervehicle.md'
