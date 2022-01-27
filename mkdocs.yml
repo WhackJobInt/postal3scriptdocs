@@ -55,7 +55,7 @@ nav:
         - 'Snatch, Unsnatch (TBD)': 'TBD.md'
         - 'Senses, LookAt, LookOut (TBD)': 'TBD.md'
         - 'Crouch, Lean (TBD)': 'TBD.md'
-        - 'Busy, Fear, Hate (TBD)': 'TBD.md'
+        - 'Busy, Fear, Hate': 'busy_fear_hate.md'
         - 'Follow, PlayerFriendly': 'follow_playerfriendly.md'
         - 'CatDervish': 'catdervish.md'
         - 'StunOut': 'stunout.md'
