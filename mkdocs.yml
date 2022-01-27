@@ -62,7 +62,7 @@ nav:
         - 'EnableGibs': 'enablegibs.md'
         - 'EnterVehicle (TBD)': 'TBD.md'
     - '-- Squad Functions --':
-        - 'SetSquad, SetSquadRelation, RemoveSquadRelation (TBD)': 'TBD.md'
+        - 'SetSquad, SetSquadRelation, RemoveSquadRelation': 'setsquad_relation.md'
         - 'RallySquad, DesertSquad (TBD)': 'TBD.md'
     - '-- Targeting Functions --':
         - 'TargetEntByName': 'targetentbyname.md'
