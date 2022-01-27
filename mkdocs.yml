@@ -66,7 +66,7 @@ nav:
         - 'RallySquad, DesertSquad (TBD)': 'TBD.md'
     - '-- Targeting Functions --':
         - 'TargetEntByName (TBD)': 'TBD.md'
-        - 'SendTarget2Caller (TBD)': 'TBD.md'
+        - 'SendTarget2Caller': 'sendtarget2caller.md'
         - 'CheckTarget, CheckLOS': 'checktarget_checklos.md'
         - 'ResetTarget, IgnoreTarget, SetTarget': 'reset_ignore_settarget.md'
         - 'TargetEnemy, TargetPlayer, TargetCaller, TargetItem, TargetVehicle, TargetHostage, TargetCrosshair': 'targetfunctions.md'
