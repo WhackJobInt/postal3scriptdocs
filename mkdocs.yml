@@ -14,7 +14,7 @@ nav:
     - '-- Attribute Checking --':
         - 'IfAttr, SetAttr, CheckAttr, ChangeAttr, RemoveAttr': 'attributes.md'
         - 'Embedded Attributes': 'embedattributes.md'
-    - '-- Object Categories (WIP) --':
+    - '-- Object Categories --':
         - 'Manner': 'manner.md'
         - 'Faction': 'faction.md'
         - 'ItemType (TBD)': 'TBD.md'
@@ -32,31 +32,35 @@ nav:
         - 'Ignore (TBD)': 'TBD.md'
         - 'Karma (TBD)': 'TBD.md'
         - 'VoicePrefix': 'voiceprefix.md'
-    - '-- Functions (WIP) --':
+    - '-- Misc Functions --':
         - 'Effect (TBD)': 'TBD.md'
-        - 'Say': 'say.md'
         - 'FireEvent, FireEventEX, FireUser, FireInput, AreaEvent, EntFireUser, EntFireInput (TBD)': 'TBD.md'
-        - 'SetSquad, SetSquadRelation, RemoveSquadRelation, RallySquad, DesertSquad (TBD)': 'TBD.md'
-        - 'TargetEnemy, TargetPlayer, TargetCaller, TargetItem, TargetAnchor, TargetVehicle, TargetHostage, TargetCrosshair, TargetEntByName, ResetTarget, IgnoreTarget, SetTarget (TBD)': 'TBD.md'
-        - 'TargetToMem, TargetFromMem, CallerToMem, ClearMem, SendTarget2Caller (TBD)': 'TBD.md'
-        - 'Gesture, ResetGesture, ResetSequence (TBD)': 'TBD.md'
-        - 'Aim, Senses, Snatch, Unsnatch, Crouch, Face, Lean, Follow, LookAt, HolsterWeapon, Anchor, Busy, Fear, Hate, CatDervish, PlayerFriendly, LookOut (TBD)': 'TBD.md'
-        - 'Headblob (TBD)': 'TBD.md'
-        - 'EmitSound (TBD)': 'TBD.md'
         - 'Item, SpawnItem (TBD)': 'TBD.md'
-        - 'Relationship (TBD)': 'TBD.md'
-        - 'EnterVehicle (TBD)': 'TBD.md'
-        - 'AssistTarget, AssistEnemy, ArrestTarget, BusyTarget, CheckTarget, CheckLOS': 'assisttarget_enemy.md'
+        - 'AddFluid': 'addfluid.md'
+    - '-- NPC Functions --':
+        - 'Say': 'say.md'
+        - 'Gesture, ResetGesture, ResetSequence (TBD)': 'TBD.md'
         - 'NPC': 'NPC.md'
         - 'StunOut': 'stunout.md'
         - 'EnableGibs': 'enablegibs.md'
-        - 'AddFluid': 'addfluid.md'
+        - 'Aim, Senses, Snatch, Unsnatch, Crouch, Face, Lean, Follow, LookAt, HolsterWeapon, Anchor, Busy, Fear, Hate, CatDervish, PlayerFriendly, LookOut (TBD)': 'TBD.md'
+        - 'Headblob (TBD)': 'TBD.md'
+        - 'EmitSound (TBD)': 'TBD.md'
+        - 'EnterVehicle (TBD)': 'TBD.md'
     - '-- State Functions --':
         - 'State, Pattern, ExecutePattern': 'func_state_pattern_executepattern.md'
         - 'Wait, WaitForEnd, Repeat': 'wait_waitforend_repeat.md'
         - 'StateMatrix': 'statematrix.md'
         - 'CallState, CallPattern': 'callstate_callpattern.md'
         - 'StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern': 'activitypattern_funcs.md'
+    - '-- Squad Functions --':
+        - 'SetSquad, SetSquadRelation, RemoveSquadRelation (TBD)': 'TBD.md'
+        - 'RallySquad, DesertSquad (TBD)': 'TBD.md'
+    - '-- Targeting Functions --':
+        - 'TargetEnemy, TargetPlayer, TargetCaller, TargetItem, TargetAnchor, TargetVehicle, TargetHostage, TargetCrosshair, TargetEntByName, ResetTarget, IgnoreTarget, SetTarget (TBD)': 'TBD.md'
+        - 'TargetToMem, TargetFromMem, CallerToMem, ClearMem, SendTarget2Caller (TBD)': 'TBD.md'
+        - 'AssistTarget, AssistEnemy, ArrestTarget, BusyTarget, CheckTarget, CheckLOS': 'assisttarget_enemy.md'
+        - 'Relationship (TBD)': 'TBD.md'
     - '-- Movement Functions --':
         - 'Move, MoveToLean, MoveToTarget, MoveToTargetLKP': 'movement_funcs.md'
         - 'FreeMovement, FreeMovementParams (TBD)': 'TBD.md'

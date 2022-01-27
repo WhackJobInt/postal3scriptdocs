@@ -2,7 +2,7 @@
 <p>Spawns gasoline trails at a specified location
 <p>Only ever used in Paradise Bridge level.
 <h1>Syntax</h1>
-<p><code class="language-js">AddFluid [xpos] [ypos] [zpos] [amount]</code> -- Spawns trails
+<p><code class="language-js">AddFluid [xpos], [ypos], [zpos], [amount]</code> -- Spawns trails
 <p>Default Amount is 300 if no Amount was defined
 <h1>Example</h1>
 <pre><code class="language-js">
