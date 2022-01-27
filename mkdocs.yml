@@ -56,7 +56,7 @@ nav:
         - 'Senses, LookAt, LookOut (TBD)': 'TBD.md'
         - 'Crouch, Lean (TBD)': 'TBD.md'
         - 'Busy, Fear, Hate (TBD)': 'TBD.md'
-        - 'Follow, PlayerFriendly (TBD)': 'TBD.md'
+        - 'Follow, PlayerFriendly': 'follow_playerfriendly.md'
         - 'CatDervish': 'catdervish.md'
         - 'StunOut': 'stunout.md'
         - 'EnableGibs': 'enablegibs.md'
