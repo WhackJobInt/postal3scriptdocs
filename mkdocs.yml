@@ -80,7 +80,6 @@ nav:
         - 'Hit': 'hit.md'
         - 'Push': 'push.md'
         - 'Weapon, Reload, ThrowGrenade': 'weapon_reload_throwgrenade.md'
-        - 'HolsterWeapon (TBD)': 'TBD.md'
     - '-- Mission Functions --':
         - 'AttributeProgressBar': 'attributeprogressbar.md'
         - 'MissionLog, MissionSave, MissionBriefing': 'missionlog_save_briefing.md'
@@ -91,4 +90,5 @@ nav:
         - 'OpenDialog': 'opendialog.md'
     - '-- Deleted Functions --':
         - 'Arm': 'arm.md'
+        - 'HolsterWeapon': 'holsterweapon.md'
 theme: readthedocs
