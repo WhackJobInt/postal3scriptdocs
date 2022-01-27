@@ -70,8 +70,8 @@ nav:
         - 'CheckTarget, CheckLOS': 'checktarget_checklos.md'
         - 'ResetTarget, IgnoreTarget, SetTarget (TBD)': 'TBD.md'
         - 'TargetEnemy, TargetPlayer, TargetCaller, TargetItem, TargetVehicle, TargetHostage, TargetCrosshair (TBD)': 'TBD.md'
-        - 'TargetToMem, TargetFromMem, CallerToMem, ClearMem (TBD)': 'TBD.md'
-        - 'AssistTarget, AssistEnemy, ArrestTarget, BusyTarget, CheckTarget, CheckLOS': 'assisttarget_enemy.md'
+        - 'TargetToMem, TargetFromMem, CallerToMem, ClearMem': 'targetmemory.md'
+        - 'AssistTarget, AssistEnemy, ArrestTarget, BusyTarget': 'assisttarget_enemy.md'
         - 'Relationship': 'relationship.md'
     - '-- Movement Functions --':
         - 'Move, MoveToLean, MoveToTarget, MoveToTargetLKP': 'movement_funcs.md'

@@ -1,7 +1,6 @@
 # Manner
 <p>Each NPC and even some generic entities, have a specific Manner assigned to them. This is essentially the same thing as Faction but on a more individual level. 
 This is used for various things, such as setting and checking how a specific NPC belonging to a faction actually BEHAVES to then make another NPC act accordingly towards them. For example, preventing us from punching someone we dislike, and instead just shoving them because our manner is set as "GayGuy".
-<p>(TODO: Manner bias towards other NPC must be researched to fully understand it)
 <pre><code class="language-js">
 st_MannerTutorial
 {
