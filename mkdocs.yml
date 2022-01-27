@@ -51,7 +51,7 @@ nav:
         - 'Headblob (TBD)': 'TBD.md'
         - 'NPC': 'NPC.md'
     - '-- NPC Behavior Functions --':
-        - 'Aim, Face (TBD)': 'TBD.md'
+        - 'Aim, Face': 'aim_face.md'
         - 'Snatch, Unsnatch': 'snatch_unsnatch.md'
         - 'Senses, LookAt, LookOut': 'senses_lookat_lookout.md'
         - 'Crouch, Lean': 'crouch_lean.md'
