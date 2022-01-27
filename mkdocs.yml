@@ -60,7 +60,7 @@ nav:
         - 'CatDervish (TBD)': 'TBD.md'
         - 'StunOut': 'stunout.md'
         - 'EnableGibs': 'enablegibs.md'
-        - 'EnterVehicle (TBD)': 'TBD.md'
+        - 'EnterVehicle': 'entervehicle.md'
     - '-- Squad Functions --':
         - 'SetSquad, SetSquadRelation, RemoveSquadRelation': 'setsquad_relation.md'
         - 'RallySquad': 'rallysquad.md'
