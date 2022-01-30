@@ -1,8 +1,8 @@
 #- ShowMessage
-<p>Prints out message to the screen
-<p>Supports strings from "Postal III/p3/resource/p3_english.txt" (or from any other file that contains valid strings)
-<p>Equivalent to Half-Life 2's UserMessageBegin
-<p>Uses data from "Postal III/p3/scripts/HudLayout.res" (Plus "channels_manifest.txt" and "HudAnimations.txt")
+<p>Prints out message to the screen.
+<p>Supports strings from "Postal III/p3/resource/p3_english.txt" (or from any other file that contains valid strings).
+<p>Equivalent to Half-Life 2's UserMessageBegin.
+<p>Uses data from "Postal III/p3/scripts/HudLayout.res" (Plus "channels_manifest.txt" and "HudAnimations.txt").
 <h1>Example</h1>
 <pre><code class="language-js">
 // This will print on the screen
@@ -30,13 +30,14 @@ IfAttr "caller.ea_Manner == Manner:PussyCat and mis_004 >= 0 Block begin,execute
 Block end
 </code></pre>
 <br><h1>- ShowHint</h1>
-<p>Unused Postal3Script function
-<p>Karma hinting is done automatically, so this has been left completely unused
-<p>Uses data from "Postal III/p3/scripts/hints_manifest.txt"
+<p>Unused Postal3Script function.
+<p>Karma hinting is done automatically, so this has been left completely unused.
+<p>Uses data from "Postal III/p3/scripts/hints_manifest.txt".
 <h1>Example</h1>
 <pre><code class="language-js">
 // First found in 'ai_st1_common.p3s' Line 954
 ShowHint hintCat
+
 // First found in 'ai_st6_missions.p3s' Line 528
 ShowHint hintKarmaDown
 ShowHint hintKarmaUp

@@ -1,13 +1,13 @@
 #- FreeMovement
-<p>Sets or resets NPC's freedom of movement
-<p>FreeMovementParams can be reset optionally
+<p>Sets or resets NPC's freedom of movement.
+<p>FreeMovementParams can be reset optionally.
 <h1>Syntax</h1>
 <p><code class="language-js">FreeMovement [walk/run], [reset]</code> -- NPC will walk or run, [reset] is optional
 <p><code class="language-js">FreeMovement [true/false], [reset]</code> -- NPC can move or not, [reset] is optional
 <p><code class="language-js">FreeMovement random, [reset]</code> -- Chooses between walk or run, [reset] is optional
 <h1>Example</h1>
 <pre><code class="language-js">
-// (from ai_cashmart_npc.p3s)
+// (From ai_cashmart_npc.p3s)
 // This will reset the NPC's movement to be able to move everywhere
 xpt_invalidroute
 {
@@ -25,7 +25,7 @@ xpt_invalidroute
 <br><br><h1>- FreeMovementParams</h1>
 <p>Restricts NPC's movement with parameters
 <pre><code class="language-js">
-// (from ai_st_init.p3s)
+// (From ai_st_init.p3s)
 Const ED_VERY_CLOSE,32
 Const ED_CLOSE,160
 Const ED_MIDDLE,320

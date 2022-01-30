@@ -9,5 +9,5 @@
 <p><code class="language-js">StateMatrix social</code> -- Goes through Social matrix, and calls states
 <h1>Example</h1>
 <pre><code class="language-js">
-// todo?
+// TODO: ???
 </code></pre>

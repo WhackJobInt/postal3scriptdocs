@@ -38,7 +38,7 @@ xpt_SetHintGroup
 <h1>Syntax</h1>
 <p><code class="language-js">AvoidProhibitedArea [boolean]</code>
 <pre><code class="language-js">
-// (from ai_freeroaming.p3s)
+// (From ai_freeroaming.p3s)
 // this AI will refuse to walk out from it's set area group
 behavior
 {

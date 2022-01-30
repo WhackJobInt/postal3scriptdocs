@@ -1,8 +1,8 @@
 # Headblob
 <p>Spawns an effect above an NPC's head
 <pre><code class="language-js">
-// (from p3_headblobs.txt)
-// unused ones without Fx are not listed here
+// (From p3_headblobs.txt)
+// Unused ones without Fx are not listed here
 "Stars"			"Stars_headblobs_Fx"
 "Zzzz"			"Zzzz_headblobs_Fx"
 "HappyCat"		"HappyCat_headblobs_Fx"
@@ -11,10 +11,10 @@
 </code></pre>
 <h2>Syntax</h2>
 <p><code class="language-js">Headblob [integer], [name]</code>
-<p>Todo: what does the number mean in front of the name? Maximum number seems to be 5
+<p>TODO: What does the number mean in front of the name? Maximum number seems to be 5
 <h1>Example</h1>
 <pre><code class="language-js">
-// from ai_npc_animal.p3s
+// From ai_npc_animal.p3s
 pt_eat
 {
 	actions

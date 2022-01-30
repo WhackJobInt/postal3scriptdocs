@@ -1,12 +1,12 @@
 # StunOut
 <p>Unused Postal3Script function
-<p>Stuns an NPC, as if they were shot by a Taser, and collapses
+<p>Stuns an NPC, as if they were shot by a Taser, and causes them to collapse on the ground.
 <h1>Syntax</h1>
 <p><code class="language-js">StunOut 1</code> -- Stuns NPC
 <h1>Example</h1>
 <pre><code class="language-js">
-// from ai_st1_common.p3s (Line 1124)
-// Old Taser code
+// From ai_st1_common.p3s (Line 1124)
+// (Old Taser code)
 pt_stunout:ignore_ext_events
 {	
 	actions 

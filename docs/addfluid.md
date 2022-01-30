@@ -1,16 +1,16 @@
 # AddFluid
-<p>Unused Postal3Script function
-<p>Spawns gasoline trails at a specified location
+<p>Unused Postal3Script function.
+<p>Spawn gasoline fluid at a specified location. The equivalent of the "p3_fluids_addgasoline" console command.
 <h1>Syntax</h1>
-<p><code class="language-js">AddFluid [xpos], [ypos], [zpos], [amount]</code> -- Spawns trails
-<p>Default Amount is 300 if no Amount was defined
+<p><code class="language-js">AddFluid [xpos], [ypos], [zpos], [amount]</code> -- Spawns gasoline fluid
+<p>Default amount is 300 if no amount provided.
 <h1>Example</h1>
 <pre><code class="language-js">
-// from ai_mission_pdb.p3s
 pt_default
 {
 	actions
 	{
+		// From ai_mission_pdb.p3s
 		Wait 0.9
 		EntFireInput tutor03_teleport,Teleport
 		EntFireInput "pcc,Command:use p3_weapon_emptyhands"
@@ -29,10 +29,6 @@ pt_default
 		Wait 0.5
 		MissionLog "add_primary,tutor04,#P3_PDB_T04_LOG"
 		ShowMessage #P3_PDB_T04_MSG01
-	}
-	events
-	{
-		OnTutor04ZombiesDead	"Pattern pt_end"
 	}
 }
 </code></pre>

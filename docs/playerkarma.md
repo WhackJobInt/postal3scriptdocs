@@ -1,8 +1,8 @@
 # PlayerKarma
-<p>Sets the Player's karma globally
+<p>Sets the Player karma globally.
 <h1>Syntax</h1>
 <pre><code class="language-js">
-(from ai_st_init.p3s)
+(From ai_st_init.p3s)
 
 // KARMA AMOUNTS
 Const KARMA_LOW,5

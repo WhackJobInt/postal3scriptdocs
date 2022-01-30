@@ -3,9 +3,9 @@
 <h1>Syntax</h1>
 <p><code class="language-js">PlayVideo [filename], [fade_in_time], [fade_out_time], [console_command(s) to execute after video is finished playing]</code>
 <h1>Technical Details</h1>
-<p>Will execute "p3_playvideo" or "p3_playvideo_exitcommand" console commands
-<p>Syntax for "p3_playvideo_exitcommand" is 'filename', 'exitcommand', 'fadein', 'fadeout'
-<p>Syntax for "p3_playvideo" is 'filename', 'fadein', 'fadeout'
+<p>* Will execute "p3_playvideo" or "p3_playvideo_exitcommand" console commands.
+<p>* Syntax for "p3_playvideo_exitcommand" is 'filename', 'exitcommand', 'fadein', 'fadeout'.
+<p>* Syntax for "p3_playvideo" is 'filename', 'fadein', 'fadeout'.
 <h1>Example</h1>
 <pre><code class="language-js">
 // Fades in and fades out in 1.5 seconds

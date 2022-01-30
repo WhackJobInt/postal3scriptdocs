@@ -64,7 +64,7 @@ to_target
 from_target
 target_dir
 </code></pre>
-<p>Todo: this is not really correct, It's not clear what each argument does just by looking at p3s scripts, it's a rough estimation
+<p>TODO: This is not really correct, It's not clear what each argument does just by looking at p3s scripts, it's a rough estimation
 <p><code class="language-js">MoveToTarget [run/walk/true], [distance_min], [distance_max], [flag]</code>
 <p><code class="language-js">MoveToTarget [run/walk/true], [distance], [flag]</code>
 <p><code class="language-js">MoveToTarget [false]</code>
@@ -87,6 +87,6 @@ pt_chase
 </code></pre>
 
 <br><br><h1>- MoveToTargetLKP</h1>
-<p>Forces the NPC to move to it's target (todo: what does LKP mean?)
+<p>Forces the NPC to move to it's target (TODO: what does LKP mean?)
 <h1>Syntax</h1>
 <p><code class="language-js">MoveToTargetLKP [run/walk/true]</code>

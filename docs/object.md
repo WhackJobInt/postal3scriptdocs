@@ -11,11 +11,11 @@ Typically, the caller means something or someone that forced the NPC to enter it
 // 'Object:slot#0' ; 'Object:null' ; 'Object:self'
 // 'Object:item' ; 'Object:anchor'
 
-// Check if our caller exists (null means zero)
+// Check if our caller exists (null == zero)
 IfAttr "Object:caller != Object:null Block Begin"
 	// Was it the Player who forced us into this state?
 	IfAttr "Object:caller == Object:player Block Begin"
-		// Well then we are going to run to them, endlessly
+		// Well then we are going to run to them endlessly
 		TargetPlayer 1 // or TargetCaller 1
 		MoveToTarget run,1,0
 	Block End
@@ -32,7 +32,7 @@ Block End
 // Check out ai_motorhead.p3s, ai_st1_common.p3s, ai_st2_states.p3s 
 // and ai_st7_environment.p3s
 
-// Object:anchor is used only in ai_mission_jwb.p3s (todo: what the hell it is?)
+// Object:anchor is used only in ai_mission_jwb.p3s (TODO: What the hell is it?)
 </code></pre>
 <h1>Saving Objects To Memory</h1>
 <p>You are capable of saving an object to memory, with up to 10 slots.
@@ -53,10 +53,13 @@ Block End
 
 // Get entity named 'gameplay' and set it as target
 TargetEntByName gameplay
+
 // Save the target to memory
 TargetToMem msGP
+
 // Set the MathLogic's attribute
 ChangeAttr "slot#msGP.MoneyGiven +5"
+
 // Reset the target
 ResetTarget 1
 </code></pre>

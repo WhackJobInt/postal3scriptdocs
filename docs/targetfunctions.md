@@ -52,15 +52,15 @@ st_return_to_vehicle
 </code></pre>
 
 <br><br><h1>- TargetHostage</h1>
-<p>Unused Postal3Script function
-<p>Sets Hostage as target object
+<p>Unused Postal3Script function.
+<p>Sets Hostage as target object.
 <p>Caller must be the Player, Player must have active Hostage
 <h2>Syntax</h2>
 <p><code class="language-js">TargetHostage 1</code> -- Sets Hostage as target object
 
 <br><br><h1>- TargetCrosshair</h1>
-<p>Unused Postal3Script function (Leftover from Dog School)
-<p>Sets Laserpen's dot as target object
-<p>Will fail if Player isn't using Laserpen
+<p>Unused Postal3Script function (Leftover from Dog School).
+<p>Sets Laserpen's dot as target object.
+<p>Will fail if Player isn't using Laserpen.
 <h2>Syntax</h2>
 <p><code class="language-js">TargetCrosshair 1</code> -- Sets Laserpen's dot as target object

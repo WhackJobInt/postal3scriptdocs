@@ -11,7 +11,7 @@
 <p><code class="language-js">MissionLog enable</code> -- Mission log is enabled
 <h1>Example</h1>
 <pre><code class="language-js">
-// from ai_mission_jwb.p3s
+// From ai_mission_jwb.p3s
 st_start
 {
 	group Neutral
@@ -65,8 +65,8 @@ st_start
 </code></pre>
 
 <br><h1>- MissionSave</h1>
-<p>Unused Postal3Script function
-<p>Not recommended to use
+<p>Unused Postal3Script function.
+<p>Not recommended to use.
 <h1>Syntax</h1>
 <p><code class="language-js">MissionSave [string]</code> -- Saves the game
 <h2>Technical Details</h2>

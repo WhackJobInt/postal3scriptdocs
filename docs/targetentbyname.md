@@ -1,10 +1,10 @@
 # TargetEntByName
-<p>Searches through the map for a named entity, and sets it as target object if it was successful
+<p>Searches the map for an entity by name, and sets it as the target object if successful.
 <h2>Syntax</h2>
 <p><code class="language-js">TargetEntByName [string]</code>
 <h1>Example</h1>
 <pre><code class="language-js">
-// (from ai_mission_cw.p3s)
+// (From ai_mission_cw.p3s)
 IfAttr "cage_num == 4 Block begin"
 	IfAttr "slot#msGP.Cage_04_opened == 0 Repeat 0"
 	IfAttr "slot#msGP.Cage_04_opened == 1 Block begin"
@@ -17,7 +17,7 @@ IfAttr "cage_num == 4 Block begin"
 	Block end
 Block end
 
-// (From Name page's Example)
+// (From "Name" page's Example)
 TargetEntByName npc_jen
 IfAttr "Name:target == String:npc_jen Block begin"
     // Set jen's health to zero

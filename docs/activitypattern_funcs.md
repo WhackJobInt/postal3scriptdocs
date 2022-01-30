@@ -1,4 +1,4 @@
-<h1>Note: It's advised to not use these functions</h1>
+<h1>Note: It's not advised to use these functions</h1>
 <h1>- StoreActivityPattern</h1>
 <p>Unused Postal3Script function
 <p>Stores an Activity Pattern
