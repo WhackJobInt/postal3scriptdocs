@@ -93,6 +93,7 @@ nav:
         - 'PlayVideo': 'playvideo.md'
         - 'OpenDialog': 'opendialog.md'
     - '-- Deleted Functions --':
+        - 'ActBusy': 'actbusy.md'
         - 'Arm': 'arm.md'
         - 'HolsterWeapon': 'holsterweapon.md'
         - 'DesertSquad': 'desertsquad.md'
