@@ -66,7 +66,7 @@ nav:
         - 'RallySquad': 'rallysquad.md'
     - '-- Targeting Functions --':
         - 'TargetEntByName': 'targetentbyname.md'
-        - 'SendTarget2Caller': 'sendtarget2caller.md'
+        - 'SendTarget2Caller, SendCaller': 'sendtarget2caller_sendcaller.md'
         - 'CheckTarget, CheckLOS': 'checktarget_checklos.md'
         - 'ResetTarget, IgnoreTarget, SetTarget': 'reset_ignore_settarget.md'
         - 'TargetEnemy, TargetPlayer, TargetCaller, TargetItem, TargetVehicle, TargetHostage, TargetCrosshair': 'targetfunctions.md'
