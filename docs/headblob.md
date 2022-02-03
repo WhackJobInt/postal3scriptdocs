@@ -10,7 +10,7 @@
 "Arrest"		"Arest_headblobs_Fx"
 </code></pre>
 <h2>Syntax</h2>
-<p><code class="language-js">Headblob [integer], [name]</code>
+<p><code class="language-js">Headblob [integer],[name]</code>
 <p>TODO: What does the number mean in front of the name? Maximum number seems to be 5
 <h1>Example</h1>
 <pre><code class="language-js">

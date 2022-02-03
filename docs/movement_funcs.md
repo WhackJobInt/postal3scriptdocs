@@ -5,7 +5,7 @@
 <p><code class="language-js">Move walk</code> -- NPC will now walk
 <p><code class="language-js">Move true</code> -- NPC is able to move
 <p><code class="language-js">Move false</code> -- NPC is no longer able to move
-<p><code class="language-js">Move [walk/run], [angle], [timing], [face_dir/update_dir]</code> -- todo
+<p><code class="language-js">Move [walk/run],[angle],[timing],[face_dir/update_dir]</code> -- todo
 
 <br><br><h1>- MoveToLean</h1>
 <p>Moves the NPC to a lean spot, used for combat
@@ -32,7 +32,7 @@ not_behind_target
 safe
 area_group
 </code></pre>
-<p><code class="language-js">MoveToLean run, [distance_min], [distance_max], [flag1], [flag2], [flag3], ..</code>
+<p><code class="language-js">MoveToLean run,[distance_min],[distance_max],[flag1],[flag2],[flag3], ..</code>
 <h1>Example</h1>
 <pre><code class="language-js">
 // from ai_cashmart.p3s
@@ -65,8 +65,8 @@ from_target
 target_dir
 </code></pre>
 <p>TODO: This is not really correct, It's not clear what each argument does just by looking at p3s scripts, it's a rough estimation
-<p><code class="language-js">MoveToTarget [run/walk/true], [distance_min], [distance_max], [flag]</code>
-<p><code class="language-js">MoveToTarget [run/walk/true], [distance], [flag]</code>
+<p><code class="language-js">MoveToTarget [run/walk/true],[distance_min],[distance_max],[flag]</code>
+<p><code class="language-js">MoveToTarget [run/walk/true],[distance],[flag]</code>
 <p><code class="language-js">MoveToTarget [false]</code>
 <pre><code class="language-js">
 // from ai_mission_sbe.p3s

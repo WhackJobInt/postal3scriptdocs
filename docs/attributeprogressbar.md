@@ -3,9 +3,9 @@
 <p>Used for displaying boss/ally health bars and portraits in missions.
 <p>Uses .res files located in "Postal III/p3/resource/UI/Hud/".
 <h1>Syntax</h1>
-<p><code class="language-js">AttributeProgressBar "[panel], show, [attribute]"</code> -- Show the progress bar panel with the attribute's value hidden
-<p><code class="language-js">AttributeProgressBar "[panel], show, [attribute], show_value"</code> -- Show the progress bar panel with the attribute's value shown as well
-<p><code class="language-js">AttributeProgressBar "[panel], hide"</code> -- Hide the progress bar
+<p><code class="language-js">AttributeProgressBar "[panel],show,[attribute]"</code> -- Show the progress bar panel with the attribute's value hidden
+<p><code class="language-js">AttributeProgressBar "[panel],show,[attribute],show_value"</code> -- Show the progress bar panel with the attribute's value shown as well
+<p><code class="language-js">AttributeProgressBar "[panel],hide"</code> -- Hide the progress bar
 <h1>Example</h1>
 <pre><code class="language-js">
 // (From ai_cashmart_npc.p3s, Cashmart Helicopter boss)

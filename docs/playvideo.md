@@ -1,7 +1,7 @@
 # PlayVideo
 <p>Plays a .bik video located in "Postal III\p3_english\media".
 <h1>Syntax</h1>
-<p><code class="language-js">PlayVideo [filename], [fade_in_time], [fade_out_time], [console_command(s) to execute after video is finished playing]</code>
+<p><code class="language-js">PlayVideo [filename],[fade_in_time],[fade_out_time],[console_command(s) to execute after video is finished playing]</code>
 <h1>Technical Details</h1>
 <p>* Will execute "p3_playvideo" or "p3_playvideo_exitcommand" console commands.
 <p>* Syntax for "p3_playvideo_exitcommand" is 'filename', 'exitcommand', 'fadein', 'fadeout'.

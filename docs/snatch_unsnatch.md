@@ -3,7 +3,7 @@
 <p>* Can be used only by Animals
 <p>* Must have a target object
 <h2>Syntax</h2>
-<p><code class="language-js">Snatch [true/false], [attachment]</code>
+<p><code class="language-js">Snatch [true/false],[attachment]</code>
 <pre><code class="language-js">
 // Attachments	// Where to snatch
 fucking_monkey 	= head

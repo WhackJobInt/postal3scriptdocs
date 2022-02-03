@@ -2,7 +2,7 @@
 <p>Unused Postal3Script function.
 <p>Spawn gasoline fluid at a specified location. The equivalent of the "p3_fluids_addgasoline" console command.
 <h1>Syntax</h1>
-<p><code class="language-js">AddFluid [xpos], [ypos], [zpos], [amount]</code> -- Spawns gasoline fluid
+<p><code class="language-js">AddFluid [xpos],[ypos],[zpos],[amount]</code> -- Spawns gasoline fluid
 <p>Default amount is 300 if no amount provided.
 <h1>Example</h1>
 <pre><code class="language-js">

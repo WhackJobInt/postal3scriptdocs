@@ -1,9 +1,9 @@
 # Push
 <p>Makes an NPC perform a shove/push melee attack.
 <h1>Syntax</h1>
-<p><code class="language-js">Push self, target, easy</code> -- Plays flinching animations, but no damage
-<p><code class="language-js">Push self, target, medium</code> -- Deals slight damage to target
-<p><code class="language-js">Push self, target, hard</code> -- Deals heavy damage to target
+<p><code class="language-js">Push self,target,easy</code> -- Plays flinching animations, but no damage
+<p><code class="language-js">Push self,target,medium</code> -- Deals slight damage to target
+<p><code class="language-js">Push self,target,hard</code> -- Deals heavy damage to target
 <p>Victim and attacker cannot be the same.
 <h1>Example</h1>
 <pre><code class="language-js">

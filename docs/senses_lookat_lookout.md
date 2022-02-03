@@ -8,7 +8,7 @@
 <p>* Must have a target object
 <h2>Syntax</h2>
 <p><code class="language-js">LookAt [true/false]</code>
-<p><code class="language-js">LookAt [time to look], [bias]</code>
+<p><code class="language-js">LookAt [time to look],[bias]</code>
 
 <br><br><h1>- LookOut</h1>
 <p>Forces NPC to look out from a lean spot.

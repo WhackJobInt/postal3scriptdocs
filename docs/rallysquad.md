@@ -5,4 +5,4 @@
 <p>* If NPC's squad exists, nearest NPC will be added to NPC's squad, If NPC's squad doesn't exist, the opposite will happen
 <p>* If both NPCs don't have any squads, a squad will be automatically created with both NPCs being the members of it
 <h2>Syntax</h2>
-<p><code class="language-js">RallySquad [distance], [squad size]</code>
+<p><code class="language-js">RallySquad [distance],[squad size]</code>

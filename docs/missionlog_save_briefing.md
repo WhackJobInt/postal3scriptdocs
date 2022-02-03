@@ -2,11 +2,11 @@
 <p>Adds missions/jobs/objectives on the Player's mission log.
 <h1>Syntax</h1>
 <p><code class="language-js">MissionLog clear_all</code> -- Clears all objectives from the log
-<p><code class="language-js">MissionLog add_primary, [obj], [text/string]</code> -- Adds primary objective to the log
-<p><code class="language-js">MissionLog add_secondary, [obj], [text/string]</code> -- Adds secondary objective to the log
-<p><code class="language-js">MissionLog done, [obj1], [obj2], ..</code> -- Objective(s) marked as done
-<p><code class="language-js">MissionLog fail, [obj1], [obj2], ..</code> -- Objective(s) marked as failed
-<p><code class="language-js">MissionLog removed, [obj1], [obj2], ..</code> -- Objective(s) removed without a trace
+<p><code class="language-js">MissionLog add_primary,[obj],[text/string]</code> -- Adds primary objective to the log
+<p><code class="language-js">MissionLog add_secondary,[obj],[text/string]</code> -- Adds secondary objective to the log
+<p><code class="language-js">MissionLog done,[obj1],[obj2], ..</code> -- Objective(s) marked as done
+<p><code class="language-js">MissionLog fail,[obj1],[obj2], ..</code> -- Objective(s) marked as failed
+<p><code class="language-js">MissionLog removed,[obj1],[obj2], ..</code> -- Objective(s) removed without a trace
 <p><code class="language-js">MissionLog disable</code> -- Mission log is disabled
 <p><code class="language-js">MissionLog enable</code> -- Mission log is enabled
 <h1>Example</h1>

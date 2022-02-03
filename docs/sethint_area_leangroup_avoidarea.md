@@ -1,7 +1,7 @@
 #- SetHintGroup
 <p>Sets NPC's hint group
 <h1>Syntax</h1>
-<p><code class="language-js">SetHintGroup [hint group1], [hint group2], [hint group3], ..</code> -- Sets hint groups for NPC
+<p><code class="language-js">SetHintGroup [hint group1],[hint group2],[hint group3], ..</code> -- Sets hint groups for NPC
 <h1>Example</h1>
 <pre><code class="language-js">
 // from ai_mission_pw.p3s
@@ -23,14 +23,14 @@ xpt_SetHintGroup
 <br><br><h1>- SetAreaGroup</h1>
 <p>Sets NPC's area group(s)
 <h1>Syntax</h1>
-<p><code class="language-js">SetAreaGroup [Group1]:[walkable], [Group2]:[walkable], [Group3]:[walkable], ..</code> -- Sets area groups for NPC 
+<p><code class="language-js">SetAreaGroup [Group1]:[walkable],[Group2]:[walkable],[Group3]:[walkable], ..</code> -- Sets area groups for NPC 
 <p>:[walkable] is optional
 <p><code class="language-js">SetAreaGroup AG_DEFAULT</code> -- Resets NPC's area group
 
 <br><br><h1>- SetLeanGroup</h1>
 <p>Sets NPC's lean group(s)
 <h1>Syntax</h1>
-<p><code class="language-js">SetLeanGroup [Group1], [Group2], [Group3], ..</code> -- Sets lean groups for NPC
+<p><code class="language-js">SetLeanGroup [Group1],[Group2],[Group3], ..</code> -- Sets lean groups for NPC
 <p>(Decompile dcr.bsp for checking out how a lean group works)
 
 <br><br><h1>- AvoidProhibitedArea</h1>

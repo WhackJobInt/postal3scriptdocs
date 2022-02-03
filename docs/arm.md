@@ -2,7 +2,7 @@
 <p>Deleted Postal3Script function
 <p>Sets melee status for the NPC, superseded by "Weapon"
 <h1>Syntax</h1>
-<p><code class="language-js">Arm [boolean], melee</code> -- Sets melee status, and holsters weapon if possible
+<p><code class="language-js">Arm [boolean],melee</code> -- Sets melee status, and holsters weapon if possible
 <h1>Example</h1>
 <pre><code class="language-js">
 // from ai_st11_urza.p3s

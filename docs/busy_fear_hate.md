@@ -16,7 +16,7 @@
 <p>* Squad members will forget or hate the target object.
 <p>* Doesn't work with Player as the target object.
 <h2>Syntax</h2>
-<p><code class="language-js">Hate [true/false], [normal/guard/assault/retreat/roundup]:[param]</code> -- Tactical variant and param only works with Military NPCs
+<p><code class="language-js">Hate [true/false],[normal/guard/assault/retreat/roundup]:[param]</code> -- Tactical variant and param only works with Military NPCs
 <h1>Example</h1>
 <pre><code class="language-js">
 // Will only work with Military NPCs

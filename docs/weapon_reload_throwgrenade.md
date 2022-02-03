@@ -1,8 +1,8 @@
 #- Weapon
 <p>Sets NPC's current weapon state.
 <h1>Syntax</h1>
-<p><code class="language-js">Weapon select, melee</code> -- Selects melee weapon, if available
-<p><code class="language-js">Weapon select, ranged</code> -- Selects ranged weapon, if available
+<p><code class="language-js">Weapon select,melee</code> -- Selects melee weapon, if available
+<p><code class="language-js">Weapon select,ranged</code> -- Selects ranged weapon, if available
 <p><code class="language-js">Weapon arm</code> -- Automatically selects weapon
 <p><code class="language-js">Weapon disarm</code> -- Holsters active weapon
 <p><code class="language-js">Weapon drop</code> -- Drops active weapon (won't drop if it's not out)
@@ -74,13 +74,13 @@ pt_default
 <pre><code class="language-js">
 // Grenade types
 frag
-smoke
-flash
+smoke -- Unused
+flash -- Unused (not recommended to use this)
 beenest
 molotov
 krotchy_toy
 </code></pre>
-<p><code class="language-js">ThrowGrenade 1, [grenade type], [no_ally]</code> -- Throws grenade, optional flag
+<p><code class="language-js">ThrowGrenade 1,[grenade type],[no_ally]</code> -- Throws grenade, optional flag
 <h1>Example</h1>
 <pre><code class="language-js">
 behavior
@@ -98,7 +98,7 @@ behavior
 				{
 					actions
 					{
-						// Do nothing but throw grenades at the Player every 5 seconds
+						// Do nothing but throw molotovs at the Player every 5 seconds
 						SetSquadRelation player_squad:enemy:10
 						TargetPlayer 1
 						Wait 1

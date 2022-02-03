@@ -36,12 +36,12 @@ pt_turn_right
 <p>Sets the NPC's turning speed
 <p>The default turning speed is 90
 <h1>Syntax</h1>
-<p><code class="language-js">TurnSpeed idle, [integer]</code> -- Sets idle speed
-<p><code class="language-js">TurnSpeed turn, [integer]</code> -- Sets turn speed
-<p><code class="language-js">TurnSpeed walk, [integer]</code> -- Sets walk speed
-<p><code class="language-js">TurnSpeed run, [integer]</code> -- Sets run speed
-<p><code class="language-js">TurnSpeed attack, [integer]</code> -- Sets attack speed
-<p><code class="language-js">TurnSpeed default, [integer]</code> -- Sets default speed
+<p><code class="language-js">TurnSpeed idle,[integer]</code> -- Sets idle speed
+<p><code class="language-js">TurnSpeed turn,[integer]</code> -- Sets turn speed
+<p><code class="language-js">TurnSpeed walk,[integer]</code> -- Sets walk speed
+<p><code class="language-js">TurnSpeed run,[integer]</code> -- Sets run speed
+<p><code class="language-js">TurnSpeed attack,[integer]</code> -- Sets attack speed
+<p><code class="language-js">TurnSpeed default,[integer]</code> -- Sets default speed
 <h1>Example</h1>
 <pre><code class="language-js">
 // from ai_st1_common.p3s

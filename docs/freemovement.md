@@ -2,9 +2,9 @@
 <p>Sets or resets NPC's freedom of movement.
 <p>FreeMovementParams can be reset optionally.
 <h1>Syntax</h1>
-<p><code class="language-js">FreeMovement [walk/run], [reset]</code> -- NPC will walk or run, [reset] is optional
-<p><code class="language-js">FreeMovement [true/false], [reset]</code> -- NPC can move or not, [reset] is optional
-<p><code class="language-js">FreeMovement random, [reset]</code> -- Chooses between walk or run, [reset] is optional
+<p><code class="language-js">FreeMovement [walk/run],[reset]</code> -- NPC will walk or run, [reset] is optional
+<p><code class="language-js">FreeMovement [true/false],[reset]</code> -- NPC can move or not, [reset] is optional
+<p><code class="language-js">FreeMovement random,[reset]</code> -- Chooses between walk or run, [reset] is optional
 <h1>Example</h1>
 <pre><code class="language-js">
 // (From ai_cashmart_npc.p3s)
@@ -57,7 +57,7 @@ once
 area_group
 </code></pre>
 <h1>Syntax</h1>
-<p><code class="language-js">FreeMovementParams [flag], [distance min], [distance max], [goalflag1], [goalflag2], [goalflag3], ..</code>
+<p><code class="language-js">FreeMovementParams [flag],[distance min],[distance max],[goalflag1],[goalflag2],[goalflag3], ..</code>
 <h1>Example</h1>
 <pre><code class="language-js">
 // This will allow the NPC to move everywhere in it's area group
