@@ -110,6 +110,8 @@ behavior
 <p>* In Postal3Script, Attributes can only be whole numbers/integers, attributes can't be floats, doubles and strings.
 <p>* An Attribute must have a value initialized before checking it's value using CheckAttr, meaning an attribute that doesn't exist will never return a valid value. (Checking if it's zero/null doesn't work).
 <p>* You can only have a limited number of if statements in a single state or pattern.
+<p>* An Attribute can only have a maximum of '100' value
+<p>* Sensitive to spaces when using functions
 
 <h1> Debugging code </h1>
 <p>Normally the game doesn't print out any errors, you need to have the "developer" and "p3_fsm_spew" console commands enabled.</p>
