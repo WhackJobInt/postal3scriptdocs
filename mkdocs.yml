@@ -97,4 +97,6 @@ nav:
         - 'Arm': 'arm.md'
         - 'HolsterWeapon': 'holsterweapon.md'
         - 'DesertSquad': 'desertsquad.md'
+    - '-- Unused Script Stuff --':
+        - 'Development/WIP Files': 'wipp3sfiles.md'
 theme: readthedocs
