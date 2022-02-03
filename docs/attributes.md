@@ -114,7 +114,8 @@ st_CheckAttrTutorial
 <h1>ChangeAttr</h1>
 <p>Changes an already existing Attribute's value, increasing, decreasing, multiplying, or by halving.
 <p>Halving will clamp the value to integer (5 / 2 wouldn't be '2.5', but '3').
-<p>BUG: Only capable of counting up to 100, this has been fixed in Catharsis Reborn.
+<p>Notes: It MUST have an operator, simply having a number inside the parameter without an operator will NOT touch the attribute!
+<p>Only capable of working with values up to 100, this has been fixed in Catharsis Reborn.
 <pre><code class="language-js">
 st_ChangeAttrTutorial
 {
@@ -136,6 +137,9 @@ st_ChangeAttrTutorial
 				
 				// Change Health on the fly
 				ChangeAttr "ea_health +25"
+				
+				// Set this Attribute to absolute zero
+				ChangeAttr "MyAttribute -MyAttribute"
 			}
 		}
 	}
