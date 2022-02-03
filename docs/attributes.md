@@ -114,6 +114,7 @@ st_CheckAttrTutorial
 <h1>ChangeAttr</h1>
 <p>Changes an already existing Attribute's value, increasing, decreasing, multiplying, or by halving.
 <p>Halving will clamp the value to integer (5 / 2 wouldn't be '2.5', but '3').
+<p>BUG: Only capable of counting up to 100, this has been fixed in Catharsis Reborn.
 <pre><code class="language-js">
 st_ChangeAttrTutorial
 {
