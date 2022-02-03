@@ -11,6 +11,7 @@ nav:
         - 'Patterns (TBD)': 'TBD.md'
         - 'Blocks (TBD)': 'TBD.md'
         - 'Events (TBD)': 'TBD.md'
+        - 'Development/WIP Files': 'wipp3sfiles.md'
     - '-- Attribute Checking --':
         - 'IfAttr, SetAttr, CheckAttr, ChangeAttr, RemoveAttr': 'attributes.md'
         - 'Embedded Attributes': 'embedattributes.md'
@@ -97,6 +98,14 @@ nav:
         - 'Arm': 'arm.md'
         - 'HolsterWeapon': 'holsterweapon.md'
         - 'DesertSquad': 'desertsquad.md'
-    - '-- Unused Script Stuff --':
-        - 'Development/WIP Files': 'wipp3sfiles.md'
+    - '-- Mission Script Files (Pre-Path) --':
+        - 'PDB (Paradise Bridge)': 'missions/pdb.md'
+        - 'PW (Porn World)': 'missions/pw.md'
+        - 'DCR (Diseased Cat Roundup)': 'missions/dcr.md'
+        - 'JWB (Jen Walcotts Bodyguard)': 'missions/jwb.md'
+        - 'CM (Cash Mart Robbery)': 'missions/cm.md'
+    - '-- Mission Script Files (Good Path) --':
+        - 'n/a': 'TBD.md'
+    - '-- Mission Script Files (Evil Path) --':
+        - 'n/a': 'TBD.md'
 theme: readthedocs
