@@ -1,7 +1,11 @@
-#- AssistTarget
-<p>Sets current target as target internally
+# Various Targeting Functions
+
+## AssistTarget
+
+Sets current target/enemy as target object internally for script.
+
 <h1>Syntax</h1>
-<p><code class="language-js">AssistTarget 1</code> -- Sets current target as target internally
+<p><code class="language-js">AssistTarget 1</code> -- Sets current target/enemy as target object internally</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 pt_npcdead
@@ -19,19 +23,33 @@ pt_npcdead
 }
 </code></pre>
 
-<br><br><h1>- AssistEnemy</h1>
-<p>Unused Postal3Script function
-<p>Sets current target's enemy as target
-<h1>Syntax</h1>
-<p><code class="language-js">AssistEnemy 1</code> -- Sets current target's enemy as target
+<br>
+## AssistEnemy
 
-<br><br><h1>- ArrestTarget</h1>
-<p>Unused Postal3Script function
-<p>Arrests the target, only works for Player
-<p>Only works for "p3_npc_cop" NPCs 
+Unused Postal3Script function
+
+Sets current target's enemy as target
+
 <h1>Syntax</h1>
-<p><code class="language-js">ArrestTarget true</code> -- Target is arrested
-<p><code class="language-js">ArrestTarget false</code> -- Target is no arrested
+<p><code class="language-js">AssistEnemy 1</code> -- Sets current target's enemy as target</p>
+
+<br>
+## ArrestTarget
+Unused Postal3Script function
+
+Arrests the target.
+
+<ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<li>Target object must be the Player</li>
+<li>Only works for <code>p3_npc_cop</code> NPCs </li>
+</div>
+</ul>
+
+<h1>Syntax</h1>
+<p><code class="language-js">ArrestTarget true</code> -- Target is arrested</p>
+<p><code class="language-js">ArrestTarget false</code> -- Target is no arrested</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // from ai_st5_temp.p3s
@@ -56,13 +74,21 @@ st_test_arrest
 }
 </code></pre>
 
-<br><br><h1>- BusyTarget</h1>
-<p>Unused Postal3Script function
-<p>Sets target's busy state internally
-<p>Can target self
+<br>
+## BusyTarget
+
+Unused Postal3Script function
+
+Sets target's busy state internally
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Can target self</p>
+</div>
+
 <h1>Syntax</h1>
-<p><code class="language-js">BusyTarget true</code> -- Target is busy
-<p><code class="language-js">BusyTarget false</code> -- Target is no longer busy
+<p><code class="language-js">BusyTarget true</code> -- Target is busy</p>
+<p><code class="language-js">BusyTarget false</code> -- Target is no longer busy</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // from ai_st11_urza.p3s

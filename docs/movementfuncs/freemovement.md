@@ -1,10 +1,18 @@
-#- FreeMovement
-<p>Sets or resets NPC's freedom of movement.
-<p>FreeMovementParams can be reset optionally.
+# Freedom of Movement Functions
+
+## FreeMovement
+
+Sets or resets NPC's freedom of movement.
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>[reset]</code> will reset FreeMovementParams's parameters.</p>
+</div>
+
 <h1>Syntax</h1>
-<p><code class="language-js">FreeMovement [walk/run],[reset]</code> -- NPC will walk or run, [reset] is optional
-<p><code class="language-js">FreeMovement [true/false],[reset]</code> -- NPC can move or not, [reset] is optional
-<p><code class="language-js">FreeMovement random,[reset]</code> -- Chooses between walk or run, [reset] is optional
+<p><code class="language-js">FreeMovement [walk/run],[reset]</code> -- NPC will walk or run, [reset] is optional</p>
+<p><code class="language-js">FreeMovement [true/false],[reset]</code> -- NPC can move or not, [reset] is optional</p>
+<p><code class="language-js">FreeMovement random,[reset]</code> -- Chooses between walk or run, [reset] is optional</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // (From ai_cashmart_npc.p3s)
@@ -22,8 +30,11 @@ xpt_invalidroute
 }
 </code></pre>
 
-<br><br><h1>- FreeMovementParams</h1>
-<p>Restricts NPC's movement with parameters
+<br>
+## FreeMovementParams
+
+Restricts NPC's movement with parameters
+
 <pre><code class="language-js">
 // (From ai_st_init.p3s)
 Const ED_VERY_CLOSE,32
@@ -57,7 +68,7 @@ once
 area_group
 </code></pre>
 <h1>Syntax</h1>
-<p><code class="language-js">FreeMovementParams [flag],[distance min],[distance max],[goalflag1],[goalflag2],[goalflag3], ..</code>
+<p><code class="language-js">FreeMovementParams [flag],[distance min],[distance max],[goalflag1],[goalflag2],[goalflag3], ..</code></p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // This will allow the NPC to move everywhere in it's area group

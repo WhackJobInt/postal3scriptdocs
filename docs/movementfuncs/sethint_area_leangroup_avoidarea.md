@@ -1,7 +1,11 @@
-#- SetHintGroup
-<p>Sets NPC's hint group
+# Hint Group Functions
+
+## SetHintGroup
+
+Sets NPC's hint group
+
 <h1>Syntax</h1>
-<p><code class="language-js">SetHintGroup [hint group1],[hint group2],[hint group3], ..</code> -- Sets hint groups for NPC
+<p><code class="language-js">SetHintGroup [hint group1],[hint group2],[hint group3], ..</code> -- Sets hint groups for NPC</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // from ai_mission_pw.p3s
@@ -20,23 +24,36 @@ xpt_SetHintGroup
 }
 </code></pre>
 
-<br><br><h1>- SetAreaGroup</h1>
-<p>Sets NPC's area group(s)
-<h1>Syntax</h1>
-<p><code class="language-js">SetAreaGroup [Group1]:[walkable],[Group2]:[walkable],[Group3]:[walkable], ..</code> -- Sets area groups for NPC 
-<p>:[walkable] is optional
-<p><code class="language-js">SetAreaGroup AG_DEFAULT</code> -- Resets NPC's area group
+<br>
+## SetAreaGroup
 
-<br><br><h1>- SetLeanGroup</h1>
-<p>Sets NPC's lean group(s)
-<h1>Syntax</h1>
-<p><code class="language-js">SetLeanGroup [Group1],[Group2],[Group3], ..</code> -- Sets lean groups for NPC
-<p>(Decompile dcr.bsp for checking out how a lean group works)
+Sets NPC's area group(s)
 
-<br><br><h1>- AvoidProhibitedArea</h1>
-<p>Sets NPC to avoid prohibited areas
 <h1>Syntax</h1>
-<p><code class="language-js">AvoidProhibitedArea [boolean]</code>
+<p><code class="language-js">SetAreaGroup [Group1]:[walkable],[Group2]:[walkable],[Group3]:[walkable], ..</code> -- Sets area groups for NPC</p>
+<p>:[walkable] is optional</p>
+<p><code class="language-js">SetAreaGroup AG_DEFAULT</code> -- Resets NPC's area group</p>
+
+<br>
+## SetLeanGroup
+
+Sets NPC's lean group(s)
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Decompile <code>dcr.bsp</code> to analyze how a Lean group works.</p>
+</div>
+
+<h1>Syntax</h1>
+<p><code class="language-js">SetLeanGroup [Group1],[Group2],[Group3], ..</code> -- Sets lean groups for NPC</p>
+
+<br>
+## AvoidProhibitedArea
+
+Sets NPC to avoid prohibited areas
+
+<h1>Syntax</h1>
+<p><code class="language-js">AvoidProhibitedArea [boolean]</code></p>
 <pre><code class="language-js">
 // (From ai_freeroaming.p3s)
 // this AI will refuse to walk out from it's set area group

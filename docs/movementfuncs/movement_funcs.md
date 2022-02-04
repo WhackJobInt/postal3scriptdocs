@@ -1,14 +1,21 @@
-#- Move
-<p>Sets the NPC's movement
-<h1>Syntax</h1>
-<p><code class="language-js">Move run</code> -- NPC will now run
-<p><code class="language-js">Move walk</code> -- NPC will now walk
-<p><code class="language-js">Move true</code> -- NPC is able to move
-<p><code class="language-js">Move false</code> -- NPC is no longer able to move
-<p><code class="language-js">Move [walk/run],[angle],[timing],[face_dir/update_dir]</code> -- todo
+# Movement Functions
 
-<br><br><h1>- MoveToLean</h1>
-<p>Moves the NPC to a lean spot, used for combat
+## Move
+
+Sets the NPC's movement
+
+<h1>Syntax</h1>
+<p><code class="language-js">Move run</code> -- NPC will now run</p>
+<p><code class="language-js">Move walk</code> -- NPC will now walk</p>
+<p><code class="language-js">Move true</code> -- NPC is able to move</p>
+<p><code class="language-js">Move false</code> -- NPC is no longer able to move</p>
+<p><code class="language-js">Move [walk/run],[angle],[timing],[face_dir/update_dir]</code> -- todo</p>
+
+<br>
+## MoveToLean
+
+Moves the NPC to a lean spot, used for combat
+
 <h1>Syntax</h1>
 <pre><code class="language-js">
 // ENEMY DISTANCE (from ai_st_init.p3s)
@@ -32,7 +39,7 @@ not_behind_target
 safe
 area_group
 </code></pre>
-<p><code class="language-js">MoveToLean run,[distance_min],[distance_max],[flag1],[flag2],[flag3], ..</code>
+<p><code class="language-js">MoveToLean run,[distance_min],[distance_max],[flag1],[flag2],[flag3], ..</code></p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // from ai_cashmart.p3s
@@ -54,8 +61,11 @@ st_combat_hide
 }
 </code></pre>
 
-<br><br><h1>- MoveToTarget</h1>
-<p>Forces the NPC to move to it's target
+<br>
+## MoveToTarget
+
+Forces the NPC to move to it's target
+
 <h1>Syntax</h1>
 <pre><code class="language-js">
 // Flags
@@ -64,10 +74,15 @@ to_target
 from_target
 target_dir
 </code></pre>
-<p>TODO: This is not really correct, It's not clear what each argument does just by looking at p3s scripts, it's a rough estimation
-<p><code class="language-js">MoveToTarget [run/walk/true],[distance_min],[distance_max],[flag]</code>
-<p><code class="language-js">MoveToTarget [run/walk/true],[distance],[flag]</code>
-<p><code class="language-js">MoveToTarget [false]</code>
+
+<div class="admonition warning">
+<p class="admonition-title">TODO</p>
+<p>The syntax below is not really correct, It's not clear what each argument does just by looking at p3s scripts, it's a rough estimation</p>
+</div>
+
+<p><code class="language-js">MoveToTarget [run/walk/true],[distance_min],[distance_max],[flag]</code></p>
+<p><code class="language-js">MoveToTarget [run/walk/true],[distance],[flag]</code></p>
+<p><code class="language-js">MoveToTarget [false]</code></p>
 <pre><code class="language-js">
 // from ai_mission_sbe.p3s
 pt_chase
@@ -86,7 +101,15 @@ pt_chase
 }
 </code></pre>
 
-<br><br><h1>- MoveToTargetLKP</h1>
-<p>Forces the NPC to move to it's target (TODO: what does LKP mean?)
+<br>
+## MoveToTargetLKP
+
+Forces the NPC to move to it's target.
+
+<div class="admonition warning">
+<p class="admonition-title">TODO</p>
+<p>What LKP means?</p>
+</div>
+
 <h1>Syntax</h1>
 <p><code class="language-js">MoveToTargetLKP [run/walk/true]</code>

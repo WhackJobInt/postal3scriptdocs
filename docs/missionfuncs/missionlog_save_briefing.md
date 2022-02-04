@@ -1,14 +1,18 @@
-#- MissionLog
-<p>Adds missions/jobs/objectives on the Player's mission log.
+# Objective Functions
+
+## MissionLog
+
+Adds missions/jobs/objectives on the Player's mission log.
+
 <h1>Syntax</h1>
-<p><code class="language-js">MissionLog clear_all</code> -- Clears all objectives from the log
-<p><code class="language-js">MissionLog add_primary,[obj],[text/string]</code> -- Adds primary objective to the log
-<p><code class="language-js">MissionLog add_secondary,[obj],[text/string]</code> -- Adds secondary objective to the log
-<p><code class="language-js">MissionLog done,[obj1],[obj2], ..</code> -- Objective(s) marked as done
-<p><code class="language-js">MissionLog fail,[obj1],[obj2], ..</code> -- Objective(s) marked as failed
-<p><code class="language-js">MissionLog removed,[obj1],[obj2], ..</code> -- Objective(s) removed without a trace
-<p><code class="language-js">MissionLog disable</code> -- Mission log is disabled
-<p><code class="language-js">MissionLog enable</code> -- Mission log is enabled
+<p><code class="language-js">MissionLog clear_all</code> -- Clears all objectives from the log</p>
+<p><code class="language-js">MissionLog add_primary,[obj],[text/string]</code> -- Adds primary objective to the log</p>
+<p><code class="language-js">MissionLog add_secondary,[obj],[text/string]</code> -- Adds secondary objective to the log</p>
+<p><code class="language-js">MissionLog done,[obj1],[obj2], ..</code> -- Objective(s) marked as done</p>
+<p><code class="language-js">MissionLog fail,[obj1],[obj2], ..</code> -- Objective(s) marked as failed</p>
+<p><code class="language-js">MissionLog removed,[obj1],[obj2], ..</code> -- Objective(s) removed without a trace</p>
+<p><code class="language-js">MissionLog disable</code> -- Mission log is disabled</p>
+<p><code class="language-js">MissionLog enable</code> -- Mission log is enabled</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // From ai_mission_jwb.p3s
@@ -64,24 +68,39 @@ st_start
 }
 </code></pre>
 
-<br><h1>- MissionSave</h1>
-<p>Unused Postal3Script function.
-<p>Not recommended to use.
+<br>
+## MissionSave
+
+Unused Postal3Script function.
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Not recommended to use.</p>
+</div>
+
 <h1>Syntax</h1>
-<p><code class="language-js">MissionSave [string]</code> -- Saves the game
+<p><code class="language-js">MissionSave [string]</code> -- Saves the game</p>
 <h2>Technical Details</h2>
-<p>When "MissionSave" is called in p3s, it will do "save P3M_[string] mission [string]" in console, where [string] is replaced with the parameter.
-<p>It was to be used or related to 'MissionLog', but it looks like it's underdeveloped.
+<p>When "MissionSave" is called in p3s, it will do "save P3M_[string] mission [string]" in console, where [string] is replaced with the parameter.</p>
+<p>It was to be used or related to 'MissionLog', but it looks like it's underdeveloped.</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // This will create a p3m_b4_zombie_ambush.sav and .tga file in the SAVE folder
 MissionSave b4_zombie_ambush
 </code></pre>
 
-<br><h1>- MissionBriefing</h1>
-<p>Unused Postal3Script function
-<p>Shows a message on the screen with black background, with a "Press ENTER to continue" prompt.
-<p>Equivalent to "gameui_show_p3_briefdlg [string]" console command, which was also used ONLY in the Paradise Bridge level.
+<br>
+## MissionBriefing
+
+Unused Postal3Script function
+
+<p>Shows a message on the screen with black background, with a "Press ENTER to continue" prompt.</p>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Equivalent to <code>gameui_show_p3_briefdlg [string]</code> console command.</p>
+</div>
+
 <h1>Example</h1>
 <pre><code class="language-js">
 // This will show the very first text screen of Paradise Bridge level

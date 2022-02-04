@@ -1,9 +1,13 @@
-#- Turn
-<p>Changes the NPC's angle (from -360 to 360)
+# Turning Functions
+
+## Turn
+
+Changes the NPC's angle (from -360 to 360)
+
 <h1>Syntax</h1>
-<p><code class="language-js">Turn [integer]</code> -- Increases angle
-<p><code class="language-js">Turn -[integer]</code> -- Decreases angle
-<p><code class="language-js">Turn [integer]:[integer]</code> -- Randomizes angle
+<p><code class="language-js">Turn [integer]</code> -- Increases angle</p>
+<p><code class="language-js">Turn -[integer]</code> -- Decreases angle</p>
+<p><code class="language-js">Turn [integer]:[integer]</code> -- Randomizes angle</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // from ai_mission_sbe.p3s
@@ -32,9 +36,16 @@ pt_turn_right
 }
 </code></pre>
 
-<br><br><h1>- TurnSpeed</h1>
-<p>Sets the NPC's turning speed
-<p>The default turning speed is 90
+<br>
+## TurnSpeed
+
+Sets the NPC's turning speed
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The default turning speed is 90</p>
+</div>
+
 <h1>Syntax</h1>
 <p><code class="language-js">TurnSpeed idle,[integer]</code> -- Sets idle speed
 <p><code class="language-js">TurnSpeed turn,[integer]</code> -- Sets turn speed

@@ -1,6 +1,13 @@
 # SetActPack
-<p>Sets NPC's animation style for activity
-<p>Uses information from "ai_activities.p3s" for [animation]
+
+Sets NPC's animation style for activity
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Uses information from <code>'p3/scripts/ai_activities.p3s'</code> for [animation]</p>
+</div>
+
+
 <h1>Syntax</h1>
 <p><code class="language-js">SetActPack ACT_[IDLE/WALK/RUN],[animation],[Alert/Wound]</code> -- Sets animation for activity, [Alert/Wound] is optional
 <h1>Example</h1>

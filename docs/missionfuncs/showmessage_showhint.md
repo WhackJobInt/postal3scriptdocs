@@ -1,8 +1,19 @@
-#- ShowMessage
-<p>Prints out message to the screen.
-<p>Supports strings from "Postal III/p3/resource/p3_english.txt" (or from any other file that contains valid strings).
-<p>Equivalent to Half-Life 2's UserMessageBegin.
-<p>Uses data from "Postal III/p3/scripts/HudLayout.res" (Plus "channels_manifest.txt" and "HudAnimations.txt").
+# Show Functions
+
+## ShowMessage
+
+Prints out message to the screen.
+
+<p>Supports strings from <code>'./p3/resource/p3_english.txt'</code></p>
+
+<ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<li>Equivalent to Half-Life 2's UserMessageBegin.</li>
+<li>Uses extra data from <code>HudLayout.res</code>, <code>channels_manifest.txt</code>, and <code>HudAnimations.txt</code></li>
+</div>
+</ul>
+
 <h1>Example</h1>
 <pre><code class="language-js">
 // This will print on the screen
@@ -29,10 +40,21 @@ IfAttr "caller.ea_Manner == Manner:PussyCat and mis_004 >= 0 Block begin,execute
 	ShowMessage "[ {0:v} of {1:v} deceased cats have been obtained], $P3Mission, mis_004, target.condition"
 Block end
 </code></pre>
-<br><h1>- ShowHint</h1>
-<p>Unused Postal3Script function.
-<p>Karma hinting is done automatically, so this has been left completely unused.
-<p>Uses data from "Postal III/p3/scripts/hints_manifest.txt".
+
+<br>
+## ShowHint
+
+Unused Postal3Script function.
+
+Karma hinting is done automatically, so this has been left completely unused.
+
+<ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Uses data from <code>'./p3/scripts/hints_manifest.txt'</code></p>
+</div>
+</ul>
+
 <h1>Example</h1>
 <pre><code class="language-js">
 // First found in 'ai_st1_common.p3s' Line 954

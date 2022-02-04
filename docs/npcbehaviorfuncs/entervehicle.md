@@ -1,7 +1,14 @@
 # EnterVehicle
-<p>Forces NPC to enter into a vehicle if it's near to it
-<p>* NPC must be a Driver
-<p>* Must be used in combination with "TargetVehicle"
+<p>Forces NPC to enter into a vehicle if it's near to it</p>
+
+<ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<li>NPC must be a Driver</li>
+<li>Must be used in combination with <a href="../../targetingfuncs/targetfunctions/#targetvehicle">TargetVehicle</a></li>
+</div>
+</ul>
+
 <h2>Syntax</h2>
 <p><code class="language-js">EnterVehicle 1</code> -- NPC enters into vehicle
 <h1>Example</h1>

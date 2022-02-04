@@ -76,7 +76,7 @@
 <li><a href="npcbehaviorfuncs/snatch_unsnatch">Snatch, Unsnatch</li></a>
 <li><a href="npcbehaviorfuncs/senses_lookat_lookout">Senses, LookAt, LookOut</li></a>
 <li><a href="npcbehaviorfuncs/crouch_lean">Crouch, Lean</li></a>
-<li><a href="npcbehaviorfuncs/busy_fear_hate">Busy, Fear, Hate</li></a>
+<li><a href="npcbehaviorfuncs/busy_hate">Busy, Hate</li></a>
 <li><a href="npcbehaviorfuncs/follow_playerfriendly">Follow, PlayerFriendly</li></a>
 <li><a href="npcbehaviorfuncs/catdervish">CatDervish</li></a>
 <li><a href="npcbehaviorfuncs/stunout">StunOut</li></a>

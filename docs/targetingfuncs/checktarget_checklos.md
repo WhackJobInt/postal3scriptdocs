@@ -1,11 +1,14 @@
-#- CheckTarget
-<p>Checks if target is visible
+# Checking Functions
+
+## CheckTarget
+Checks various aspects of the target, and executes events according to it.
+
 <h1>Syntax</h1>
-<p><code class="language-js">CheckTarget 1</code> -- Target is checked
+<p><code class="language-js">CheckTarget 1</code> -- Target is checked</p>
 <h1>Technical Details</h1>
-<p>If target is busy and exists, an event called "OnTargetReset" will be fired with the target being the caller, and the NPC that called CheckTarget will get their target nulled out.
-<p>If that check fails, NPC will forget their target, look for potential targets, and fire "OnVisible" event with the target being the caller
-<p>If even that fails, the event "OnTargetReset" will be fired on the NPC.
+<p>If target is busy and exists, an event called "OnTargetReset" will be fired with the target being the caller, and the NPC that called CheckTarget will get their target nulled out.</p>
+<p>If that check fails, NPC will forget their target, look for potential targets, and fire "OnVisible" event with the target being the caller</p>
+<p>If even that fails, the event "OnTargetReset" will be fired on the NPC.</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // from ai_mission_pdb.p3s
@@ -26,12 +29,15 @@ pt_move
 }
 </code></pre>
 
-<br><br><h1>- CheckLOS</h1>
-<p>Checks if target is able to see the caller
+<br>
+## CheckLOS
+
+Checks if target is able to see the caller
+
 <h1>Syntax</h1>
 <p><code class="language-js">CheckLOS 1</code> -- Checks target's line of sight
 <h1>Technical Details</h1>
-<p>Fires event "OnLOS" if target is able to see the caller
+<p>Fires event <code>OnLOS</code> if target is able to see the caller
 <h1>Example</h1>
 <pre><code class="language-js">
 // from ai_mission_pm2.p3s

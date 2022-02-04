@@ -2,7 +2,6 @@
 <p>The relation of an NPC.
 <h1>Syntax</h1>
 <p><code class="language-js">Relation:[relation type]</code> -- Returns the relation type specified
-<p>Check if a specified object is visible.
 <div class="admonition note">
 <p class="admonition-title">All Relation Types</p>
 <p><code>Relation:neutral</code> ; <code>Relation:enemy</code> ; <code>Relation:fear</code></p>

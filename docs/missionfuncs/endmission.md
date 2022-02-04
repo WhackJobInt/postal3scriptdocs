@@ -1,6 +1,12 @@
 # EndMission
 <p>Ends the level, and proceeds to the next level (if possible)
-<p>Equivalent to "p3_end_mission" console command
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Equivalent to <code>p3_end_mission</code> console command
+</div>
+
+
 <h1>Example</h1>
 <pre><code class="language-js">
 // from ai_mission_daveland.p3s

@@ -1,7 +1,11 @@
-#- ResetTarget
-<p>Resets target object.
+# Various Target functions
+
+## ResetTarget
+
+Resets target object.
+
 <h2>Syntax</h2>
-<p><code class="language-js">ResetTarget 1</code> -- Resets target object
+<p><code class="language-js">ResetTarget 1</code> -- Resets target object</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // This will set the Player, and an object from memory as enemy
@@ -22,11 +26,14 @@ xpt_IHateEveryone
 }
 </code></pre>
 
-<br><br><h1>- IgnoreTarget </h1>
-<p>Ignores a target object for a specified time.
-<h2>Syntax</h2>
-<p><code class="language-js">IgnoreTarget [integer]</code> -- NPC will not know this object exists for 5 seconds
-<p><code class="language-js">IgnoreTarget [integer]:[integer]</code> -- NPC will not know this object exists for a randomized time
+<br>
+## IgnoreTarget
+
+Ignores a target object for a specified time.
+
+<h1>Syntax</h1>
+<p><code class="language-js">IgnoreTarget [integer]</code> -- NPC will not know this object exists for 5 seconds</p>
+<p><code class="language-js">IgnoreTarget [integer]:[integer]</code> -- NPC will not know this object exists for a randomized time</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 pt_end
@@ -41,11 +48,14 @@ pt_end
 }
 </code></pre>
 
-<br><br><h1>- SetTarget </h1>
-<p>Sets target objects for an object
-<h2>Syntax</h2>
-<p><code class="language-js">SetTarget "[object].Object:target Object:[object]"</code> -- Sets the object's target object from the caller's object
-<p><code class="language-js">SetTarget "Object:self target.Object:slot#[memory slot]"</code> -- Sets our target from a target's memory slot
+<br>
+## SetTarget
+
+Sets target objects for an object
+
+<h1>Syntax</h1>
+<p><code class="language-js">SetTarget "[object].Object:target Object:[object]"</code> -- Sets the object's target object from the caller's object</p>
+<p><code class="language-js">SetTarget "Object:self target.Object:slot#[memory slot]"</code> -- Sets our target from a target's memory slot</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // This will set our target's target object ourself

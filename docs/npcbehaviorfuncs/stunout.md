@@ -1,7 +1,14 @@
 # StunOut
-<p>Unused Postal3Script function
-<p>Stuns an NPC, as if they were shot by a Taser, and causes them to collapse on the ground.
-<p>Note: Uses an unused animation, after execution the NPC will no longer stand up until death.
+
+Unused Postal3Script function
+
+Stuns an NPC, as if they were shot by a Taser, and causes them to collapse on the ground.
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Uses an unused animation, after execution the NPC will no longer stand up or react to it's surroundings.</p>
+</div>
+
 <h1>Syntax</h1>
 <p><code class="language-js">StunOut 1</code> -- Stuns NPC
 <h1>Example</h1>

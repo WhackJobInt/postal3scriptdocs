@@ -1,7 +1,12 @@
-# Object
-<p>An object or entity, such as an NPC or a prop. 
-<p>In Postal3Script you always have access to important objects such as a target or yourself, so you can check and do stuff to them.
-<p>You don't always have access to the Caller, as it's heavily dependent on the Event that caused the NPC to enter the state.
+# Object Entities
+
+## Object
+An object or entity, such as an NPC or a prop.
+
+In Postal3Script you always have access to important objects such as a target or yourself, so you can check and do stuff to them.
+
+You don't always have access to the Caller, as it's heavily dependent on the Event that caused the NPC to enter the state.
+
 Typically, the caller means something or someone that forced the NPC to enter it.
 
 <div class="admonition note">
@@ -13,7 +18,7 @@ Typically, the caller means something or someone that forced the NPC to enter it
 </div>
 
 <h1>Syntax</h1>
-<p><code class="language-js">Object:[object]</code> -- Returns the Object specified
+<p><code class="language-js">Object:[object]</code> -- Returns the Object specified</p>
 <pre><code class="language-js">
 // Check if our caller exists (null == zero)
 IfAttr "Object:caller != Object:null Block Begin"
@@ -37,12 +42,13 @@ Block End
 // and ai_st7_environment.p3s
 
 </code></pre>
-<h1>Saving Objects To Memory</h1>
+<br>
+## Saving Objects To Memory
 <p>You are capable of saving an object to memory, with up to 10 slots.
 <p>This feature is typically used for keeping track of progress on tasks and related to mission logic.
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The 6 and 7 memory slot was never used. Cannot be higher than 10 or lower than 0.</p>
+<p>The '6' and '7' memory slot was never used. Cannot be higher than 10 or lower than 0.</p>
 </div>
 <pre><code class="language-js">
 // (from ai_st_init.p3s)

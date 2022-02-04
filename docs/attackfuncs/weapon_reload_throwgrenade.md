@@ -1,12 +1,16 @@
-#- Weapon
-<p>Sets NPC's current weapon state.
+# Weapon-related Functions
+
+## Weapon
+
+Sets NPC's current weapon state.
+
 <h1>Syntax</h1>
-<p><code class="language-js">Weapon select,melee</code> -- Selects melee weapon, if available
-<p><code class="language-js">Weapon select,ranged</code> -- Selects ranged weapon, if available
-<p><code class="language-js">Weapon arm</code> -- Automatically selects weapon
-<p><code class="language-js">Weapon disarm</code> -- Holsters active weapon
-<p><code class="language-js">Weapon drop</code> -- Drops active weapon (won't drop if it's not out)
-<p><code class="language-js">Weapon drop_all</code> -- Drops every weapon stored in NPC (Catharsis Reborn only!)
+<p><code class="language-js">Weapon select,melee</code> -- Selects melee weapon, if available</p>
+<p><code class="language-js">Weapon select,ranged</code> -- Selects ranged weapon, if available</p>
+<p><code class="language-js">Weapon arm</code> -- Automatically selects weapon</p>
+<p><code class="language-js">Weapon disarm</code> -- Holsters active weapon</p>
+<p><code class="language-js">Weapon drop</code> -- Drops active weapon (won't drop if it's not out)</p>
+<p><code class="language-js">Weapon drop_all</code> -- Drops every weapon stored in NPC (Catharsis Reborn only)</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // From ai_mission_pdb.p3s
@@ -47,10 +51,13 @@ pt_attack
 }
 </code></pre>
 
-<br><br><h1>- Reload</h1>
-<p>Forces NPC to reload it's weapon.
+<br>
+## Reload
+
+Forces NPC to play reloading animation.
+
 <h1>Syntax</h1>
-<p><code class="language-js">Reload 1</code> -- Reloads
+<p><code class="language-js">Reload 1</code> -- Reloads</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // From ai_npc_military.p3s (stripped out)
@@ -68,8 +75,17 @@ pt_default
 }
 </code></pre>
 
-<br><br><h1>- ThrowGrenade</h1>
-<p>Forces NPC to throw a grenade
+<br>
+## ThrowGrenade
+
+Forces NPC to throw a grenade
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Smoke and Flash grenade are never used anywhere else in the game.</p>
+<p>Flash isn't recommended to use as it'll apply a permanent sound altering effect.</p>
+</div>
+
 <h1>Syntax</h1>
 <pre><code class="language-js">
 // Grenade types
