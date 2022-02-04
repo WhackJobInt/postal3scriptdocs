@@ -136,6 +136,7 @@
 <li><a href="deletedfuncs/arm">Arm</li></a>
 <li><a href="deletedfuncs/holsterweapon">HolsterWeapon</li></a>
 <li><a href="deletedfuncs/desertsquad">DesertSquad</li></a>
+<li><a href="deletedfuncs/fear">Fear</li></a>
 </ul>
 
 ## Mission Script Files (Pre-Path)
