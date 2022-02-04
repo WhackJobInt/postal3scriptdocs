@@ -1,7 +1,11 @@
-#- State
-<p>Exits from current state, and enters a new state
+# Basic State Functions
+
+## State
+
+Exits from current state, and enters a new state
+
 <h1>Syntax</h1>
-<p><code class="language-js">State [state name]</code> -- Sets the new state
+<code class="language-js">State [state name]</code> -- Sets the new state
 <h1>Example</h1>
 <pre><code class="language-js">
 // On start after 5 seconds it will exit from st_start and enter st_new_start, and back forth
@@ -39,10 +43,13 @@ st_new_start
 }
 </code></pre>
 
-<br><br><h1>- Pattern</h1>
-<p>Exits from current pattern from current state, and enters a new pattern in the current state
+<br>
+## Pattern
+
+Exits from current pattern from current state, and enters a new pattern in the current state
+
 <h1>Syntax</h1>
-<p><code class="language-js">pattern [pattern name]</code> -- Sets the new pattern
+<code class="language-js">pattern [pattern name]</code> -- Sets the new pattern
 <h1>Example</h1>
 <pre><code class="language-js">
 // State initially enters "pt_default" pattern, but will move to "pt_follow" and will be there endlessly
@@ -88,11 +95,13 @@ st_idle
 	}
 }
 </code></pre>
+<br>
+## ExecutePattern
 
-<br><br><h1>- ExecutePattern</h1>
-<p>Executes a pattern outside of current state
+Executes a pattern outside of current state
+
 <h1>Syntax</h1>
-<p><code class="language-js">ExecutePattern [actor name]:[state name].[pattern name]</code> -- Executes this pattern
+<code class="language-js">ExecutePattern [actor name]:[state name].[pattern name]</code> -- Executes this pattern
 <h1>Example</h1>
 <pre><code class="language-js">
 // This will execute bh_base's st_init's pt_default pattern

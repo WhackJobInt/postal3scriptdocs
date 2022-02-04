@@ -1,7 +1,7 @@
 # RelationTo
 <p>Check the relation of a specified object.
 <h1>Syntax</h1>
-<p><code class="language-js">RelationTo:[object]</code> -- Returns the "Relation" towards this object, see "Relation" page
+<p><code class="language-js">RelationTo:[object]</code> -- Returns the "Relation" towards this object, see <a href="../../objects/relation">Relation</a> page for more information</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // If the relation to our caller is of enemy, target them!

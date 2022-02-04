@@ -1,7 +1,17 @@
 # VoicePrefix
-<p>The prefix of an NPC's voice.
-<p>The voice prefix can be found in the related NPC's sentence data script entry located in "Postal III\p3\scripts\sentences_data.txt". Everything
-before the underscore is considered the voice prefix.
+
+The prefix of an NPC's voice.
+
+<p>The voice prefix can be found in the related NPC's sentence data script entry located in</p>
+
+<code>.\Postal III\p3\scripts\sentences_data.txt</code>
+
+<p></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Everything before the underscore is considered the voice prefix.</p>
+</div>
+
 <h1>Syntax</h1>
 <p><code class="language-js">VoicePrefix:[object]</code> -- Returns the voice prefix of the specified object
 <pre><code class="language-js">

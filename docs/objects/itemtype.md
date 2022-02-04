@@ -1,6 +1,6 @@
 # ItemType
 <p>The type of an item object.
-<p>You can find all the item types in a list located in "Postal III/p3/scripts/ai_matrix.txt".
+<p>You can find all the item types in a list located in <code>'./Postal III/p3/scripts/ai_matrix.txt'</code>.
 <h1>Syntax</h1>
 <p><code class="language-js">ItemType:[item type]</code> -- Returns the item type specified
 <p>Here's the list of all ItemType's

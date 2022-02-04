@@ -1,6 +1,12 @@
 # Name
-<p>The name of a specified object, set via Hammer
-<p>It is case-insensitive
+
+The name of a specified object, set via Hammer
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is case-insensitive</p>
+</div>
+
 <h1>Syntax</h1>
 <p><code class="language-js">Name:[object]</code> -- Returns the name of a specified object
 <pre><code class="language-js">

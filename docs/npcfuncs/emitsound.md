@@ -1,7 +1,16 @@
 # EmitSound
-<p>Plays a sound from an NPC
-<p>* Uses names from ai_activities.p3s
-<p>* Plays on the Voice channel
+
+Plays a sound from an NPC
+
+<ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<li>Uses names from <code>ai_activities.p3s</code></li>
+<p>
+<li>Plays on the Voice channel</code></li>
+</div>
+</ul>
+
 <h2>Syntax</h2>
 <p><code class="language-js">EmitSound [name]</code>
 <h1>Example</h1>

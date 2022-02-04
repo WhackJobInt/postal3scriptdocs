@@ -1,8 +1,18 @@
-#- Wait
-<p>A Timer to wait before execution
+# Basic Wait Logic Functions
+
+## Wait
+
+A Timer to wait before execution
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Can use floats.</p>
+</ul>
+</div>
+
 <h1>Syntax</h1>
-<p><code class="language-js">Wait [float]</code> -- Wait before executing
-<p><code class="language-js">Wait [float]:[float]</code> -- Randomized waiting time
+<p><code class="language-js">Wait [float]</code> -- Wait before executing</p>
+<p><code class="language-js">Wait [float]:[float]</code> -- Randomized waiting time</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // from ai_mission_aa.p3s
@@ -31,11 +41,22 @@ st_tank
 }
 </code></pre>
 
-<br><br><h1>- WaitForEnd</h1>
-<p>Wait for an ongoing activity before execution
-<p>Mostly used for sequences
+<br>
+## WaitForEnd
+
+Wait for an ongoing activity before execution
+
+Mostly used for sequences
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Must be used for an activity that has animation, otherwise the function will fail to execute properly.</p>
+<p>Highly recommended to check out Postal3Script files and analyze the function to understand it better.</p>
+</ul>
+</div>
+
 <h1>Syntax</h1>
-<p><code class="language-js">WaitForEnd 1</code> -- Wait for ending before execution
+<p><code class="language-js">WaitForEnd 1</code> -- Wait for ending before execution</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // from ai_mission_cw.p3s
@@ -64,8 +85,17 @@ st_opencage_02
 }
 </code></pre>
 
-<br><br><h1>- Repeat</h1>
-<p>Repeats a pattern every defined second(s)
+<br>
+## Repeat
+
+Repeats a pattern every defined second
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Can use floats.</p>
+</ul>
+</div>
+
 <h1>Syntax</h1>
 <p><code class="language-js">Repeat [float]</code> -- Repeat every [float] seconds
 <h1>Example</h1>

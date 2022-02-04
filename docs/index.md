@@ -1,119 +1,160 @@
-# What is Postal3Script?
+# Index
 
-<p>Postal3Script, or P3S, is a scripting language developed for Postal 3, designed to handle most of the NPC AI and mission scripting.
-It allows for a much easier and faster time doing missions and AI rather than messing around in C++ and doing logic entirely through map entities in Hammer.
-<p>With Postal3Script, you can easily do many things that you normally would not be able to do without the source code of the game due to the many useful functions and attributes that are interfaced.
-<p>P3S script files are located in "/Postal III/p3/scripts" and use the ".p3s" file extension. To load and be able to use a p3s script, you must add it to a manifest, in "ai_scripts.txt", found in the previously mentioned folder.
-<p>Changes to p3s scripts will automatically hotload when the map restarts, so you can just use the "restart" console command without ever having to exit and reload the game.
-<p>It is highly recommended to snoop around the game files and find examples of what you're trying to accomplish to get a better idea of the language.
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This site is a Work in Progress! Many functions are still not covered yet, or those that are already covered, their documentation are subject to change!</p>
+</div>
 
-<h2>Postal3Script Example</h2>
-<pre><code class="language-js">
-Constants
-{
-	Const DONUTS_INCR,1
-	Const SOMEBODY_STOLE_MY_DONUTS,15
-	Const YES,1
-	Const NO,0
-}
+## Postal3Script
+<ul>
+<li><a href="whatispostal3script">What is Postal3Script?</a></li>
+<li>Structure</li>
+<li>States</li>
+<li>Patterns</li>
+<li>Blocks</li>
+<li>Events</li>
+<li><a href="wipp3sfiles">Development/WIP Files</a></li>
+</ul>
 
-behavior
-{
-	name bh_evensuperioractor
-	inherited bh_mysuperioractor
-	
-	States
-	{
-		st_mycustomstate
-		{
-			Group Alert
-			Patterns
-			{
-				pt_default
-				{
-					// Only executes when on Alert
-				}
-			}
-		}
-		
-		st_nowyallgonnapay
-		{
-			Group Combat
-			Patterns
-			{
-				pt_default
-				{
-					// Only executes when in Combat
-					SetAttr	"veryverypissedoff YES"
-					Pattern pt_donuts
-				}
-				
-				pt_donuts
-				{
-					IfAttr "veryverypissedoff == YES Pattern st_nowyallgonnapay.pt_allgood"
-				}
-				
-				pt_allgood
-				{
-					SetAttr	"veryverypissedoff NO"
-				}
-			}
-		}
-		events
-		{
-			OnDeath "ExecutePattern st_OnDeath.pt_default"
-			OnTimer_tUnstun	"Pattern pt_end"
-			OnUnconscious "Pattern pt_unconscious"
-			OnHostaged "Pattern pt_hostaged"
-			OnSprayStunned "Timer tUnstun,SPRAY_UNSTUN_TIMER"
-			OnTimer_tScream "ExecutePattern .xpt_SayScream"
-			OnUnstunned "Pattern pt_end"
-			OnStandUpEnd "Pattern pt_end"
-		}
-		
-		// Sets on spawn
-		st_init
-		{
-			Group Neutral
-			Patterns
-			{
-				pt_default
-				{
-					actions
-					{
-						Senses false
-					}
-				}
-			}
-		}
-		
-		// Called continously
-		st_start
-		{
-			Group Neutral
-			Patterns
-			{
-				pt_default
-				{
-					actions
-					{
-						// tick
-					}
-				}
-			}
-		}
-	}
-}
-</code></pre>
-<h1> Limitations </h1>
-<p>Each state can hold events, which in turn can execute patterns. Patterns can be inherited from other P3S actors, as well as Attributes.
-<p>* In Postal3Script, Attributes can only be whole numbers/integers, attributes can't be floats, doubles and strings.
-<p>* An Attribute must have a value initialized before checking it's value using CheckAttr, meaning an attribute that doesn't exist will never return a valid value. (Checking if it's zero/null doesn't work).
-<p>* You can only have a limited number of if statements in a single state or pattern.
-<p>* An Attribute can only have a maximum of '100' value
-<p>* Sensitive to spaces when using functions
+## Attribute Checking
+<ul>
+<li><a href="attribchecking/attributes">IfAttr, SetAttr, CheckAttr, ChangeAttr, RemoveAttr</a></li>
+<li><a href="attribchecking/embedattributes">Embedded Attributes</a></li>
+</ul>
 
-<h1> Debugging code </h1>
-<p>Normally the game doesn't print out any errors, you need to have the "developer" and "p3_fsm_spew" console commands enabled.</p>
-<p>Scrolling around in the console should show you which script and what lines have errors if there are any.
-<p>If you want to print out your own debug messages, You'll have to settle for doing EntFireInput on the point_clientcommand in the map via "EntFireInput pcc,Command: echo yourmessagehere". Debug channel specific ShowMessages are broken it seems.
+## Object Categories
+<ul>
+<li><a href="objects/manner">Manner</a></li>
+<li><a href="objects/faction">Faction</a></li>
+<li><a href="objects/itemtype">ItemType</a></li>
+<li>String</li>
+<li>Timer</li>
+<li><a href="objects/object">Object</a></li>
+<li><a href="objects/distto">DistTo</a></li>
+<li><a href="objects/angleto">AngleTo</a></li>
+<li><a href="objects/visible">Visible</a></li>
+<li>HasWeapon</li>
+<li><a href="objects/relationto">RelationTo</a></li>
+<li><a href="objects/relation">Relation</a></li>
+<li><a href="objects/name">Name</a></li>
+<li>Ammo</li>
+<li>Ignore</li>
+<li>Karma</li>
+<li><a href="objects/voiceprefix">VoicePrefix</a></li>
+</ul>
+
+## State Functions
+<ul>
+<li><a href="statefuncs/func_state_pattern_executepattern">State, Pattern, ExecutePattern</a></li>
+<li><a href="statefuncs/wait_waitforend_repeat">Wait, WaitForEnd, Repeat</a></li>
+<li><a href="statefuncs/statematrix">StateMatrix</a></li>
+<li><a href="statefuncs/callstate_callpattern">CallState, CallPattern</a></li>
+<li><a href="statefuncs/activitypattern_funcs">StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern</a></li>
+</ul>
+
+## Misc Functions
+<ul>
+<li>Effect</li>
+<li>FireEvent, FireEventEX, FireUser, FireInput, AreaEvent, EntFireUser, EntFireInput</li>
+<li>Item, SpawnItem</li>
+<li><a href="miscfuncs/addfluid">AddFluid</li></a>
+<li>Anchor, TargetAnchor</li>
+</ul>
+
+## NPC Functions
+<ul>
+<li><a href="npcfuncs/say">Say</li></a>
+<li><a href="npcfuncs/emitsound">EmitSound</li></a>
+<li>Gesture, ResetGesture, ResetSequence</li>
+<li><a href="npcfuncs/headblob">Headblob</li></a>
+<li><a href="npcfuncs/NPC">NPC</li></a>
+</ul>
+
+## NPC Behavior Functions
+<ul>
+<li><a href="npcbehaviorfuncs/aim_face">Aim, Face</li></a>
+<li><a href="npcbehaviorfuncs/snatch_unsnatch">Snatch, Unsnatch</li></a>
+<li><a href="npcbehaviorfuncs/senses_lookat_lookout">Senses, LookAt, LookOut</li></a>
+<li><a href="npcbehaviorfuncs/crouch_lean">Crouch, Lean</li></a>
+<li><a href="npcbehaviorfuncs/busy_fear_hate">Busy, Fear, Hate</li></a>
+<li><a href="npcbehaviorfuncs/follow_playerfriendly">Follow, PlayerFriendly</li></a>
+<li><a href="npcbehaviorfuncs/catdervish">CatDervish</li></a>
+<li><a href="npcbehaviorfuncs/stunout">StunOut</li></a>
+<li><a href="npcbehaviorfuncs/enablegibs">EnableGibs</li></a>
+<li><a href="npcbehaviorfuncs/entervehicle">EnterVehicle</li></a>
+</ul>
+
+## Squad Functions
+<ul>
+<li><a href="squadfuncs/setsquad_relation">SetSquad, SetSquadRelation, RemoveSquadRelation</li></a>
+<li><a href="squadfuncs/rallysquad">RallySquad</li></a>
+</ul>
+
+## Targeting Functions
+<ul>
+<li><a href="targetingfuncs/targetentbyname">TargetEntByName</li></a>
+<li><a href="targetingfuncs/sendtarget2caller_sendcaller">SendTarget2Caller, SendCaller</li></a>
+<li><a href="targetingfuncs/checktarget_checklos">CheckTarget, CheckLOS</li></a>
+<li><a href="targetingfuncs/reset_ignore_settarget">ResetTarget, IgnoreTarget, SetTarget</li></a>
+<li><a href="targetingfuncs/targetfunctions">TargetEnemy, TargetPlayer, TargetCaller, TargetItem, TargetVehicle, TargetHostage, TargetCrosshair</li></a>
+<li><a href="targetingfuncs/targetmemory">TargetToMem, TargetFromMem, CallerToMem, ClearMem</li></a>
+<li><a href="targetingfuncs/assisttarget_enemy">AssistTarget, AssistEnemy, ArrestTarget, BusyTarget</li></a>
+<li><a href="targetingfuncs/relationship">Relationship</li></a>
+</ul>
+
+## Movement Functions
+<ul>
+<li><a href="movementfuncs/movement_funcs">Move, MoveToLean, MoveToTarget, MoveToTargetLKP</li></a>
+<li><a href="movementfuncs/freemovement">FreeMovement, FreeMovementParams</li></a>
+<li><a href="movementfuncs/travelbypathtrack">TravelByPathTrack</li></a>
+<li><a href="movementfuncs/SetHintGroup, SetAreaGroup, SetLeanGroup, AvoidProhibitedArea</li></a>
+<li><a href="movementfuncs/turn_turnspeed">Turn, TurnSpeed</li></a>
+<li><a href="movementfuncs/setactpack">SetActPack</li></a>
+</ul>
+
+## Attack Functions
+<ul>
+<li><a href="attackfuncs/hit">Hit</li></a>
+<li><a href="attackfuncs/push">Push</li></a>
+<li><a href="attackfuncs/weapon_reload_throwgrenade">Weapon, Reload, ThrowGrenade</li></a>
+</ul>
+
+## Mission Functions
+<ul>
+<li><a href="missionfuncs/attributeprogressbar">AttributeProgressBar</li></a>
+<li><a href="missionfuncs/missionlog_save_briefing">MissionLog, MissionSave, MissionBriefing</li></a>
+<li><a href="missionfuncs/showmessage_showhint">ShowMessage, ShowHint</li></a>
+<li><a href="missionfuncs/endmission">EndMission</li></a>
+<li><a href="missionfuncs/playerkarma">PlayerKarma</li></a>
+<li><a href="missionfuncs/playvideo">PlayVideo</li></a>
+<li><a href="missionfuncs/opendialog">OpenDialog</li></a>
+</ul>
+
+## Deleted Functions
+<ul>
+<li><a href="deletedfuncs/actbusy">ActBusy</li></a>
+<li><a href="deletedfuncs/arm">Arm</li></a>
+<li><a href="deletedfuncs/holsterweapon">HolsterWeapon</li></a>
+<li><a href="deletedfuncs/desertsquad">DesertSquad</li></a>
+</ul>
+
+## Mission Script Files (Pre-Path)
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Work in Progress, please scroll down on left side for the time being!</p>
+</div>
+
+## Mission Script Files (Good Path)
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Work in Progress, please scroll down on left side for the time being!</p>
+</div>
+
+## Mission Script Files (Evil Path)
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Work in Progress, please scroll down on left side for the time being!</p>
+</div>

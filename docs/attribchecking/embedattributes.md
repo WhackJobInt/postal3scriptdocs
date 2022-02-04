@@ -1,10 +1,17 @@
 # Embedded Attributes
-<p>Instead of unexposed C++ variables in the source code, there are attributes that are already "embedded" and read from a related Postal3Script for given entities.
-<p>For example, "ea_health" is the health of the entity that uses the assigned p3s behaviour, or the health of a set target, and can be read, changed, and set using the various "Attr" statements.
-<p>Embedded Attributes have the "ea_" prefix.
-<p>There are a variety of attributes and they each serve their own purposes.
+Instead of unexposed C++ variables in the source code, there are attributes that are already "embedded" and read from a related Postal3Script for given entities.
 
-<h2>Embedded Attribute Example</h2>
+For example, "ea_health" is the health of the entity that uses the assigned p3s behaviour, or the health of a set target, and can be read, changed, and set using the various "Attr" statements.
+
+There are a variety of attributes and they each serve their own purposes.
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Embedded Attributes have the <code>ea_</code> prefix.</p>
+</ul>
+</div>
+
+## Embedded Attribute Example
 <pre><code class="language-js">
 st_EmbeddedAttrTutorial
 {

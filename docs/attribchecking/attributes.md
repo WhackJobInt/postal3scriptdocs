@@ -1,10 +1,19 @@
 # Attributes
 
-<p>In Postal3Script you are able to set or check Attributes, and execute states according to the results.
-<p>All attributes in Postal3Script are integers only.
-<p>When checking against multiple attributes at once you can use the "and" keyword.
-<h1>IfAttr</h1>
-<p>Checks if an Attribute or Object has met a condition. The Attribute or Object MUST be set using the SetAttr statement first, or already exist.
+In Postal3Script you are able to set or check Attributes, and execute states according to the results.
+
+All attributes in Postal3Script are integers only.
+
+When checking against multiple attributes at once you can use the "and" keyword.
+
+## IfAttr
+
+Checks if an Attribute or Object has met a condition. 
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Attribute or Object MUST be set using the <code>SetAttr</code> function first, or already exist.</p>
+</div>
+
 <pre><code class="language-js">
 st_IfAttrTutorial
 {
@@ -49,8 +58,11 @@ st_IfAttrTutorial
 	}
 }
 </code></pre>
-<h1>SetAttr</h1>
-<p>Creates and sets a new attribute value if it doesn't exist, or just sets it if it already exists.
+
+## SetAttr
+
+Creates and sets a new attribute value if it doesn't exist, or just sets it if it already exists.
+
 <pre><code class="language-js">
 Constants
 {
@@ -89,8 +101,11 @@ st_SetAttrTutorial
 	}
 }
 </code></pre>
-<h1>CheckAttr</h1>
-<p>Checks if an Attribute is true (equal to 1).
+
+## CheckAttr
+
+Checks if an Attribute is true (equal to 1).
+
 <pre><code class="language-js">
 st_CheckAttrTutorial
 {
@@ -111,11 +126,24 @@ st_CheckAttrTutorial
 }
 </code></pre>
 
-<h1>ChangeAttr</h1>
-<p>Changes an already existing Attribute's value, increasing, decreasing, multiplying, or by halving.
-<p>Halving will clamp the value to integer (5 / 2 wouldn't be '2.5', but '3').
-<p>Notes: It MUST have an operator, simply having a number inside the parameter without an operator will NOT touch the attribute!
-<p>Only capable of working with values up to 100 (This limiter has been removed from Catharsis Reborn)
+## ChangeAttr
+
+Changes an already existing Attribute's value, increasing, decreasing, multiplying, or by halving.
+
+<ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+ChangeAttr has some several flaws that are good to keep in mind:</p>
+<li>It MUST have an operator, simply having a number inside the parameter without an operator will NOT touch the attribute!</li>
+<p>
+<li>Only capable of working with values up to 100.</li>
+<p>
+<li>If value will exceed 100, it will reset back to 0.</li>
+<p>
+<li>Halving will round the value upwards ('5 / 2' would be '3').</li>
+</div>
+</ul>
+
 <pre><code class="language-js">
 st_ChangeAttrTutorial
 {
@@ -146,8 +174,10 @@ st_ChangeAttrTutorial
 }
 </code></pre>
 
-<h1>RemoveAttr</h1>
-<p>Removes an already existing Attribute. Cannot be accessed and isn't set anymore.
+## RemoveAttr
+
+Removes an already existing Attribute. Cannot be accessed and isn't set anymore.
+
 <pre><code class="language-js">
 st_RemoveAttrTutorial
 {

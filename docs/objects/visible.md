@@ -1,6 +1,10 @@
 # Visible
 <p>Check if a specified object is visible.
-<p>If 'Senses' is turned off, the NPC will never be able to "see" the target. 
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If <code>Senses</code> is turned off, the NPC will NEVER be able to "see" the target.</p> 
+</div>
+
 <h1>Syntax</h1>
 <p><code class="language-js">Visible:[object]</code> -- Returns if the specified object is visible or not
 <pre><code class="language-js">

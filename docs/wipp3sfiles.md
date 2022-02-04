@@ -1,9 +1,14 @@
 # Unused Postal3Script files
-<p>These files can be found in "!location of P3!/p3/scripts/"
-<p>Many of them contain cut and planned features for the open world gameplay, ultimately they were never ported over properly.
-<p>It's a good idea to search through these files for hunting for Beta content that never made it out alive.
-<p>They were used by the scripters to test and develop scripts before eventually moving them over to mission scripts.
-<p>They were also used to test many P3S functions to ensure they are working properly.
+These files can be found in <code>(location of P3)/p3/scripts/</code>
+
+Many of them contain cut and planned features for the open world gameplay, ultimately they were never ported over properly.
+
+It's a good idea to search through these files for hunting for Beta content that never made it out alive.
+
+They were used by the scripters to test and develop scripts before eventually moving them over to mission scripts.
+
+They were also used to test many P3S functions to ensure they are working properly.
+
 <pre><code class="language-js">
 'ai_badger_test.p3s' - Badger testing
 'ai_cashmart.p3s' - Earlier version of Cashmart (ai_cashmart_npc.p3s is not unused)
@@ -26,3 +31,8 @@
 'ai_test_babuska.p3s' - Test script
 'lean_test.p3s' - Test script
 </code></pre>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Don't try loading them as is, they have a very outdated Postal3Script layout, and several deleted functions! Use <code>p3_fsm_spew 1</code> console command to check which one of them loads properly!
+</div>
