@@ -10,8 +10,7 @@ markdown_extensions:
     - admonition
     - attr_list
     - def_list
-extra_css:
-    - css/extra.css
+extra_css: [css/extra.css]
 nav:
     - '-- Postal3Script (WIP) --':
         - 'Index': 'index.md'
