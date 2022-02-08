@@ -29,7 +29,7 @@ nav:
         - 'Faction': 'objects/faction.md'
         - 'ItemType': 'objects/itemtype.md'
         - 'String (TBD)': 'TBD.md'
-        - 'Timer (TBD)': 'TBD.md'
+        - 'Timer': 'objects/timer.md'
         - 'Object': 'objects/object.md'
         - 'DistTo': 'objects/distto.md'
         - 'AngleTo': 'objects/angleto.md'

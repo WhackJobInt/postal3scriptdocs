@@ -28,7 +28,7 @@
 <li><a href="objects/faction">Faction</a></li>
 <li><a href="objects/itemtype">ItemType</a></li>
 <li>String</li>
-<li>Timer</li>
+<li><a href="objects/timer">Timer</a></li>
 <li><a href="objects/object">Object</a></li>
 <li><a href="objects/distto">DistTo</a></li>
 <li><a href="objects/angleto">AngleTo</a></li>

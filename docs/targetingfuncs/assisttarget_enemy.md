@@ -35,6 +35,7 @@ Sets current target's enemy as target
 
 <br>
 ## ArrestTarget
+
 Unused Postal3Script function
 
 Arrests the target.
@@ -44,12 +45,14 @@ Arrests the target.
 <p class="admonition-title">Note</p>
 <li>Target object must be the Player</li>
 <li>Only works for <code>p3_npc_cop</code> NPCs </li>
+<p></p>
+This is an old function that's not guranteed to properly work.
 </div>
 </ul>
 
 <h1>Syntax</h1>
 <p><code class="language-js">ArrestTarget true</code> -- Target is arrested</p>
-<p><code class="language-js">ArrestTarget false</code> -- Target is no arrested</p>
+<p><code class="language-js">ArrestTarget false</code> -- Target is no longer arrested</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // from ai_st5_temp.p3s
