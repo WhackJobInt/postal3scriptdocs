@@ -12,7 +12,7 @@ markdown_extensions:
     - def_list
 extra_css: [css/extra.css]
 nav:
-    - '-- Postal3Script (WIP) --':
+    - 'Postal3Script (WIP)':
         - 'Index': 'index.md'
         - 'What is Postal3Script?': 'whatispostal3script.md'
         - 'Structure (TBD)': 'TBD.md'
@@ -21,10 +21,10 @@ nav:
         - 'Blocks (TBD)': 'TBD.md'
         - 'Events (TBD)': 'TBD.md'
         - 'Development/WIP Files': 'wipp3sfiles.md'
-    - '-- Attribute Checking --':
+    - 'Attribute Checking':
         - 'IfAttr, SetAttr, CheckAttr, ChangeAttr, RemoveAttr': 'attribchecking/attributes.md'
         - 'Embedded Attributes': 'attribchecking/embedattributes.md'
-    - '-- Object Categories --':
+    - 'Object Categories':
         - 'Manner': 'objects/manner.md'
         - 'Faction': 'objects/faction.md'
         - 'ItemType': 'objects/itemtype.md'
@@ -42,25 +42,25 @@ nav:
         - 'Ignore': 'objects/ignore.md'
         - 'Karma': 'objects/karma.md'
         - 'VoicePrefix': 'objects/voiceprefix.md'
-    - '-- State Functions --':
+    - 'State Functions':
         - 'State, Pattern, ExecutePattern': 'statefuncs/func_state_pattern_executepattern.md'
         - 'Wait, WaitForEnd, Repeat': 'statefuncs/wait_waitforend_repeat.md'
         - 'StateMatrix': 'statefuncs/statematrix.md'
         - 'CallState, CallPattern': 'statefuncs/callstate_callpattern.md'
         - 'StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern': 'statefuncs/activitypattern_funcs.md'
-    - '-- Misc Functions --':
+    - 'Misc Functions':
         - 'Effect (TBD)': 'TBD.md'
         - 'FireEvent, FireEventEX, FireUser, FireInput, AreaEvent, EntFireUser, EntFireInput (TBD)': 'TBD.md'
         - 'Item, SpawnItem (TBD)': 'TBD.md'
         - 'AddFluid': 'miscfuncs/addfluid.md'
         - 'Anchor, TargetAnchor (TBD)': 'TBD.md'
-    - '-- NPC Functions --':
+    - 'NPC Functions':
         - 'Say': 'npcfuncs/say.md'
         - 'EmitSound': 'npcfuncs/emitsound.md'
         - 'Gesture, ResetGesture, ResetSequence (TBD)': 'TBD.md'
         - 'Headblob': 'npcfuncs/headblob.md'
         - 'NPC': 'npcfuncs/NPC.md'
-    - '-- NPC Behavior Functions --':
+    - 'NPC Behavior Functions':
         - 'Aim, Face': 'npcbehaviorfuncs/aim_face.md'
         - 'Snatch, Unsnatch': 'npcbehaviorfuncs/snatch_unsnatch.md'
         - 'Senses, LookAt, LookOut': 'npcbehaviorfuncs/senses_lookat_lookout.md'
@@ -71,10 +71,10 @@ nav:
         - 'StunOut': 'npcbehaviorfuncs/stunout.md'
         - 'EnableGibs': 'npcbehaviorfuncs/enablegibs.md'
         - 'EnterVehicle': 'npcbehaviorfuncs/entervehicle.md'
-    - '-- Squad Functions --':
+    - 'Squad Functions':
         - 'SetSquad, SetSquadRelation, RemoveSquadRelation': 'squadfuncs/setsquad_relation.md'
         - 'RallySquad': 'squadfuncs/rallysquad.md'
-    - '-- Targeting Functions --':
+    - 'Targeting Functions':
         - 'TargetEntByName': 'targetingfuncs/targetentbyname.md'
         - 'SendTarget2Caller, SendCaller': 'targetingfuncs/sendtarget2caller_sendcaller.md'
         - 'CheckTarget, CheckLOS': 'targetingfuncs/checktarget_checklos.md'
@@ -83,18 +83,18 @@ nav:
         - 'TargetToMem, TargetFromMem, CallerToMem, ClearMem': 'targetingfuncs/targetmemory.md'
         - 'AssistTarget, AssistEnemy, ArrestTarget, BusyTarget': 'targetingfuncs/assisttarget_enemy.md'
         - 'Relationship': 'targetingfuncs/relationship.md'
-    - '-- Movement Functions --':
+    - 'Movement Functions':
         - 'Move, MoveToLean, MoveToTarget, MoveToTargetLKP': 'movementfuncs/movement_funcs.md'
         - 'FreeMovement, FreeMovementParams': 'movementfuncs/freemovement.md'
         - 'TravelByPathTrack': 'movementfuncs/travelbypathtrack.md'
         - 'SetHintGroup, SetAreaGroup, SetLeanGroup, AvoidProhibitedArea': 'movementfuncs/sethint_area_leangroup_avoidarea.md'
         - 'Turn, TurnSpeed': 'movementfuncs/turn_turnspeed.md'
         - 'SetActPack': 'movementfuncs/setactpack.md'
-    - '-- Attack Functions --':
+    - 'Attack Functions':
         - 'Hit': 'attackfuncs/hit.md'
         - 'Push': 'attackfuncs/push.md'
         - 'Weapon, Reload, ThrowGrenade': 'attackfuncs/weapon_reload_throwgrenade.md'
-    - '-- Mission Functions --':
+    - 'Mission Functions':
         - 'AttributeProgressBar': 'missionfuncs/attributeprogressbar.md'
         - 'MissionLog, MissionSave, MissionBriefing': 'missionfuncs/missionlog_save_briefing.md'
         - 'ShowMessage, ShowHint': 'missionfuncs/showmessage_showhint.md'
@@ -102,19 +102,19 @@ nav:
         - 'PlayerKarma': 'missionfuncs/playerkarma.md'
         - 'PlayVideo': 'missionfuncs/playvideo.md'
         - 'OpenDialog': 'missionfuncs/opendialog.md'
-    - '-- Deleted Functions --':
+    - 'Deleted Functions':
         - 'ActBusy': 'deletedfuncs/actbusy.md'
         - 'Arm': 'deletedfuncs/arm.md'
         - 'HolsterWeapon': 'deletedfuncs/holsterweapon.md'
         - 'DesertSquad': 'deletedfuncs/desertsquad.md'
         - 'Fear': 'deletedfuncs/fear.md'
-    - '-- Mission Script Files (Pre-Path) --':
+    - 'Mission Script Files (Pre-Path)':
         - 'PDB (Paradise Bridge)': 'missions/pdb.md'
         - 'PW (Porn World)': 'missions/pw.md'
         - 'DCR (Diseased Cat Roundup)': 'missions/dcr.md'
         - 'JWB (Jen Walcotts Bodyguard)': 'missions/jwb.md'
         - 'CM (Cash Mart Robbery)': 'missions/cm.md'
-    - '-- Mission Script Files (Good Path) --':
+    - 'Mission Script Files (Good Path)':
         - 'n/a': 'TBD.md'
-    - '-- Mission Script Files (Evil Path) --':
+    - 'Mission Script Files (Evil Path)':
         - 'n/a': 'TBD.md'
