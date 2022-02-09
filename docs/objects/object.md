@@ -19,6 +19,7 @@ Typically, the caller means something or someone that forced the NPC to enter it
 
 <h1>Syntax</h1>
 <p><code class="language-js">Object:[object]</code> -- Returns the Object specified</p>
+<h1>Example</h1>
 <pre><code class="language-js">
 // Check if our caller exists (null == zero)
 IfAttr "Object:caller != Object:null Block Begin"
@@ -50,6 +51,8 @@ Block End
 <p class="admonition-title">Note</p>
 <p>The '6' and '7' memory slot was never used. Cannot be higher than 10 or lower than 0.</p>
 </div>
+
+<h1>Example</h1>
 <pre><code class="language-js">
 // (from ai_st_init.p3s)
 // Const msTEMP,0

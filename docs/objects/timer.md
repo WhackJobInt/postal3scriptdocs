@@ -12,6 +12,7 @@
 <p>The example below shows a piece of code that will always fail if <code>tCantHeal</code> doesn't exists, and instead of returning from it, it will continue to execute all the actions below it.
 </div>
 
+<h1>Example</h1>
 <pre><code class="language-js">
 // This state was entered from somewhere else...
 st_medic

@@ -27,19 +27,19 @@
 <li><a href="objects/manner">Manner</a></li>
 <li><a href="objects/faction">Faction</a></li>
 <li><a href="objects/itemtype">ItemType</a></li>
-<li>String</li>
+<li><a href="objects/string">String</a></li>
 <li><a href="objects/timer">Timer</a></li>
 <li><a href="objects/object">Object</a></li>
 <li><a href="objects/distto">DistTo</a></li>
 <li><a href="objects/angleto">AngleTo</a></li>
 <li><a href="objects/visible">Visible</a></li>
-<li>HasWeapon</li>
+<li><a href="objects/hasweapon">HasWeapon</a></li>
 <li><a href="objects/relationto">RelationTo</a></li>
 <li><a href="objects/relation">Relation</a></li>
 <li><a href="objects/name">Name</a></li>
-<li>Ammo</li>
-<li>Ignore</li>
-<li>Karma</li>
+<li><a href="objects/ammo">Ammo</a></li>
+<li><a href="objects/ignore">Ignore</a></li>
+<li><a href="objects/karma">Karma</a></li>
 <li><a href="objects/voiceprefix">VoicePrefix</a></li>
 </ul>
 
