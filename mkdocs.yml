@@ -49,7 +49,7 @@ nav:
         - 'CallState, CallPattern': 'statefuncs/callstate_callpattern.md'
         - 'StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern': 'statefuncs/activitypattern_funcs.md'
     - 'Misc Functions':
-        - 'Effect (TBD)': 'TBD.md'
+        - 'Effect': 'miscfuncs/effect.md'
         - 'FireEvent, FireEventEX, FireUser, FireInput, AreaEvent, EntFireUser, EntFireInput (TBD)': 'TBD.md'
         - 'Item, SpawnItem (TBD)': 'TBD.md'
         - 'AddFluid': 'miscfuncs/addfluid.md'
