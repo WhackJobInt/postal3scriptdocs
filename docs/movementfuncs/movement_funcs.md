@@ -108,7 +108,7 @@ Forces the NPC to move to it's target.
 
 <div class="admonition warning">
 <p class="admonition-title">TODO</p>
-<p>What LKP means?</p>
+<p>What the fuck does LKP mean?</p>
 </div>
 
 <h1>Syntax</h1>

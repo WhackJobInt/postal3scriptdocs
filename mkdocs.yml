@@ -51,7 +51,7 @@ nav:
     - 'Misc Functions':
         - 'Effect': 'miscfuncs/effect.md'
         - 'FireEvent, FireEventEX, FireUser, FireInput, AreaEvent, EntFireUser, EntFireInput (TBD)': 'TBD.md'
-        - 'Item, SpawnItem (TBD)': 'TBD.md'
+        - 'Item, SpawnItem': 'miscfuncs/item_spawnitem.md'
         - 'AddFluid': 'miscfuncs/addfluid.md'
         - 'Anchor, TargetAnchor (TBD)': 'TBD.md'
     - 'NPC Functions':

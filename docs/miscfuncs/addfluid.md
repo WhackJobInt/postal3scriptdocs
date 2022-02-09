@@ -4,10 +4,9 @@ Unused Postal3Script function.
 
 <p>Spawn gasoline fluid at a specified location.</p>
 
-<p></p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Equivalent of the <code>p3_fluids_addgasoline</code> console command</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Equivalent of the <code>p3_fluids_addgasoline</code> console command.</p>
 </div>
 
 <h1>Syntax</h1>
@@ -17,6 +16,7 @@ Unused Postal3Script function.
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Default amount is '300' if no amount is provided.</p>
+<p>Equivalent of the <code>p3_fluids_addgasoline</code> console command.</p>
 </div>
 
 <h1>Example</h1>
