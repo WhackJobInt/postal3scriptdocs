@@ -26,7 +26,7 @@ They were also used to test many P3S functions to ensure they are working proper
 'ai_st10_temp.p3s' - Test script, contains code related to Traffic lights
 'ai_st11_urza.p3s' - Contains scrapped features, old code
 'ai_st12_urza.p3s' - Contains scrapped features, old code
-'ai_st98_helicopter.p3s' - Code that's identical to today's Helicopter AI
+'ai_st98_helicopter.p3s' - Code that is identical to the Helicopter AI that IS used
 'ai_st_utilities.p3s' - Various code related to NPCs
 'ai_test_babuska.p3s' - Test script
 'lean_test.p3s' - Test script

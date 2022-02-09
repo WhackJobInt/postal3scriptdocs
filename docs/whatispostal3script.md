@@ -6,13 +6,12 @@ It allows for a much easier and faster time doing missions and AI rather than me
 
 With Postal3Script, you can easily do many things that you normally would not be able to do without the source code of the game due to the many useful functions and attributes that are interfaced.
 
-P3S script files are located in <code>/Postal III/p3/scripts</code> and use the <code>.p3s</code> file extension. To load and be able to use a p3s script, you must add it to a manifest, in "ai_scripts.txt", found in the previously mentioned folder.
-
-It is highly recommended to snoop around the game files and find examples of what you're trying to accomplish to get a better idea of the language.
+P3S script files are located in <code>Postal III/p3/scripts</code> and use the <code>.p3s</code> file extension. To load and be able to use a p3s script, you must add it to a manifest, in "ai_scripts.txt", found in the previously mentioned folder.
 
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Changes to p3s scripts will automatically hotload when the map restarts, so you can just use the "restart" console command without ever having to exit and reload the game.</p>
+<p>It is highly recommended to snoop around the game files and find examples of what you're trying to accomplish to get a better idea of the language.</p>
 </div>
 
 ## Postal3Script Example
@@ -120,10 +119,14 @@ behavior
 <p class="admonition-title">Warning</p>
 <p id="limitations">Postal3Script comes with limitations. Ignoring these limitations will make your script behave oddly, and unexpectedly.</p>
 <ul>
-<li>In Postal3Script, Attributes can only be whole numbers/integers, attributes can't be floats, doubles and strings. <code>Wait</code> and <code>Repeat</code> is the only exception in this case, where you can freely use floats.</li>
+<li>In Postal3Script, Attributes can only be whole numbers/integers, attributes can't be floats, doubles, or strings. However, the <code>Wait</code> and <code>Repeat</code> functions are the only exception where you can freely use floats.</li>
+<br>
 <li>An Attribute must have a value initialized before checking it's value using <code>CheckAttr</code>, meaning an attribute that doesn't exist will never return a valid value. (Checking if it's zero/null doesn't work).</li>
+<br>
 <li>You can only have a limited number of if statements in a single state or pattern. It's not entirely clear why it breaks.</li>
+<br>
 <li>An Attribute can only have a maximum of '100' value.</li>
+<br>
 <li>Sensitive to spaces when using parameters for functions.</li>
 </ul>
 </div>
@@ -131,4 +134,4 @@ behavior
 ## Debugging code
 <p>Normally the game doesn't print out any errors, you need to have the <code>developer</code> and <code>p3_fsm_spew</code> console commands enabled.</p>
 <p>Scrolling around in the console should show you which script and what lines have errors if there are any.
-<p>If you want to print out your own debug messages, You'll have to settle for doing <code>EntFireInput</code> on the <code>point_clientcommand</code> in the map via <code>"EntFireInput pcc,Command: echo yourmessagehere"</code> in p3s. Debug channel-specific ShowMessages are broken.
+<p>If you want to print out your own debug messages, You'll have to settle for doing <code>EntFireInput</code> on the <code>point_clientcommand</code> entity in the map by doing <code>EntFireInput pcc,Command: echo yourmessagehere</code> in p3s. Debug channel specific ShowMessages are broken.
