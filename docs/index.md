@@ -54,9 +54,9 @@
 
 ## Misc Functions
 <ul>
-<li>Effect</li>
+<li><a href="miscfuncs/effect">Effect</li></li>
 <li>FireEvent, FireEventEX, FireUser, FireInput, AreaEvent, EntFireUser, EntFireInput</li>
-<li>Item, SpawnItem</li>
+<li><a href="miscfuncs/item_spawnitem">Item, SpawnItem</li></li>
 <li><a href="miscfuncs/addfluid">AddFluid</li></a>
 <li>Anchor, TargetAnchor</li>
 </ul>

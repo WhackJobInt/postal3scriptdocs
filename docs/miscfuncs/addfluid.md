@@ -16,7 +16,6 @@ Unused Postal3Script function.
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Default amount is '300' if no amount is provided.</p>
-<p>Equivalent of the <code>p3_fluids_addgasoline</code> console command.</p>
 </div>
 
 <h1>Example</h1>
