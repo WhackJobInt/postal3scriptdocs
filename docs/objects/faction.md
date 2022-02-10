@@ -5,7 +5,7 @@ towards whole groups of specific NPC's, and what dispositions they should have a
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Here's a list of all the faction types:
-<code>Police, Zealots, Citizens, Hobos, Animals, Player, LaserDot, Effects, Items, Venezuela, ZombieBoss</code></p>
+<code>Police</code>, <code>Zealots</code>, <code>Citizens</code>, <code>Hobos</code>, <code>Animals</code>, <code>Player</code>, <code>LaserDot</code>, <code>Effects</code>, <code>Items</code>, <code>Venezuela</code>, <code>ZombieBoss</code></p>
 <p>The <code>ZombieBoss</code> faction is used for all boss NPC's, this is a quick hack so they won't invalidate the PERSONAL JESUS achievement
 since zombies don't invalidate it</p>
 </div>

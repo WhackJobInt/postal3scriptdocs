@@ -5,7 +5,7 @@ This is used for various things, such as setting and checking how a specific NPC
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Here's a list of all the manner types:
-<code>Player, StreetBro, JusticeMan, StGranny, LameWanker, SoccerMom, CuteGirl, Vendor, RedNeck, SushiNinja, Girl, MedicDoc, StrayDog, MonkeyApe, PussyCat, JihadBeard, RhinoCow, LaserDot, Mission, Pigeon, GayGuy, NerdyNerd, Bystander</code></p>
+<code>Player</code>, <code>StreetBro</code>, <code>JusticeMan</code>, <code>StGranny</code>, <code>LameWanker</code>, <code>SoccerMom</code>, <code>CuteGirl</code>, <code>Vendor</code>, <code>RedNeck</code>, <code>SushiNinja</code>, <code>Girl</code>, <code>MedicDoc</code>, <code>StrayDog</code>, <code>MonkeyApe</code>, <code>PussyCat</code>, <code>JihadBeard</code>, <code>RhinoCow</code>, <code>LaserDot</code>, <code>Mission</code>, <code>Pigeon</code>, <code>GayGuy</code>, <code>NerdyNerd</code>, <code>Bystander</code></p>
 </div>
 
 <pre><code class="language-js">

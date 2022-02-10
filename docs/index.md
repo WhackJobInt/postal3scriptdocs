@@ -13,6 +13,7 @@
 <li>Patterns</li>
 <li>Blocks</li>
 <li>Events</li>
+<li>Hammer Functions</li>
 <li><a href="wipp3sfiles">Development/WIP Files</a></li>
 </ul>
 

@@ -6,7 +6,7 @@ Turns on or off NPC's ability to fear.
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>This function is useless, and will not do anything when executed. It's only here for documentation purposes.</p>
+<p>Technically this function still exists and will execute without errors, but will NOT do anything.</p>
 </div>
 <h2>Syntax</h2>
 <p><code class="language-js">Fear [true/false]</code></p>

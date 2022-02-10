@@ -5,9 +5,9 @@
 
 <h2>Syntax</h2>
 <p><code class="language-js">Item [action]</code> -- Perform an action with the held item (kill, drop, throw, or use)</p>
-<p><code class="language-js">Item take, [attachmentpoint]</code> -- Take the item with a specified attachment point</p>
-<p><code class="language-js">Item throw, [attachmentpointdirection]</code> -- Throw the item at a specified attachmentpoint direction</p>
-<p><code class="language-js">Item kill, [blendtime]</code> -- Dematerialize the item in a specified amount of time then kill/destroy it</p>
+<p><code class="language-js">Item take,[attachmentpoint]</code> -- Take the item with a specified attachment point</p>
+<p><code class="language-js">Item throw,[attachmentpointdirection]</code> -- Throw the item at a specified attachmentpoint direction</p>
+<p><code class="language-js">Item kill,[blendtime]</code> -- Dematerialize the item in a specified amount of time then kill/destroy it</p>
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -17,7 +17,7 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Here's a list of all the action types:
-<code>take, kill, drop, throw, use</code></p>
+<code>take</code>, <code>kill</code>, <code>drop</code>, <code>throw</code>, <code>use</code></p>
 <p>The <code>attachmentpointdirection</code> parameter takes in the name of the attachment point that is related to the orientation of the NPC,
 the only attachment point bone direction that is actually used in the p3s scripts is <code>forward</code>.</p>
 
@@ -64,12 +64,12 @@ pt_default
 <p>Cause an existing <code>p3_item_spawner</code> entity to spawn an item, and do stuff with the spawned item.</p>
 
 <h2>Syntax</h2>
-<p><code class="language-js">SpawnItem "[spawnername],[destinationtype],[attachmentpoint],[blendtime]"</code> -- Spawn the held item</p>
+<p><code class="language-js">SpawnItem [spawnername],[destinationtype],[attachmentpoint],[blendtime]</code> -- Spawn the held item</p>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Here's a list of all the destination types:
-<code>owner, target, caller, point</p></code>
+<code>owner</code>, <code>target</code>, <code>caller</code>, <code>point</code></p>
 <p>The <code>point</code> destination type uses the default <code>p3_item_spawner</code> entity spawn logic</p>
 <p>The <code>attachmentpoint</code> parameter is any bone name of an NPC for example</p>
 <p>The <code>blendtime</code> parameter controls how fast the spawned item will take to fully "materialize"</p>

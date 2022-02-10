@@ -14,7 +14,7 @@ Typically, the caller means something or someone that forced the NPC to enter it
 <p>All the objects in Postal3Script:</p>
 <p><code>Object:Caller</code> ; <code>Object:Target</code> ; <code>Object:Player</code></p>
 <p><code>Object:slot#0</code> ; <code>Object:null</code> ; <code>Object:self</code></p>
-<p><code>Object:item</code> ; <code>Object:anchor</code></p>
+<p><code>Object:item</code> ; <code>Object:anchor</code> ; <code>Object:destination</code></p>
 </div>
 
 <h1>Syntax</h1>
