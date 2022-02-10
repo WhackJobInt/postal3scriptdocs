@@ -17,6 +17,7 @@ all parameters</p>
 <p>The names of existing particle effects correspond to their names in their related <code>.pcf</code> file, located in <code>Postal III\p3\particles</code>.
 In order to load these particle effects and to view each of the effect names, you will need to load the in-game particle editor in Half-Life 2.
 Launch Half-Life 2 with the <code>-tools -nop4</code> launch arguments, and navigate to the particle editor and load one.</p>
+<p>Doing <code>reset</code> on a particle effect is basically the same thing as killing it</p>
 </div>
 
 <h1>Example</h1>

@@ -50,7 +50,7 @@ nav:
         - 'StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern': 'statefuncs/activitypattern_funcs.md'
     - 'Misc Functions':
         - 'Effect': 'miscfuncs/effect.md'
-        - 'FireEvent, FireEventEX, FireUser, FireInput, AreaEvent, EntFireUser, EntFireInput (TBD)': 'TBD.md'
+        - 'FireEvent, FireEventEX, FireUser, OnUser, FireInput, AreaEvent, EntFireUser, EntFireInput (WIP)': 'miscfuncs/fire_event_and_user_funcs.md'
         - 'Item, SpawnItem': 'miscfuncs/item_spawnitem.md'
         - 'AddFluid': 'miscfuncs/addfluid.md'
         - 'Anchor, TargetAnchor (TBD)': 'TBD.md'

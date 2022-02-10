@@ -11,7 +11,7 @@
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Be aware that "Item" also refers to weapons!</p>
+<p>Be aware that "Item" also refers to weapon pickups!</p>
 </div>
 
 <div class="admonition note">

@@ -55,7 +55,7 @@
 ## Misc Functions
 <ul>
 <li><a href="miscfuncs/effect">Effect</li></li>
-<li>FireEvent, FireEventEX, FireUser, FireInput, AreaEvent, EntFireUser, EntFireInput</li>
+<li><a href="miscfuncs/fire_event_and_user_funcs">FireEvent, FireEventEx, FireUser, OnUser, FireInput, AreaEvent, EntFireUser, EntFireInput</li></li>
 <li><a href="miscfuncs/item_spawnitem">Item, SpawnItem</li></li>
 <li><a href="miscfuncs/addfluid">AddFluid</li></a>
 <li>Anchor, TargetAnchor</li>
@@ -107,7 +107,7 @@
 <li><a href="movementfuncs/movement_funcs">Move, MoveToLean, MoveToTarget, MoveToTargetLKP</li></a>
 <li><a href="movementfuncs/freemovement">FreeMovement, FreeMovementParams</li></a>
 <li><a href="movementfuncs/travelbypathtrack">TravelByPathTrack</li></a>
-<li><a href="movementfuncs/SetHintGroup, SetAreaGroup, SetLeanGroup, AvoidProhibitedArea</li></a>
+<li><a href="movementfuncs/sethint_area_leangroup_avoidarea">SetHintGroup, SetAreaGroup, SetLeanGroup, AvoidProhibitedArea</li></a>
 <li><a href="movementfuncs/turn_turnspeed">Turn, TurnSpeed</li></a>
 <li><a href="movementfuncs/setactpack">SetActPack</li></a>
 </ul>

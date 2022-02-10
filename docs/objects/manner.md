@@ -18,8 +18,6 @@ st_MannerTutorial
 		{
 			actions
 			{
-				
-
 				// Don't continue if we're not a StreetBro...
 				IfAttr "ea_manner != Manner:StreetBro Return 1"
 
