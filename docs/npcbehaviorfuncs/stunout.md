@@ -37,3 +37,5 @@ pt_stunout:ignore_ext_events
 	}
 }
 </code></pre>
+<h2>The function in action</h2>
+<p><img alt="The function in action" src="https://media.giphy.com/media/Ba2uJ99LeUUdBbnS0H/giphy.gif" /></p>
