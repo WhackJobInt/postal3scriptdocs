@@ -44,15 +44,6 @@
 <li><a href="objects/voiceprefix">VoicePrefix</a></li>
 </ul>
 
-## Catharsis Reborn-only Functions
-<ul>
-<li><a href="wjifuncs/setangle_setorigin">SetAngle, SetOrigin</a></li>
-<li><a href="wjifuncs/entityeffect">EntityEffect</a></li>
-<li><a href="wjifuncs/screenshake">ScreenShake</a></li>
-<li><a href="wjifuncs/printattr">PrintAttr</a></li>
-<li><a href="wjifuncs/ifcansee">IfCanSee</a></li>
-</ul>
-
 ## State Functions
 <ul>
 <li><a href="statefuncs/func_state_pattern_executepattern">State, Pattern, ExecutePattern</a></li>
