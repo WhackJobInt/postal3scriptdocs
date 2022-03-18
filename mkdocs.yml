@@ -59,7 +59,7 @@ nav:
     - 'NPC Functions':
         - 'Say': 'npcfuncs/say.md'
         - 'EmitSound': 'npcfuncs/emitsound.md'
-        - 'Gesture, ResetGesture, ResetSequence (TBD)': 'TBD.md'
+        - 'Gesture, ResetGesture, ResetSequence': 'npcfuncs/gesture_resetgesture_resetsequence.md'
         - 'Headblob': 'npcfuncs/headblob.md'
         - 'NPC': 'npcfuncs/NPC.md'
     - 'NPC Behavior Functions':
