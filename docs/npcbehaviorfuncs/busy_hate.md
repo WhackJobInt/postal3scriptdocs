@@ -14,7 +14,6 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <li>NPC's Squad members will forget or hate the same target object.</li>
-<li>Doesn't work with Player as the target object.</li>
 </div>
 </ul>
 
