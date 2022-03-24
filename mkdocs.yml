@@ -19,7 +19,7 @@ nav:
         - 'States (TBD)': 'TBD.md'
         - 'Patterns (TBD)': 'TBD.md'
         - 'Blocks (TBD)': 'TBD.md'
-        - 'Events (TBD)': 'TBD.md'
+        - 'Events': 'events.md'
         - 'Hammer Functions (TBD)': 'TBD.md'
         - 'Development/WIP Files': 'wipp3sfiles.md'
     - 'Attribute Checking':
