@@ -195,10 +195,10 @@ behavior
 ## Embedded Events
 <p>These are all Events that are highly embedded into the engine (Todo: categorize them)</p>
 <pre><code class="language-js">
-OnStartBusyNode
-OnFinishBusyNode
-OnNoActiveNode
-FearHide
+OnStartBusyNode -- completely unused
+OnFinishBusyNode -- completely unused
+OnNoActiveNode -- completely unused
+FearHide -- completely unused
 OnInvalidRoute
 OnTargetReset
 OnEnd
@@ -206,18 +206,18 @@ OnUser1
 OnUser2
 OnUser3
 OnUser4
-OnPathTrackUnresolved
-OnPathTrackFailed
-OnUse
-OnDrop
-OnTake
-OnDialogNo
-OnDialogYes
+OnPathTrackUnresolved -- unused, is in test script files
+OnPathTrackFailed -- unused, is in test script files
+OnUse -- unused, is in test script files (inventory items)
+OnDrop -- unused, is in test script files (inventory items)
+OnTake -- unused, is in test script files (inventory items)
+OnDialogNo -- completely unused
+OnDialogYes -- completely unused
 OnIgnite
 OnAcid
 OnFinaleWin
 OnLeanFailed
-OnKrotchyDamage
+OnKrotchyDamage -- unused (commented out in ai_mission_bdk.p3s)
 OnDamaged
 OnHit
 OnExtinguish
@@ -226,16 +226,16 @@ OnNasty
 OnPaint
 OnInFlame
 OnSeeFlame
-OnPlayerPush
+OnPlayerPush -- unused (commented out in ai_npc_social.p3s)
 OnEnemiesDead
 OnNewEnemy
 OnNewFear
 OnSawEnemyEnt
-OnSawFearEnt
-OnSawNeutralEnt
+OnSawFearEnt -- completely unused
+OnSawNeutralEnt -- completely unused
 OnLostEnemyEnt
-OnLostFearEnt
-OnLostNeutralEnt
+OnLostFearEnt -- completely unused
+OnLostNeutralEnt -- completely unused
 OnTased
 OnTargetReach
 OnStandUpBegin
@@ -248,13 +248,13 @@ OnHear
 OnHearCombat
 OnHearDanger
 OnDeath
-OnTargetKilled
+OnTargetKilled -- completely unused
 OnUnconscious
 OnTargetUnconscious
 OnKicked
 OnFallToGround
 OnRecover
-OnThreatOfVehicleHit
+OnThreatOfVehicleHit -- completely unused
 OnSprayStunned
 OnTasingStart
 OnBatonShocked
@@ -264,7 +264,7 @@ OnUseCommand
 OnLand
 OnDervishBegin
 OnDervishEnd
-OnGrenadeAttached
+OnGrenadeAttached -- completely unused
 OnSnatch
 OnUnsnatch
 OnStun
@@ -273,15 +273,15 @@ OnResque
 OnArrested
 OnTargetArrested
 OnThrowGrenadeFailed
-OnStunnedOut
-OnEnemySpoted
-OnTargetResistArrest
+OnStunnedOut -- completely unused
+OnEnemySpoted -- unused, is in test script files
+OnTargetResistArrest -- unused, is in test script files (ArrestTarget, beta cop leftover)
 OnFailedToEnterVehicle
 OnEnteredVehicle
 OnLeaveVehicle
 OnCannonShoot
 OnCannonDestroyed
-OnGatlingShoot
+OnGatlingShoot -- unused, commented out in ai_tank.p3s
 OnGatlingDestroyed
 OnLauncherShoot
 OnLauncherLeftDestroyed
@@ -289,7 +289,7 @@ OnLauncherRightDestroyed
 OnPrimaryAttack
 OnSecondaryAttack
 OnBeeSting
-OnBlind
+OnBlind -- completely unused (used by Laserpen, spray weapons)
 OnSucked
 OnTasingFinish
 </code></pre>
