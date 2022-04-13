@@ -9,9 +9,10 @@ When checking against multiple attributes at once you can use the "and" keyword.
 ## IfAttr
 
 Checks if an Attribute or Object has met a condition. 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The Attribute or Object MUST be set using the <code>SetAttr</code> function first, or already exist.</p>
+<div class="admonition warning">
+<p class="admonition-title">Bug</p>
+<p>The Attribute or Object <b>MUST</b> be set using the <code>SetAttr</code> function first, or already exist.</p>
+<p>If it doesn't exist, IfAttr will <b>NOT</b> work properly, so keep this in mind!</p>
 </div>
 
 <pre><code class="language-js">
@@ -61,7 +62,8 @@ st_IfAttrTutorial
 
 ## SetAttr
 
-Creates and sets a new attribute value if it doesn't exist, or just sets it if it already exists.
+<p>Creates and sets a new attribute value if it doesn't exist, or just sets it if it already exists.</p>
+<p>Third and fourth parameter is for setting a minimum and maximum value for <b>ChangeAttr</b></p>
 
 <pre><code class="language-js">
 Constants
@@ -87,11 +89,13 @@ st_SetAttrTutorial
 				SetAttr "ea_status sNEUTRAL"
 				SetAttr "reaction RE_NONE"
 				
-				// Randomize non-existent attributes
-				// Maximum possible is 100
-				// Second value should always be zero
+				// Set an attribute with minimum and maximum values
+				// this should be 0 for min, and 100 for max
 				SetAttr "rnd 0,0,100"
-				SetAttr "rndtwo 25,0,75"
+				// this should be 5 for min and 75 for max
+				SetAttr "rndtwo 25,5,75"
+				// this will execute events for ChangeAttr (although it works without on_change_event)
+				SetAttr "myattribute 5,0,100,on_change_event"
 				
 				// Sets other object's attribute
 				SetAttr "target.cr_demo YES"
@@ -133,7 +137,7 @@ Changes an already existing Attribute's value, increasing, decreasing, multiplyi
 <ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-ChangeAttr has some several flaws that are good to keep in mind:</p>
+ChangeAttr has some several flaws that must be kept in mind:</p>
 <li>It MUST have an operator, simply having a number inside the parameter without an operator will NOT touch the attribute!</li>
 <p>
 <li>Only capable of working with values up to 100.</li>
@@ -141,6 +145,23 @@ ChangeAttr has some several flaws that are good to keep in mind:</p>
 <li>If value will exceed 100, it will reset back to 0.</li>
 <p>
 <li>Halving will round the value upwards ('5 / 2' would be '3').</li>
+<p>
+<li>Attribute <b>MUST</b> exist when you try to modify it! It has the same flaws like IfAttr.</li>
+</div>
+</ul>
+
+<ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+Creates or executes the following events:</p>
+<li>OnAttrMin_[attribute] -- executes when Attribute reaches it's set minimum value</li>
+<p>
+<li>OnAttrMax_[attribute] -- executes when Attribute reaches it's set maximum value</li>
+<p>
+<li>OnAttrChange_[attribute] -- executes whenever Attribute's value changes</li>
+<p>
+<p>A minimum or maximum value can be set via SetAttr:</p>
+<li>SetAttr "myattribute [initial value],[minimum],[maximum]"</li>
 </div>
 </ul>
 
@@ -171,12 +192,26 @@ st_ChangeAttrTutorial
 			}
 		}
 	}
+	events
+	{
+		OnAttrMin_PooIGive		"State st_createmorepoo"
+		OnAttrMax_DonutsIHave	"State st_eatdonuts"
+		OnAttrChange_ea_health	"EmitSound munchmunch"
+	}
 }
 </code></pre>
 
 ## RemoveAttr
 
 Removes an already existing Attribute. Cannot be accessed and isn't set anymore.
+
+<ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+Creates or executes the following event:</p>
+<li>OnAttrRemove_[attribute] -- executes when Attribute was removed</li>
+</div>
+</ul>
 
 <pre><code class="language-js">
 st_RemoveAttrTutorial
@@ -193,6 +228,10 @@ st_RemoveAttrTutorial
 				RemoveAttr "IamTheDevil"
 			}
 		}
+	}
+	events
+	{
+		OnAttrRemove_IamTheDevil	"EmitSound darthvader_noooooo"
 	}
 }
 </code></pre>
