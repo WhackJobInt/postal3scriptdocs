@@ -22,6 +22,7 @@ nav:
         - 'Events': 'events.md'
         - 'Hammer Functions (TBD)': 'TBD.md'
         - 'Development/WIP Files': 'wipp3sfiles.md'
+        - 'Syntax Highlighter': 'syntaxhighlighter.md'
     - 'Attribute Checking':
         - 'IfAttr, SetAttr, CheckAttr, ChangeAttr, RemoveAttr': 'attribchecking/attributes.md'
         - 'Embedded Attributes': 'attribchecking/embedattributes.md'
