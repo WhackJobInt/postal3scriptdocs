@@ -34,3 +34,17 @@ Unused Postal3Script function.
 <h1>Syntax</h1>
 <p><code class="language-js">CallPattern [pattern name]</code> -- Exits out from current pattern, and enters a new pattern in current state</p>
 <br>
+
+## Call
+
+Unused Postal3Script function.
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Superseded by <a href="../../statefuncs/func_state_pattern_executepattern/#executepattern">ExecutePattern</a>
+</ul>
+</div>
+
+<h1>Syntax</h1>
+<p><code class="language-js">Call [state name].[pattern name]</code> -- Externally executes a pattern from a state</p>
+<br>

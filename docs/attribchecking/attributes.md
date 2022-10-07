@@ -4,13 +4,13 @@ In Postal3Script you are able to set or check Attributes, and execute states acc
 
 All attributes in Postal3Script are integers only.
 
-When checking against multiple attributes at once you can use the "and" keyword.
+When checking against multiple attributes at once you can use the <code>AND</code> keyword.
 
 ## IfAttr
 
 Checks if an Attribute or Object has met a condition. 
 <div class="admonition warning">
-<p class="admonition-title">Bug</p>
+<p class="admonition-title">Bugs</p>
 <p>The Attribute or Object <b>MUST</b> be set using the <code>SetAttr</code> function first, or already exist.</p>
 <p>If it doesn't exist, IfAttr will <b>NOT</b> work properly, so keep this in mind!</p>
 </div>
@@ -63,7 +63,10 @@ st_IfAttrTutorial
 ## SetAttr
 
 <p>Creates and sets a new attribute value if it doesn't exist, or just sets it if it already exists.</p>
-<p>Third and fourth parameter is for setting a minimum and maximum value for <b>ChangeAttr</b></p>
+<p>Third and fourth parameter is for setting a minimum and maximum value for <code>ChangeAttr</code></p>
+<p>If <b>no parameters are given</b>, the minimum and maximum value of the attribute <b>will always be</b> 0 and 100</p>
+<p>A minimum and maximum value can be set like this:</p>
+<code>SetAttr "myattribute [initial value],[minimum],[maximum]"</code>
 
 <pre><code class="language-js">
 Constants
@@ -108,7 +111,7 @@ st_SetAttrTutorial
 
 ## CheckAttr
 
-Checks if an Attribute is true (equal to 1).
+Checks if an Attribute exists or not. Works with <code>Ammo</code> type.
 
 <pre><code class="language-js">
 st_CheckAttrTutorial
@@ -124,6 +127,18 @@ st_CheckAttrTutorial
 				CheckAttr "greet_sleazy Say SLEEZ"
 				CheckAttr "AnimalNotCat Say LIKESANIMAL"
 				CheckAttr "AnimalCat Say LIKESANIMAL,LIKESCAT"
+				
+				SetAttr "exists 0"
+				CheckAttr "myattrib Block begin"
+					SetAttr "exists 1"
+				Block end
+				
+				IfAttr "exists == 1 Block begin"
+					Pattern pt_somepattern
+				Block end
+				
+				SetAttr "I_have_ammo 0"
+				CheckAttr "Ammo:self SetAttr I_have_ammo 1"
 			}
 		}
 	}
@@ -140,13 +155,16 @@ Changes an already existing Attribute's value, increasing, decreasing, multiplyi
 ChangeAttr has some several flaws that must be kept in mind:</p>
 <li>It MUST have an operator, simply having a number inside the parameter without an operator will NOT touch the attribute!</li>
 <p>
-<li>Only capable of working with values up to 100.</li>
+<li>Will ONLY work within the attribute's minimum and maximum values.</li>
 <p>
-<li>If value will exceed 100, it will reset back to 0.</li>
+<li>If value will exceed the attribute's maximum value, it will reset back to it's minimum value.</li>
 <p>
 <li>Halving will round the value upwards ('5 / 2' would be '3').</li>
 <p>
 <li>Attribute <b>MUST</b> exist when you try to modify it! It has the same flaws like IfAttr.</li>
+<br>
+<p>A minimum and maximum value can be set via SetAttr:</p>
+<li>SetAttr "myattribute [initial value],[minimum],[maximum]"</li>
 </div>
 </ul>
 
@@ -159,9 +177,6 @@ Creates or executes the following events:</p>
 <li>OnAttrMax_[attribute] -- executes when Attribute reaches it's set maximum value</li>
 <p>
 <li>OnAttrChange_[attribute] -- executes whenever Attribute's value changes</li>
-<p>
-<p>A minimum or maximum value can be set via SetAttr:</p>
-<li>SetAttr "myattribute [initial value],[minimum],[maximum]"</li>
 </div>
 </ul>
 

@@ -123,15 +123,11 @@ behavior
 <br>
 <li>An Attribute must have a value initialized before checking it's value using <code>CheckAttr</code>, meaning an attribute that doesn't exist will never return a valid value. (Checking if it's zero/null doesn't work).</li>
 <br>
-<li>You can only have a limited number of if statements in a single state or pattern. It's not entirely clear why it breaks.</li>
+<li>Extremely sensitive to spaces when using parameters for functions, this can lead to unexpected behavior.</li>
 <br>
-<li>An Attribute can only have a maximum of '100' value.</li>
+<li>Errors in a script file won't show up without enabling a console command first, and most of the time it's not obvious if the code is working fine.</li>
 <br>
-<li>Sensitive to spaces when using parameters for functions.</li>
+<li>Postal3Script function names are case-sensitive, i.e. it's not recommended to use <code>ifattr</code> instead of <code>IfAttr</code>.</li>
 </ul>
 </div>
-
-## Debugging code
-<p>Normally the game doesn't print out any errors, you need to have the <code>developer</code> and <code>p3_fsm_spew</code> console commands enabled.</p>
-<p>Scrolling around in the console should show you which script and what lines have errors if there are any.
-<p>If you want to print out your own debug messages, You'll have to settle for doing <code>EntFireInput</code> on the <code>point_clientcommand</code> entity in the map by doing <code>EntFireInput pcc,Command: echo yourmessagehere</code> in p3s. Debug channel specific ShowMessages are broken.
+<br>

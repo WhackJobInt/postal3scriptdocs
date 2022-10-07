@@ -1,13 +1,15 @@
-# Index
+# Home
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This site is a Work in Progress! Many functions are still not covered yet, or those that are already covered, their documentation are subject to change!</p>
+<p><b>Last Update: <i>07.10.2022</i></b> (<a href="changelog">Changelog</a>)</p>
 </div>
 
 ## Postal3Script
 <ul>
 <li><a href="whatispostal3script">What is Postal3Script?</a></li>
+<li><a href="debugging">Debugging Postal3Script</a></li>
 <li>Structure</li>
 <li>States</li>
 <li>Patterns</li>
@@ -55,8 +57,9 @@
 
 ## Misc Functions
 <ul>
+<li><a href="miscfuncs/areaevent">AreaEvent</li></li>
 <li><a href="miscfuncs/effect">Effect</li></li>
-<li><a href="miscfuncs/fire_event_and_user_funcs">FireEvent, FireEventEx, FireUser, OnUser, FireInput, AreaEvent, EntFireUser, EntFireInput</li></li>
+<li><a href="miscfuncs/fire_event_and_user_funcs">FireEvent, FireEventEx, FireUser, OnUser, FireInput, EntFireUser, EntFireInput</li></li>
 <li><a href="miscfuncs/item_spawnitem">Item, SpawnItem</li></li>
 <li><a href="miscfuncs/addfluid">AddFluid</li></a>
 <li>Anchor, TargetAnchor</li>
@@ -66,7 +69,7 @@
 <ul>
 <li><a href="npcfuncs/say">Say</li></a>
 <li><a href="npcfuncs/emitsound">EmitSound</li></a>
-<li>Gesture, ResetGesture, ResetSequence</li>
+<li><a href="npcfuncs/gesture_resetgesture_resetsequence">Gesture, ResetGesture, ResetSequence</li></a>
 <li><a href="npcfuncs/headblob">Headblob</li></a>
 <li><a href="npcfuncs/NPC">NPC</li></a>
 </ul>
