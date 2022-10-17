@@ -3,7 +3,7 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This site is a Work in Progress! Many functions are still not covered yet, or those that are already covered, their documentation are subject to change!</p>
-<p><b>Last Update: <i>07.10.2022</i></b> (<a href="changelog">Changelog</a>)</p>
+<p><b>Last Update: <i>17.10.2022</i></b> (<a href="changelog">Changelog</a>)</p>
 </div>
 
 ## Postal3Script
@@ -49,7 +49,7 @@
 ## State Functions
 <ul>
 <li><a href="statefuncs/func_state_pattern_executepattern">State, Pattern, ExecutePattern</a></li>
-<li><a href="statefuncs/wait_waitforend_repeat">Wait, WaitForEnd, Repeat</a></li>
+<li><a href="statefuncs/wait_waitforend_repeat">Wait, WaitForEnd, Repeat, Return</a></li>
 <li><a href="statefuncs/statematrix">StateMatrix</a></li>
 <li><a href="statefuncs/callstate_callpattern">CallState, CallPattern</a></li>
 <li><a href="statefuncs/activitypattern_funcs">StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern</a></li>
@@ -62,14 +62,14 @@
 <li><a href="miscfuncs/fire_event_and_user_funcs">FireEvent, FireEventEx, FireUser, OnUser, FireInput, EntFireUser, EntFireInput</li></li>
 <li><a href="miscfuncs/item_spawnitem">Item, SpawnItem</li></li>
 <li><a href="miscfuncs/addfluid">AddFluid</li></a>
-<li>Anchor, TargetAnchor</li>
+<li><a href="miscfuncs/anchor">Anchor, TargetAnchor</li></a>
 </ul>
 
 ## NPC Functions
 <ul>
 <li><a href="npcfuncs/say">Say</li></a>
 <li><a href="npcfuncs/emitsound">EmitSound</li></a>
-<li><a href="npcfuncs/gesture_resetgesture_resetsequence">Gesture, ResetGesture, ResetSequence</li></a>
+<li><a href="npcfuncs/gesture_resetgesture_resetsequence">Gesture, ResetGesture, Sequence, ResetSequence</li></a>
 <li><a href="npcfuncs/headblob">Headblob</li></a>
 <li><a href="npcfuncs/NPC">NPC</li></a>
 </ul>

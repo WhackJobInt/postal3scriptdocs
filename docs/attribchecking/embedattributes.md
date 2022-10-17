@@ -54,6 +54,10 @@ ea_krotchydmg_absorb 	-- Krotchy DMG absorption (DMG_BUCKSHOT), parallel to Blas
 ea_blast_immune			-- Blast from Explosion immunity, boltons won't fall off from the NPC
 ea_tased				-- Whether the NPC is currently tased
 ea_autokill				-- NPC will disappear if it's too far from the Player (1920 Hammer units)
+ea_gibs					-- Only exists on ragdolls
+ 1 	= Full body/Lower body/Lower body with legs
+ 3 	= Single Head/Upper body with head (and arms)
+ 4 	= Single Arm/Single Leg/Upper body (with arms)
 </code></pre>
 <br>
 

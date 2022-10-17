@@ -97,7 +97,7 @@ Repeats a pattern every defined second
 </div>
 
 <h1>Syntax</h1>
-<p><code class="language-js">Repeat [float]</code> -- Repeat every [float] seconds
+<p><code class="language-js">Repeat [float]</code> -- Repeat every [float] seconds</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // This will create a loop in pt_loop endlessly, unless we exit from out it
@@ -121,6 +121,40 @@ st_start
 			actions
 			{
 				Repeat 2
+			}
+		}
+	}
+}
+</code></pre>
+
+<br>
+## Return
+
+Stops lines being executed from below
+
+<h1>Syntax</h1>
+<p><code class="language-js">Return 1</code> -- Stop execution from below
+<h1>Example</h1>
+<pre><code class="language-js">
+st_somestate
+{
+	Group Neutral
+	Patterns
+	{
+		pt_default
+		{
+			actions
+			{
+				// Return if health is more than 50!
+				IfAttr "ea_health > 50 Return 1"
+				
+				// This will never execute if health is above 50!
+				SetAttr "ea_health 100"
+				
+				Return 1
+				
+				// And this will never, ever execute
+				SetAttr "ea_health 99999"
 			}
 		}
 	}

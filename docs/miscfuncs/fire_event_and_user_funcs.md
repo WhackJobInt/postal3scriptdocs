@@ -5,7 +5,7 @@
 
 <h2>Syntax</h2>
 <p><code class="language-js">FireEvent [eventname]</code> -- Fire an event with this name</p>
-<p><code class="language-js">FireEvent [eventname], [destinationtype]</code> -- Fire an event with this name and destination type</p>
+<p><code class="language-js">FireEvent [eventname],[destinationtype]</code> -- Fire an event with this name and destination type</p>
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -90,7 +90,7 @@ st_state2
 
 <h2>Syntax</h2>
 <p><code class="language-js">FireEventEx [eventname]"</code> -- Fire an event on the targeted entity</p>
-<p><code class="language-js">FireEventEx [eventname], self"</code> -- Fire an event with this name with the <code>self</code> destination type</p>
+<p><code class="language-js">FireEventEx [eventname],self"</code> -- Fire an event with this name with the <code>self</code> destination type</p>
 
 <h2>Example</h2>
 <pre><code class="language-js">

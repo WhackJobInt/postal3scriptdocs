@@ -11,6 +11,7 @@
 <p>Filtering can be <code>Manner</code>, <code>Faction</code>, and <code>State</code> name.</p>
 <p><code>[radius]</code> is always multiplied by 32.</p>
 <p>Events will be called OnAE_<code>[eventname]</code>.</p>
+<p>Multiple filters work via ANY execution, this means the function will execute the event on entities that meet ANY of the criteria!</p>
 </div>
 
 <h1>Example</h1>
