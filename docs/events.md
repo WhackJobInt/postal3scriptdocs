@@ -7,7 +7,14 @@
 
 <div class="admonition note">
 <p class="admonition-title">Types of Events</p>
-<p>Events can be Global, State, or Pattern only.</p>
+<p>Events can be <b>Global</b>, <b>State</b>, or <b>Pattern</b> only.</p>
+</div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Events that were called successfully will always override the caller, if that happens you can do 
+<code>TargetCaller 1</code> or access <code>Object:caller</code> or do conditional checks like <code>IfAttr "caller.ea_health > 0 
+..</code> in the same pattern.</p>
 </div>
 
 <h1>Global Events Example</h1>
@@ -192,104 +199,3 @@ behavior
 <p><code class="language-js">OnFire_[name]</code> -- Fire Functions</p>
 
 <br>
-## Embedded Events
-<p>These are all Events that are highly embedded into the engine (Todo: categorize them)</p>
-<pre><code class="language-js">
-OnStartBusyNode -- completely unused
-OnFinishBusyNode -- completely unused
-OnNoActiveNode -- completely unused
-FearHide -- completely unused
-OnInvalidRoute
-OnTargetReset
-OnEnd
-OnUser1
-OnUser2
-OnUser3
-OnUser4
-OnPathTrackUnresolved -- unused, is in test script files
-OnPathTrackFailed -- unused, is in test script files
-OnUse -- unused, is in test script files (inventory items)
-OnDrop -- unused, is in test script files (inventory items)
-OnTake -- unused, is in test script files (inventory items)
-OnDialogNo -- completely unused
-OnDialogYes -- completely unused
-OnIgnite
-OnAcid
-OnFinaleWin
-OnLeanFailed
-OnKrotchyDamage -- unused (commented out in ai_mission_bdk.p3s)
-OnDamaged
-OnHit
-OnExtinguish
-OnSuperNasty
-OnNasty
-OnPaint
-OnInFlame
-OnSeeFlame
-OnPlayerPush -- unused (commented out in ai_npc_social.p3s)
-OnEnemiesDead
-OnNewEnemy
-OnNewFear
-OnSawEnemyEnt
-OnSawFearEnt -- completely unused
-OnSawNeutralEnt -- completely unused
-OnLostEnemyEnt
-OnLostFearEnt -- completely unused
-OnLostNeutralEnt -- completely unused
-OnTased
-OnTargetReach
-OnStandUpBegin
-OnStandUpEnd
-OnLost
-OnTargetClose
-OnVisible
-OnLOS
-OnHear
-OnHearCombat
-OnHearDanger
-OnDeath
-OnTargetKilled -- completely unused
-OnUnconscious
-OnTargetUnconscious
-OnKicked
-OnFallToGround
-OnRecover
-OnThreatOfVehicleHit -- completely unused
-OnSprayStunned
-OnTasingStart
-OnBatonShocked
-OnUnstunned
-OnBump
-OnUseCommand
-OnLand
-OnDervishBegin
-OnDervishEnd
-OnGrenadeAttached -- completely unused
-OnSnatch
-OnUnsnatch
-OnStun
-OnHostaged
-OnResque
-OnArrested
-OnTargetArrested
-OnThrowGrenadeFailed
-OnStunnedOut -- completely unused
-OnEnemySpoted -- unused, is in test script files
-OnTargetResistArrest -- unused, is in test script files (ArrestTarget, beta cop leftover)
-OnFailedToEnterVehicle
-OnEnteredVehicle
-OnLeaveVehicle
-OnCannonShoot
-OnCannonDestroyed
-OnGatlingShoot -- unused, commented out in ai_tank.p3s
-OnGatlingDestroyed
-OnLauncherShoot
-OnLauncherLeftDestroyed
-OnLauncherRightDestroyed
-OnPrimaryAttack
-OnSecondaryAttack
-OnBeeSting
-OnBlind -- completely unused (used by Laserpen, spray weapons)
-OnSucked
-OnTasingFinish
-</code></pre>

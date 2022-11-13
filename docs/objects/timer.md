@@ -2,7 +2,7 @@
 <p>Creates a timer to wait before executing an event.
 <h1>Syntax</h1>
 <p><code class="language-js">Timer [string],[float]</code> -- Creates a Timer, will execute <code>OnTimer_[string]</code> event after <code>[float]</code> seconds.</p>
-<p><code class="language-js">Timer [string],[float],repeatable</code> -- Creates a Timer, will execute <code>OnTimer_[string]</code> event after every <code>[float]</code> seconds.</p>
+<p><code class="language-js">Timer [string],[float],repeated</code> -- Creates a Timer, will execute <code>OnTimer_[string]</code> event after every <code>[float]</code> seconds.</p>
 <p><code class="language-js">Timer [string],0</code> -- Disables a Timer completely.</p>
 <p><code class="language-js">Timer:[string]</code> -- Get a Timer object's timer/value.</p>
 

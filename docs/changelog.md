@@ -4,6 +4,16 @@ This is the changelog for Postal3Script docs, because we make mistakes and some 
 
 If you have any issues related to Postal3Script Docs, let us know <a href="https://github.com/WhackJobInt/Postal3ScriptDocsTracker/issues">here</a> by opening a new issue.
 
+## 13.11.2022
+
+- Fixed invalid parameter on "Timer" page
+- Updated "Item" page, expanded Warning
+- Updated Debugging page, added one more console command which might be useful
+- Updated "What is Postal3Script?" page, P3S is a finite state machine
+- Updated Events page, gave an explanation to callers
+- Reorganized subcategories, added new planned ones
+- Updated Embedded Events, categorized them and gave confusing events an explanation what they do
+
 ## 17.10.2022
 
 - Rewrote "Ignore" page, it checks if a pointer was already ignored, and not that it sets ignoring.

@@ -12,21 +12,23 @@ markdown_extensions:
     - def_list
 extra_css: [css/extra.css]
 nav:
-    - 'Postal3Script (WIP)':
+    - 'Postal3Script':
         - 'Index': 'index.md'
         - 'What is Postal3Script?': 'whatispostal3script.md'
         - 'Debugging Postal3Script': 'debugging.md'
-        - 'Structure (TBD)': 'TBD.md'
-        - 'States (TBD)': 'TBD.md'
-        - 'Patterns (TBD)': 'TBD.md'
-        - 'Blocks (TBD)': 'TBD.md'
-        - 'Events': 'events.md'
-        - 'Hammer Functions (TBD)': 'TBD.md'
         - 'Development/WIP Files': 'wipp3sfiles.md'
         - 'Syntax Highlighter': 'syntaxhighlighter.md'
+    - 'Embedded/Engine':
+        - 'Embedded Attributes': 'attribchecking/embedattributes.md'
+        - 'Embedded Events': 'embeddedevents.md'
+        - 'Embedded Behaviors (TBD)': 'TBD.md'
+        - 'Animation Events (TBD)': 'TBD.md'
+    - 'Structure (Tutorial)':
+        - 'Events': 'events.md'
+        - 'Blocks, Conditional (TBD)': 'TBD.md'
+        - 'States, Patterns, Execution Patterns (TBD)': 'TBD.md'
     - 'Attribute Checking':
         - 'IfAttr, SetAttr, CheckAttr, ChangeAttr, RemoveAttr': 'attribchecking/attributes.md'
-        - 'Embedded Attributes': 'attribchecking/embedattributes.md'
     - 'Object Categories':
         - 'Manner': 'objects/manner.md'
         - 'Faction': 'objects/faction.md'

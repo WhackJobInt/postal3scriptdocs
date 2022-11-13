@@ -76,6 +76,12 @@ p3_fsm_execute_ex someguy SetAttr "ea_health 0"
 </code></pre>
 
 <br>
+## High Level Debugging
+
+<p>This one is not really useful to most people, it requires <code>p3_fsm_spew</code>, <code>developer</code>, and the use of <code>npc_fsminfo</code> in combination.</p>
+<p>Enable these 3 commands, then set <code>npc_fsm_log</code> to 1, this will print out the currently under debugging NPC's P3S executions at high level onto the console.</p>
+
+<br>
 ## General Advice
 
 <p>If you are not sure how Postal3Script works you can always check the functions on the left, every one of them have examples on their usage and how they work.</p>

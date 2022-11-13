@@ -3,26 +3,35 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This site is a Work in Progress! Many functions are still not covered yet, or those that are already covered, their documentation are subject to change!</p>
-<p><b>Last Update: <i>17.10.2022</i></b> (<a href="changelog">Changelog</a>)</p>
+<p><b>Last Update: <i>14.11.2022</i></b> (<a href="changelog">Changelog</a>)</p>
 </div>
 
 ## Postal3Script
 <ul>
 <li><a href="whatispostal3script">What is Postal3Script?</a></li>
 <li><a href="debugging">Debugging Postal3Script</a></li>
-<li>Structure</li>
-<li>States</li>
-<li>Patterns</li>
-<li>Blocks</li>
-<li>Events</li>
-<li>Hammer Functions</li>
 <li><a href="wipp3sfiles">Development/WIP Files</a></li>
+<li><a href="syntaxhighlighter">Syntax Highlighter</a></li>
+</ul>
+
+## Embedded/Engine
+<ul>
+<li><a href="attribchecking/embedattributes">Embedded Attributes</a></li>
+<li><a href="embeddedevents">Embedded Events</a></li>
+<li>Embedded Behaviors</li>
+<li>Animation Events</li>
 </ul>
 
 ## Attribute Checking
 <ul>
 <li><a href="attribchecking/attributes">IfAttr, SetAttr, CheckAttr, ChangeAttr, RemoveAttr</a></li>
-<li><a href="attribchecking/embedattributes">Embedded Attributes</a></li>
+</ul>
+
+## Structure (Tutorial)
+<ul>
+<li><a href="events">Events</a></li>
+<li>Blocks, Conditional</li>
+<li>States, Patterns, Execution Patterns</li>
 </ul>
 
 ## Object Categories
