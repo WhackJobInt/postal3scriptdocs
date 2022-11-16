@@ -3,7 +3,7 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This site is a Work in Progress! Many functions are still not covered yet, or those that are already covered, their documentation are subject to change!</p>
-<p><b>Last Update: <i>14.11.2022</i></b> (<a href="changelog">Changelog</a>)</p>
+<p><b>Last Update: <i>16.11.2022</i></b> (<a href="changelog">Changelog</a>)</p>
 </div>
 
 ## Postal3Script
@@ -18,8 +18,8 @@
 <ul>
 <li><a href="attribchecking/embedattributes">Embedded Attributes</a></li>
 <li><a href="embeddedevents">Embedded Events</a></li>
-<li>Embedded Behaviors</li>
-<li>Animation Events</li>
+<li><a href="embeddedbehaviors">Embedded Behaviors</a></li>
+<li><a href="animationsevents">Animation Events</a></li>
 </ul>
 
 ## Attribute Checking

@@ -21,8 +21,8 @@ nav:
     - 'Embedded/Engine':
         - 'Embedded Attributes': 'attribchecking/embedattributes.md'
         - 'Embedded Events': 'embeddedevents.md'
-        - 'Embedded Behaviors (TBD)': 'TBD.md'
-        - 'Animation Events (TBD)': 'TBD.md'
+        - 'Embedded Behaviors': 'embeddedbehaviors.md'
+        - 'Animation Events': 'animationevents.md'
     - 'Structure (Tutorial)':
         - 'Events': 'events.md'
         - 'Blocks, Conditional (TBD)': 'TBD.md'

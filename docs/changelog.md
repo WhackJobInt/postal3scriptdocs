@@ -4,7 +4,12 @@ This is the changelog for Postal3Script docs, because we make mistakes and some 
 
 If you have any issues related to Postal3Script Docs, let us know <a href="https://github.com/WhackJobInt/Postal3ScriptDocsTracker/issues">here</a> by opening a new issue.
 
-## 13.11.2022
+## 16.11.2022
+
+- Added "Animation Events" page
+- Added "Embedded Behaviors" page, all hardcoded Postal3Script scripting have now been documented.
+
+## 14.11.2022
 
 - Fixed invalid parameter on "Timer" page
 - Updated "Item" page, expanded Warning
