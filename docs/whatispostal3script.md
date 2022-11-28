@@ -8,6 +8,8 @@ With Postal3Script, you can easily do many things that you normally would not be
 
 P3S script files are located in <code>Postal III/p3/scripts</code> and use the <code>.p3s</code> file extension, but it can be any extension if wanted. To load and be able to use a p3s script, you must add it to a manifest, in "ai_scripts.txt", found in the previously mentioned folder.
 
+<p><a href="../zips/scripts.zip">HERE</a> you can download the contents of Postal 3's scripts folder, if you need it for researching purposes, or else.</p>
+
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Changes to p3s scripts will automatically hotload when the map restarts, so you can just use the "restart" console command without ever having to exit and reload the game.</p>

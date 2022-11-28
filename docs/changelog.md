@@ -4,6 +4,11 @@ This is the changelog for Postal3Script docs, because we make mistakes and some 
 
 If you have any issues related to Postal3Script Docs, let us know <a href="https://github.com/WhackJobInt/Postal3ScriptDocsTracker/issues">here</a> by opening a new issue.
 
+## 28.11.2022
+
+- Added <a href="../zips/scripts.zip">scripts.zip</a> to "What is Postal3Script?" page, contains the content of P3's scripts folder
+- Updated description of a few embedded event's description
+
 ## 16.11.2022
 
 - Added "Animation Events" page
