@@ -9,4 +9,6 @@
 
 <h1>Syntax</h1>
 <p><code>GetCvar [attribute to create/set],[cvar]</code> -- Creates the attribute with the cvar's value.</p>
-<p><code>GetCVar cheating,sv_cheats</code> -- This creates an attribute equal to sv_cheats' value.</p>
+
+<h1>Example</h1>
+<p><code>GetCVar cheating,sv_cheats</code> -- This creates an attribute equal to 'sv_cheats' value.</p>

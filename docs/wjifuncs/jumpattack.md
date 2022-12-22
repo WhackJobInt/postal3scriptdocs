@@ -1,6 +1,6 @@
-## Suicide
+## JumpAttack
 
-<p>Instantly kills an NPC.</p>
+<p>Performs a jump attack without snatching. (Animals only)</p>
 
 <div class="admonition warning">
 <p class="admonition-title">Catharsis Reborn Feature</p>
@@ -8,6 +8,4 @@
 </div>
 
 <h1>Syntax</h1>
-<p><code>Suicide 1</code> -- Instantly kills the NPC.</p>
-
-<p>Will use Memory Slot 7 as the killer/inflictor.</p>
+`JumpAttack 1` -- Leaps at the target.</p>

@@ -17,7 +17,7 @@
 
 <h1>Example</h1>
 <pre><code class="language-js">
-// This will print out the health of the entity to console.
+// This will print out the health of the entity to the console.
 pt_default
 {
 	actions
@@ -32,7 +32,7 @@ pt_default
 	actions
 	{
 		IfAttr "ea_health < 25 Block begin"
-			PrintAttr "I_have_less_than_25_health"
+			PrintAttr "I have less than 25 health"
 		Block end
 	}
 }

@@ -1,11 +1,15 @@
 ## ListenEvents
 
 <p>Makes an entity listen for game events.</p>
-<p>Uses events from <code>ModEvents.res</code></p>
 
 <div class="admonition warning">
 <p class="admonition-title">Catharsis Reborn Feature</p>
 <p>The following function will only work in <b>Catharsis Reborn</b>.</p>
+</div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Uses events from <code>ModEvents.res</code></p>
 </div>
 
 <h1>Syntax</h1>

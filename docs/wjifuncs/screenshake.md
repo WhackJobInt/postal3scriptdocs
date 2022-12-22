@@ -17,7 +17,7 @@
 
 <h1>Example</h1>
 <pre><code class="language-js">
-// This will make the screen shake for 3 seconds
+// This will make the screen shake for 3 seconds, that is if the Player is near this entity.
 pt_default
 {
 	actions

@@ -10,4 +10,4 @@
 <h1>Syntax</h1>
 <p><code>Knockout 1</code> -- Knocks the NPC out.</p>
 
-<p>Will use Memory Slot 7 as the inflictor.</p>
+<p>Will use <code>Object:slot#7</code> as the inflictor.</p>

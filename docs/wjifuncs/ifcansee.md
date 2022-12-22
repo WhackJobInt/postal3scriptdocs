@@ -23,6 +23,7 @@ Block end
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This function doesn't support one line execution. It must have <b>Block begin</b> and <b>Block end</b>.</p>
+<p>TODO: this should get fixed at some point</p>
 </div>
 
 <h1>Example</h1>

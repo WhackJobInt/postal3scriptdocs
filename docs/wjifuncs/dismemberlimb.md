@@ -8,13 +8,14 @@
 </div>
 
 <h1>Syntax</h1>
-<code>
+<pre><code>
 // Limbs
 Const LIMB_LEFTARM,4
 Const LIMB_RIGHTARM,5
 Const LIMB_LEFTLEG,6
 Const LIMB_RIGHTLEG,7
-</code>
+</code></pre>
+
 <p><code>DismemberLimb [pointer],[min],[max]</code> -- Dismembers a Human target's limb</p>
 <p><code>DismemberLimb [pointer]</code> -- Dismembers a Human target's random limb</p>
 

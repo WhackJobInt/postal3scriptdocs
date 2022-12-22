@@ -8,7 +8,7 @@
 </div>
 
 <h1>Syntax</h1>
-<p><code>SetBehavior [behavior] -- Sets only the behavior.</p>
+<p><code>SetBehavior [behavior]</code> -- Sets only the behavior.</p>
 <p><code>SetBehavior [behavior],[init_state]</code> -- Sets the behavior and init state only.</p>
 <p><code>SetBehavior [behavior],[init_state],[start_state]</code> -- Sets behavior, init, and start state only.</p>
 <p><code>SetBehavior [behavior],[init_state],[start_state],[faction]</code> -- Sets behavior, init, start state, and the faction only.</p>
