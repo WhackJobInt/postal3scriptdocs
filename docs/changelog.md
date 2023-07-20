@@ -4,10 +4,18 @@ This is the changelog for Postal3Script docs, because we make mistakes and some 
 
 If you have any issues related to Postal3Script Docs, let us know <a href="https://github.com/WhackJobInt/Postal3ScriptDocsTracker/issues">here</a> by opening a new issue.
 
+## 20.07.2023
+
+- Updated Animation Events page, now it uses a table.
+- Updated the formatting of main pages, they should now look much nicer.
+- Updated *Embedded Behaviors* page, the explanations should be now less confusing than before.
+- Added *Input Functions* page
+- We are in 2023 now... welcome back 8 months later!
+
 ## 28.11.2022
 
 - Added <a href="../zips/scripts.zip">scripts.zip</a> to "What is Postal3Script?" page, contains the content of P3's scripts folder
-- Updated description of a few embedded event's description
+- Updated descriptions of embedded events
 
 ## 16.11.2022
 

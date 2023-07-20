@@ -2,7 +2,7 @@ theme: readthedocs
 site_name: Postal3Script
 site_author: WhackJob Interactive
 site_description: Postal3Script
-copyright: Written by Kizoky and Pseudonym_Tim <br>© WhackJob Interactive 2022<br>ㅤ
+copyright: Written by Kizoky and Pseudonym_Tim <br>© WhackJob Interactive 2022-2023<br>ㅤ
 site_url: https://whackjobint.github.io/postal3script
 markdown_extensions:
     - toc:
@@ -23,6 +23,7 @@ nav:
         - 'Embedded Events': 'embeddedevents.md'
         - 'Embedded Behaviors': 'embeddedbehaviors.md'
         - 'Animation Events': 'animationevents.md'
+        - 'Input Functions': 'inputfunctions.md'
     - 'Structure (Tutorial)':
         - 'Events': 'events.md'
         - 'Blocks, Conditional (TBD)': 'TBD.md'

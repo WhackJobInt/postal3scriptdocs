@@ -32,7 +32,7 @@ They were also used to test many P3S functions to ensure they are working proper
 'lean_test.p3s' - Test script
 </code></pre>
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Don't try loading them as is, they have a very outdated Postal3Script layout, and several deleted functions! Use <code>p3_fsm_spew 1</code> console command to check which one of them loads properly!
-</div>
+!!! warning "Warning"
+
+    Don't try loading them as is, they have a very outdated Postal3Script layout, and several deleted functions!  
+    Use <code>p3_fsm_spew 1</code> console command to check which one of them loads properly!

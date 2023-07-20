@@ -3,8 +3,11 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This site is a Work in Progress! Many functions are still not covered yet, or those that are already covered, their documentation are subject to change!</p>
-<p><b>Last Update: <i>28.11.2022</i></b> (<a href="changelog">Changelog</a>)</p>
+<p><b>Last Update: <i>20.07.2023</i></b> (<a href="changelog">Changelog</a>)</p>
 </div>
+
+!!! tip "Did You Know?"
+    - There are a total of 125 Postal3Script functions.
 
 ## Postal3Script
 <ul>
