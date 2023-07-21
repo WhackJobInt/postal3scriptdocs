@@ -112,66 +112,73 @@ pt_default
 
 <br>
 
-## OnUser
+## FireUser
 
-<p>Fire user entity outputs set through hammer on a specific entity.</p>
+Fire user entity inputs set through Hammer on the entity.
 
-<div class="admonition warning">
-<p class="admonition-title">TODO</p>
-<p>Finish OnUser!</p>
-</div>
+!!! warning "Warning"
+	Activator and the Caller will be the entity itself.
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Only up to four slots are usable!</p>
-</div>
-
-<h2>Syntax</h2>
-<p><code class="language-js">OnUser1"</code> -- Fire the slot 1 output</p>
-<p><code class="language-js">OnUser2"</code> -- Fire the slot 2 output</p>
-<p><code class="language-js">OnUser3"</code> -- Fire the slot 3 output</p>
-<p><code class="language-js">OnUser4"</code> -- Fire the slot 4 output</p>
-
-<h2>Example</h2>
-<pre><code class="language-js">
-pt_default
-{
-	actions
-	{
-		
-	}
-}
-</code></pre>
+### Syntax
+<p><code class="language-js">FireUser 1</code> -- Fire the slot 1 input</p>
+<p><code class="language-js">FireUser 2</code> -- Fire the slot 2 input</p>
+<p><code class="language-js">FireUser 3</code> -- Fire the slot 3 input</p>
+<p><code class="language-js">FireUser 4</code> -- Fire the slot 4 input</p>
 
 <br>
 
-## FireUser
+## EntFireUser
 
-<p>Fire user entity inputs set through hammer on a specific entity.</p>
+Fire user entity inputs set through Hammer on a named entity.
 
-<div class="admonition warning">
-<p class="admonition-title">TODO</p>
-<p>Finish FireUser!</p>
-</div>
+!!! warning "Warning"
+	Activator and the Caller will be the entity itself (the one that called the function).
+	
+### Syntax
+<p><code class="language-js">EntFireUser [ent_name],1</code> -- Fire the slot 1 input on the entity</p>
+<p><code class="language-js">EntFireUser [ent_name],2</code> -- Fire the slot 2 input on the entity</p>
+<p><code class="language-js">EntFireUser [ent_name],3</code> -- Fire the slot 3 input on the entity</p>
+<p><code class="language-js">EntFireUser [ent_name],4</code> -- Fire the slot 4 input on the entity</p>
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Only up to four slots are usable!</p>
-</div>
+<br>
 
-<h2>Syntax</h2>
-<p><code class="language-js">FireUser1"</code> -- Fire the slot 1 input</p>
-<p><code class="language-js">FireUser2"</code> -- Fire the slot 2 input</p>
-<p><code class="language-js">FireUser3"</code> -- Fire the slot 3 input</p>
-<p><code class="language-js">FireUser4"</code> -- Fire the slot 4 input</p>
+## FireInput
 
-<h2>Example</h2>
-<pre><code class="language-js">
-pt_default
-{
-	actions
-	{
-		
-	}
-}
-</code></pre>
+Fire entity inputs on an entity.  
+You can see [here](../../inputfunctions/) the list of all available inputs.
+
+!!! warning "Warning"
+	Only <code>self</code> and <code>target</code> are supported.
+	
+### Syntax
+
+<code>FireInput target,[input]</code> -- Fires input on the entity's target.
+
+<code>FireInput self,[input]</code> -- Fires input on the entity.
+
+<br>
+
+## EntFireInput
+
+Fire entity inputs on a named entity.  
+You can see [here](../../inputfunctions/) the list of all available inputs.  
+Radius is always checked from the executed entity.
+	
+### Syntax
+
+<code>EntFireInput [name],[input]</code> -- Fires input on the named entity.
+
+<code>EntFireInput [name],[input]:[param]</code> -- Fires input with param (if supported) on the named entity.
+
+<code>EntFireInput [name],[input],[radius]</code> -- Fires input on the named entity if it's around the radius.
+
+<code>EntFireInput [name],[input]:[param],[radius]</code> -- Fires input with param (if supported) on the named entity if it's around the radius.
+
+<br>
+
+## OnUser (Events)
+
+Fire user entity outputs set through Hammer on a specific entity.  
+When they are invoked, they can call a Postal3Script event.
+
+Only up to 4 are supported. <code>OnUser1</code> -> <code>OnUser4</code>

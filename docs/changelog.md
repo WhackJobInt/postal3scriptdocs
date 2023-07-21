@@ -4,6 +4,14 @@ This is the changelog for Postal3Script docs, because we make mistakes and some 
 
 If you have any issues related to Postal3Script Docs, let us know <a href="https://github.com/WhackJobInt/Postal3ScriptDocsTracker/issues">here</a> by opening a new issue.
 
+## 21.07.2023
+
+- Added Randomization tutorial.
+- Finished all tutorials.
+- Added a warning for <code>Follow</code> function.
+- Finished FireEvent page.
+- Updated Input Functions page to include functions other than *void* types.
+
 ## 20.07.2023
 
 - Updated Animation Events page, now it uses a table.

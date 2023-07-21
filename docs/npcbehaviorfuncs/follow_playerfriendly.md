@@ -4,6 +4,10 @@
 
 Forces NPC to follow it's target object
 
+!!! warning "Broken Feature"
+	This function can only be enabled or disabled, <code>walk</code> or <code>run</code> will **not do anything**.  
+	If you want to make an NPC follow something by walking, [set it's act pack](../../movementfuncs/setactpack/) instead.
+
 <h2>Syntax</h2>
 <p><code class="language-js">Follow [true/false]</code></p>
 <p><code class="language-js">Follow [walk/run],[distance]</code></p>

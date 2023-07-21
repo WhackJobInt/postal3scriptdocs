@@ -3,7 +3,7 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This site is a Work in Progress! Many functions are still not covered yet, or those that are already covered, their documentation are subject to change!</p>
-<p><b>Last Update: <i>20.07.2023</i></b> (<a href="changelog">Changelog</a>)</p>
+<p><b>Last Update: <i>21.07.2023</i></b> (<a href="changelog">Changelog</a>)</p>
 </div>
 
 !!! tip "Did You Know?"

@@ -12,23 +12,24 @@ markdown_extensions:
     - def_list
 extra_css: [css/extra.css]
 nav:
-    - 'Postal3Script':
+    - '🔒 Postal3Script':
         - 'Index': 'index.md'
         - 'What is Postal3Script?': 'whatispostal3script.md'
         - 'Debugging Postal3Script': 'debugging.md'
         - 'Development/WIP Files': 'wipp3sfiles.md'
         - 'Syntax Highlighter': 'syntaxhighlighter.md'
-    - 'Embedded/Engine':
+    - '🛡 Embedded/Engine':
         - 'Embedded Attributes': 'attribchecking/embedattributes.md'
         - 'Embedded Events': 'embeddedevents.md'
         - 'Embedded Behaviors': 'embeddedbehaviors.md'
         - 'Animation Events': 'animationevents.md'
         - 'Input Functions': 'inputfunctions.md'
-    - 'Structure (Tutorial)':
+    - '📖 Tutorials':
         - 'Events': 'events.md'
-        - 'Blocks, Conditional (TBD)': 'TBD.md'
-        - 'States, Patterns, Execution Patterns (TBD)': 'TBD.md'
-    - 'Attribute Checking':
+        - 'Blocks, Conditional': 'blocksconditional.md'
+        - 'States, Patterns, Execution Patterns': 'statespatterns.md'
+        - 'Randomization': 'randomization.md'
+    - '🔎 Attribute Checking':
         - 'IfAttr, SetAttr, CheckAttr, ChangeAttr, RemoveAttr': 'attribchecking/attributes.md'
     - 'Object Categories':
         - 'Manner': 'objects/manner.md'
@@ -58,7 +59,7 @@ nav:
     - 'Misc Functions':
         - 'AreaEvent': 'miscfuncs/areaevent.md'
         - 'Effect': 'miscfuncs/effect.md'
-        - 'FireEvent, FireEventEX, FireUser, OnUser, FireInput, EntFireUser, EntFireInput (WIP)': 'miscfuncs/fire_event_and_user_funcs.md'
+        - 'FireEvent, FireEventEX, FireUser, EntFireUser, FireInput, EntFireInput, OnUser': 'miscfuncs/fire_event_and_user_funcs.md'
         - 'Item, SpawnItem': 'miscfuncs/item_spawnitem.md'
         - 'AddFluid': 'miscfuncs/addfluid.md'
         - 'Anchor, TargetAnchor': 'miscfuncs/anchor.md'
