@@ -10,7 +10,6 @@ Sets NPC's current weapon state.
 <p><code class="language-js">Weapon arm</code> -- Automatically selects weapon</p>
 <p><code class="language-js">Weapon disarm</code> -- Holsters active weapon</p>
 <p><code class="language-js">Weapon drop</code> -- Drops active weapon (won't drop if it's not out)</p>
-<p><code class="language-js">Weapon drop_all</code> -- Drops every weapon stored in NPC (Catharsis Reborn only)</p>
 <h1>Example</h1>
 <pre><code class="language-js">
 // From ai_mission_pdb.p3s
