@@ -7,7 +7,7 @@
 <p>Can only be used with <a href="../../targetingfuncs/reset_ignore_settarget/#ignoretarget">IgnoreTarget</a> beforehand.</p>
 </div>
 
-<div class="admonition warning">
+<div class="admonition error">
 <p class="admonition-title">Bug</p>
 <p>Using against corpses doesn't work, even though <code>IgnoreTarget</code> has proper coding for it.</p>
 </div>

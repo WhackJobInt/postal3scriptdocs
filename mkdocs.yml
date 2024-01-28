@@ -2,7 +2,7 @@ theme: readthedocs
 site_name: Postal3Script
 site_author: WhackJob Interactive
 site_description: Postal3Script
-copyright: Written by Kizoky and Pseudonym_Tim <br>© WhackJob Interactive 2022-2023<br>ㅤ
+copyright: Written by Kizoky, Pseudonym_Tim and contributors <br>© WhackJob Interactive 2022-2024<br>ㅤ
 site_url: https://whackjobint.github.io/postal3script
 markdown_extensions:
     - toc:

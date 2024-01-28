@@ -23,7 +23,7 @@ This is a feature re-used from Half-Life 2/Source Engine.
 
 Patterns can be used in two ways, *normally*, or *executed*.  
 When *normally* used, the State will enter into that pattern, and will execute code normally.  
-When *executed*, the State will **never** enter into that pattern, but **will execute** the pattern's contents.
+When *executed*, the State will **never** enter into that pattern, but **will execute** the pattern's content.
 
 !!! warning "Execute Pattern"
 	When executing a pattern, some functions will not work.  
@@ -45,7 +45,7 @@ When *executed*, the State will **never** enter into that pattern, but **will ex
 ## Inheritance
 
 Postal3Script supports inheritance, states and patterns can be inherited, and they can be overridden when wanted.  
-In Postal 3 this is heavily used to split apart the NPC AI.
+In Postal 3 this is heavily used to split the NPC AI in parts.
 
 Here's an example of inheritance:
 

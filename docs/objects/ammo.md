@@ -2,8 +2,8 @@
 <p>Unused Postal3Script Object
 <p>Checks an NPC's primary ammo value.</p>
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<div class="admonition error">
+<p class="admonition-title">Broken Feature</p>
 <p>Postal 3 doesn't have proper ammo handling or check for NPCs, it's a broken or underdeveloped feature. It's advised to come up with your own Ammo system in p3s.</p>
 </div>
 

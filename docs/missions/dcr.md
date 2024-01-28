@@ -1,5 +1,9 @@
 # Diseased Cat Roundup (ai_mission_dcr.p3s)
 <h1>Pre-Path</h1>
+
+Infinite hostile NPC generator, they are also very annoying.  
+Did I also mention how this mission is so hard because you have to catch so many cats?
+
 <p>Below you will only see the behavior names, and a rough guessing from the code on what they were supposed to do.
 <p>Unused behavior name(s) from script file:
 <pre><code class="language-js">

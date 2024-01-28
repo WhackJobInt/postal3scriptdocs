@@ -3,7 +3,7 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This site is a Work in Progress! Many functions are still not covered yet, or those that are already covered, their documentation are subject to change!</p>
-<p><b>Last Update: <i>21.07.2023</i></b> (<a href="changelog">Changelog</a>)</p>
+<p><b>Last Update: <i>28.01.2024</i></b> (<a href="changelog">Changelog</a>)</p>
 </div>
 
 !!! tip "Did You Know?"
@@ -17,24 +17,24 @@
 <li><a href="syntaxhighlighter">Syntax Highlighter</a></li>
 </ul>
 
-## Embedded/Engine
+## Embedded (Hardcoded)/Engine
 <ul>
 <li><a href="attribchecking/embedattributes">Embedded Attributes</a></li>
 <li><a href="embeddedevents">Embedded Events</a></li>
 <li><a href="embeddedbehaviors">Embedded Behaviors</a></li>
 <li><a href="animationsevents">Animation Events</a></li>
+<li><a href="inputfunctions">Input Functions</a></li>
 </ul>
+
+## Tutorials
+- [Events](events)
+- [Blocks, Conditional](blocksconditional)
+- [States, Patterns, Execution Patterns](statespatterns)
+- [Randomization](randomization)
 
 ## Attribute Checking
 <ul>
 <li><a href="attribchecking/attributes">IfAttr, SetAttr, CheckAttr, ChangeAttr, RemoveAttr</a></li>
-</ul>
-
-## Structure (Tutorial)
-<ul>
-<li><a href="events">Events</a></li>
-<li>Blocks, Conditional</li>
-<li>States, Patterns, Execution Patterns</li>
 </ul>
 
 ## Object Categories
@@ -59,13 +59,12 @@
 </ul>
 
 ## State Functions
-<ul>
-<li><a href="statefuncs/func_state_pattern_executepattern">State, Pattern, ExecutePattern</a></li>
-<li><a href="statefuncs/wait_waitforend_repeat">Wait, WaitForEnd, Repeat, Return</a></li>
-<li><a href="statefuncs/statematrix">StateMatrix</a></li>
-<li><a href="statefuncs/callstate_callpattern">CallState, CallPattern</a></li>
-<li><a href="statefuncs/activitypattern_funcs">StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern</a></li>
-</ul>
+- [State, Pattern, ExecutePattern](statefuncs/func_state_pattern_executepattern)
+- [Wait, WaitForEnd, Repeat, Return](statefuncs/wait_waitforend_repeat)
+- [StateMatrix](statefuncs/statematrix)
+- [CallState, CallPattern](statefuncs/callstate_callpattern)
+- [StoreActivityPattern, ExecuteActivityPattern, ClearActivityPattern](statefuncs/activitypattern_funcs)
+- [SendState, SendPattern](statefuncs/sendstate_sendpattern)
 
 ## Misc Functions
 <ul>
@@ -156,22 +155,22 @@
 </ul>
 
 ## Mission Script Files (Pre-Path)
-
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Work in Progress, please scroll down on left side for the time being!</p>
-</div>
+1. [Paradise Bridge `PDB`](missions/pdb)
+2. [Porn World `PW`](missions/pw)
+3. [Diseased Cat Roundup `DCR`](missions/dcr)
+4. [Jen Walcotts Bodyguard `JWB`](missions/jwb)
+5. [Cash Mart Robbery `CM`](missions/cm)
 
 ## Mission Script Files (Good Path)
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Work in Progress, please scroll down on left side for the time being!</p>
+<p>Work in Progress</p>
 </div>
 
 ## Mission Script Files (Evil Path)
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Work in Progress, please scroll down on left side for the time being!</p>
+<p>Work in Progress</p>
 </div>

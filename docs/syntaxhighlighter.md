@@ -4,7 +4,7 @@
 
 ## Notepad++
 <p><img alt="Notepad++ Syntax Highlight" src="../images/notepadpp.png" /></p>
-<p><b>Note:</b> Bracket collapsing isn't properly working, if you wish to use collapsing we recommend to use the syntax highlighter below instead</p>
+<p><b>Note:</b> Bracket collapsing isn't properly working, if you wish to use collapsing we recommend using the syntax highlighter below instead</p>
 ### Installation
 <p>Navigate to <b>'Language->User Defined Language->Open User Defined Language folder...'</b> then drop Postal3Script.xml there, restart Notepad++</p>
 <p><b><a href="https://github.com/Kizoky/postal3script_npp/releases/latest">DOWNLOAD HERE</a></b> (<i>Download as source code</i>)</p>

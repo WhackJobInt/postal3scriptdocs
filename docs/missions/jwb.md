@@ -1,5 +1,9 @@
 # Jen Walcott's Bodyguard (ai_mission_jwb.p3s)
 <h1>Pre-Path</h1>
+
+If only the Taser wasn't that bad... maybe this mission wouldn't feel frustrating.  
+How is it that Jen can kill people with her shovel, but you cannot?
+
 <p>JWB does not have unused behaviors.
 <p>All behavior names used in the level:
 <pre><code class="language-js">

@@ -1,5 +1,8 @@
 # Cash Mart Robbery (ai_mission_cm.p3s and ai_cashmart_npc.p3s)
 <h1>Pre-Path</h1>
+
+Cover simulator, also the Helicopter only appears once and never again throughout the game.
+
 <p>Cash Mart is the only mission where there are 2 files being used.
 <p>Cash Mart does not have unused behaviors.
 <p>All behavior names used in the level:

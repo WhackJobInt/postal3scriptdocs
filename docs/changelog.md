@@ -1,8 +1,17 @@
 # Changelog for Postal3Script Docs
 
-This is the changelog for Postal3Script docs, because we make mistakes and some functions might not work the way we initially defined them in descriptions.
+This is the changelog for Postal3Script docs.
 
 If you have any issues related to Postal3Script Docs, let us know <a href="https://github.com/WhackJobInt/Postal3ScriptDocsTracker/issues">here</a> by opening a new issue.
+
+## 28.01.2024
+
+- Added `Bug` section for <code>Manner</code> and <code>Faction</code>.
+- Removed mentions of <code>Catharsis Reborn</code> fixing Postal 3 bugs
+- Renamed <code>Ammo</code>'s `Warning` section to `Broken Feature`, so it makes more sense and no one will attempt using it
+- Added more possible <code>State</code> parameters
+- Fixed the index page being outdated when compared to the sidebar
+- Few grammar/formatting fixes (english is hard!), some explanations rewritten
 
 ## 21.07.2023
 

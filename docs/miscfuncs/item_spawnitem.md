@@ -12,7 +12,7 @@
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>- "Item" also refers to weapon or corpse/limb pickups</p>
-<p>- NPCs aren't able to pick up weapons off the ground, or interact them in any way in P3S, this is a bug (this is fixed in Catharsis Reborn)</p>
+<p>- NPCs aren't able to pick up weapons off the ground, or interact them in any way in P3S, this is a bug</p>
 </div>
 
 <div class="admonition note">

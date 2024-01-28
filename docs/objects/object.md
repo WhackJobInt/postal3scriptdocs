@@ -5,7 +5,7 @@ An object or entity, such as an NPC or a prop.
 
 In Postal3Script you always have access to important objects such as a target or yourself, so you can check and do stuff to them.
 
-You don't always have access to the Caller, as it's heavily dependent on the Event that caused the NPC to enter the state.
+You don't always have access to the Caller, as it's heavily dependent on the Event that caused the NPC to enter the pattern.
 
 Typically, the caller means something or someone that forced the NPC to enter it.
 

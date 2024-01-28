@@ -2,20 +2,17 @@
 
 ## What are Postal3Script events?
 
-<p>Events are essentially "events", triggered by some source while the entity is in a state or pattern which makes you have some kind of "async" checking.</p>
-<p>Some examples being of an event is, the entity is in a state called sitting, and suddenly they've got hurt, the "OnHit" event is being called because of that, which makes the Entity's state, pattern change, or even execute a pattern externally depending on what will the "OnHit" event do as it's defined in it's Postal3Script file.</p>
+Events are essentially "signals" triggered by an outside source while the entity is in a state or pattern.  
 
 <div class="admonition note">
 <p class="admonition-title">Types of Events</p>
 <p>Events can be <b>Global</b>, <b>State</b>, or <b>Pattern</b> only.</p>
 </div>
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Events that were called successfully will always override the caller, if that happens you can do 
-<code>TargetCaller 1</code> or access <code>Object:caller</code> or do conditional checks like <code>IfAttr "caller.ea_health > 0 
-..</code> in the same pattern.</p>
-</div>
+!!! tip "Tip"
+	Events that were called successfully will always override the `caller`, if that happens you can do 
+	`TargetCaller 1` or access `Object:caller` or do conditional checks like  
+	`IfAttr "caller.ea_health > 0 ..."` in the same pattern.
 
 <h1>Global Events Example</h1>
 <div class="admonition warning">

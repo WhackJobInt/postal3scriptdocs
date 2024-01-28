@@ -1,5 +1,9 @@
 # Porn World (ai_mission_pw.p3s)
 <h1>Pre-Path</h1>
+
+You not only have to clean up someone's *wank*, but you also have to defend the store from being destroyed.  
+No one pays the Postal Dude high enough for this.
+
 <p>Porn World does not have unused behaviors in it's script file.
 <p>All used behavior names in the level:
 <pre><code class="language-js">

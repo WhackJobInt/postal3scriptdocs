@@ -2,11 +2,11 @@
 
 Postal3Script, or P3S, is a Finite State Machine (FSM) and a scripting language developed for Postal 3, designed to handle most of the NPC AI and mission scripting.
 
-It allows for a much easier and faster time doing missions and AI rather than messing around in C++ and doing logic entirely through map entities in Hammer.
+It allows for a much easier and faster way of doing missions and AI rather than messing around in C++ and doing logic entirely through map entities in Hammer.
 
 With Postal3Script, you can easily do many things that you normally would not be able to do without the source code of the game due to the many useful functions and attributes that are interfaced.
 
-While Postal3Script is a scripting language, it is not as powerful as say, Garry's Mod's LUA, it is heavily limited by the amount of functions available, it's also unfortunately not as fast as LUA in execution speed.
+While Postal3Script is a scripting language, it is not as powerful as say, `Garry's Mod`'s LUA, it is heavily limited by the amount of functions available, it's also not as fast as LUA in execution speed unfortunately.
 
 P3S script files are located in <code>Postal III/p3/scripts</code> and use the <code>.p3s</code> file extension, but it can be any extension if wanted. To load and be able to use a p3s script, you must add it to a manifest, in "ai_scripts.txt", found in the previously mentioned folder.
 
@@ -136,4 +136,9 @@ behavior
 	* Postal3Script function names are case-sensitive, i.e. it's not recommended to use <code>ifattr</code> instead of <code>IfAttr</code>.
 	<br><br>
 	* Very long code can (sometimes) result in the game freezing, this can be avoided by splitting up the patterns.
+	<br><br>
+	* Possibly due to a programming oversight, the language when it can't find anything sometimes will happily pass checks even though they should be invalid (false),
+	this can be observed with functions like `IfAttr`, `CheckAttr`, `ChangeAttr`, `Manner` and `Faction`..
+	<br><br>
+	* There is no `else`, there are no arrays, only integers can be saved.
 	

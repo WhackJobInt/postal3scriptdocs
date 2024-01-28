@@ -5,7 +5,7 @@
 Exits from current state, and enters a new state
 
 <h1>Syntax</h1>
-<code class="language-js">State [state name]</code> -- Sets the new state
+<code class="language-js">State [behavior name]:[state name].[pattern name]</code> -- Sets the new state, Behavior and Pattern is OPTIONAL, Behavior will only work for inherited ones!
 <h1>Example</h1>
 <pre><code class="language-js">
 // On start after 5 seconds it will exit from st_start and enter st_new_start, and back forth
@@ -37,6 +37,23 @@ st_new_start
 				Wait 5
 				ChangeAttr "TimeTicking +1"
 				State st_start
+			}
+		}
+	}
+}
+
+st_start_pattern
+{
+	Group Neutral
+	Patterns
+	{
+		pt_default
+		{
+			actions
+			{
+				Wait 5
+				ChangeAttr "TimeTicking +1"
+				State st_start.pt_mypattern // Skips pt_default!
 			}
 		}
 	}
