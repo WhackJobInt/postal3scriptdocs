@@ -28,6 +28,10 @@ Sets Event's caller as target object
 
 Sets item in NPC's hand as target object
 
+!!! tip "🪽 Postal 3 Angel-only feature"
+	- Works with Players
+	- Can be used to get the active weapon
+
 <h2>Syntax</h2>
 <p><code class="language-js">TargetItem 1</code> -- Sets item in NPC's hand as target object</p>
 

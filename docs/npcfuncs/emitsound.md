@@ -11,6 +11,9 @@ Plays a sound from an NPC
 </div>
 </ul>
 
+!!! tip "🪽 Postal 3 Angel-only feature"
+	Works with any entity that have Postal3Script scripting.
+
 <h2>Syntax</h2>
 <p><code class="language-js">EmitSound [name]</code>
 <h1>Example</h1>

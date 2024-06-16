@@ -6,6 +6,18 @@
 <p>If you see a typo, <b>it's not a typo</b>, it's how they were programmed into the game.</p>
 </div>
 
+## 🪽 Postal 3 Angel Embedded Events
+!!! warning "🪽 Postal 3 Angel-only feature"
+	These embedded events below will only work with the Postal 3 Angel mod.
+```
+OnPissed -- Called on P3 Item props when they were pissed on
+
+OnPlayerCrosshairFocus -- (inside entity) Called when Player is focusing on this entity
+OnPlayerCrosshairLeft -- (inside entity) Called when Player is no longer focusing the entity
+
+OnApplyCatnipHead -- Called when Human NPC's head is catnip sprayed
+```
+
 ## Act Busy (unused)
 <pre><code class="language-js">
 OnStartBusyNode -- completely unused

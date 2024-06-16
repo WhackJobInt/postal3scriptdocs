@@ -42,6 +42,9 @@ These behaviors can be given an AI (if they are unused) providing an actual scri
 
 !!! warning "Broken Feature"
     Scriptable weapons are not possible, weapons will not have any working P3S scripting attached to them.
+	
+!!! tip "🪽 Postal 3 Angel-only feature"
+	Postal 3 Angel has fixed this AI, and is working correctly.
 
 | Behavior Name			| Init State 				| Start State 	 		| Manner 	| Faction 	|
 |-----------------------|---------------------------|-----------------------|-----------|-----------|

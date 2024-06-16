@@ -13,11 +13,16 @@ markdown_extensions:
 extra_css: [css/extra.css]
 nav:
     - '🔒 Postal3Script':
+        - 'Changelog': 'changelog.md'
         - 'Index': 'index.md'
         - 'What is Postal3Script?': 'whatispostal3script.md'
         - 'Debugging Postal3Script': 'debugging.md'
         - 'Development/WIP Files': 'wipp3sfiles.md'
         - 'Syntax Highlighter': 'syntaxhighlighter.md'
+    - '🪽 Postal 3 Angel':
+        - 'What is Postal 3 Angel?': 'p3angel/whatispostal3angel.md'
+        - 'AngelScript': 'p3angel/f_angelscript.md'
+        - 'UnlockHintNode': 'p3angel/f_unlockhintnode.md'
     - '🛡 Embedded/Engine':
         - 'Embedded Attributes': 'attribchecking/embedattributes.md'
         - 'Embedded Events': 'embeddedevents.md'

@@ -145,7 +145,7 @@ Fire user entity inputs set through Hammer on a named entity.
 ## FireInput
 
 Fire entity inputs on an entity.  
-You can see [here](../../inputfunctions/) the list of all available inputs.
+You can see [here](../inputfunctions.md) the list of all available inputs.
 
 !!! warning "Warning"
 	Only <code>self</code> and <code>target</code> are supported.
@@ -161,7 +161,7 @@ You can see [here](../../inputfunctions/) the list of all available inputs.
 ## EntFireInput
 
 Fire entity inputs on a named entity.  
-You can see [here](../../inputfunctions/) the list of all available inputs.  
+You can see [here](../inputfunctions.md) the list of all available inputs.  
 Radius is always checked from the executed entity.
 	
 ### Syntax

@@ -12,6 +12,9 @@
 <p>Using against corpses doesn't work, even though <code>IgnoreTarget</code> has proper coding for it.</p>
 </div>
 
+!!! tip "🪽 Postal 3 Angel-only feature"
+	Bug fixed with not being able to use it with corpses.
+
 <h1>Syntax</h1>
 <p><code class="language-js">Ignore:[object type]</code> -- Checks if the type is already ignored or not</p>
 

@@ -4,6 +4,10 @@ This is the changelog for Postal3Script docs.
 
 If you have any issues related to Postal3Script Docs, let us know <a href="https://github.com/WhackJobInt/Postal3ScriptDocsTracker/issues">here</a> by opening a new issue.
 
+## 16.06.2024
+
+- Added Postal 3 Angel-relevant information all over the docs
+
 ## 28.01.2024
 
 - Added `Bug` section for <code>Manner</code> and <code>Faction</code>.

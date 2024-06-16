@@ -1,5 +1,6 @@
 # Timer
-<p>Creates a timer to wait before executing an event.
+<p>Creates a timer to wait before executing an event.</p>
+
 <h1>Syntax</h1>
 <p><code class="language-js">Timer [string],[float]</code> -- Creates a Timer, will execute <code>OnTimer_[string]</code> event after <code>[float]</code> seconds.</p>
 <p><code class="language-js">Timer [string],[float],repeated</code> -- Creates a Timer, will execute <code>OnTimer_[string]</code> event after every <code>[float]</code> seconds.</p>
@@ -11,6 +12,9 @@
 <p>Checking for a non-existent Timer is not possible. You must pre-create all the timers you will use with <code>Timer [string],0</code> to ensure <code>IfAttr</code> will properly return zero value.</p>
 <p>The example below shows a piece of code that will always fail if <code>tCantHeal</code> doesn't exists, and instead of returning from it, it will continue to execute all the actions below it.
 </div>
+
+!!! tip "🪽 Postal 3 Angel-only feature"
+	Timers can have longer names
 
 <h1>Example</h1>
 <pre><code class="language-js">

@@ -1,13 +1,13 @@
 # Object Entities
 
 ## Object
-An object or entity, such as an NPC or a prop.
+An object, such as an NPC, Player or a prop.
 
-In Postal3Script you always have access to important objects such as a target or yourself, so you can check and do stuff to them.
+In Postal3Script you have access to certain objects such as `target` or the behavior's host, and you can either manipulate or read from them.
 
-You don't always have access to the Caller, as it's heavily dependent on the Event that caused the NPC to enter the pattern.
+You don't always have access to the `caller`, as it's heavily dependent on the Event that caused the Object to enter the pattern.
 
-Typically, the caller means something or someone that forced the NPC to enter it.
+Typically, the caller means something or someone that forced the Object to enter a pattern.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -16,6 +16,10 @@ Typically, the caller means something or someone that forced the NPC to enter it
 <p><code>Object:slot#0</code> ; <code>Object:null</code> ; <code>Object:self</code></p>
 <p><code>Object:item</code> ; <code>Object:anchor</code> ; <code>Object:destination</code></p>
 </div>
+
+!!! tip "🪽 Postal 3 Angel-only feature"
+	- `Object:item` on Players behaves the same like with NPCs.
+	- `Object:item` can be used to get the active weapon, including dismembered bodyparts and throwable objects on Players and NPCs.
 
 <h1>Syntax</h1>
 <p><code class="language-js">Object:[object]</code> -- Returns the Object specified</p>

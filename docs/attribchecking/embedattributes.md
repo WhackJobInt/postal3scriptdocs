@@ -11,6 +11,30 @@ There are a variety of attributes and they each serve their own purposes.
 </ul>
 </div>
 
+## 🪽 Postal 3 Angel Embedded Attributes
+!!! warning "🪽 Postal 3 Angel-only feature"
+	These embedded attributes below will only work with the Postal 3 Angel mod.
+```
+ImAnAnimal				-- Entity is an animal NPC, if it exist
+ImAHuman				-- Entity is a Human NPC, if it exist
+ImACat					-- Entity is a Cat NPC, if it exist
+ImADog					-- Entity is a Dog NPC, if it exist
+ImAMonkey				-- Entity is a Monkey NPC, if it exist
+ImMotorhead				-- Entity is Motorhead, if it exist
+ImAHelicopter			-- Entity is a Helicopter, if it exist
+ImAPigeon				-- Entity is a Pigeon NPC, if it exist
+ImAPoliceman			-- Entity is an unused Policeman-type Human NPC, if it exist
+ImAMilitary				-- Entity is a Military-type Human NPC, if it exist
+ImACitizen				-- Entity is a Citizen-type Human NPC, if it exist
+ImARhino				-- Entity is a Rhino-type Animal NPC, if it exist
+ImASimDriver			-- Entity is a Sim Driver-type Citizen NPC, if it exist
+ImHugoChavez			-- Entity is Hugo Chavez Sim Driver NPC, if it exist
+
+ea_glow					-- Entity will glow if Player looks at it, if it exist
+active					-- (Weapon) If it's 1 they can be seen, not holstered
+dropped					-- (Weapon) By default (on spawn) is 0
+```
+
 ## All Embedded Attributes
 <pre><code>
 ea_lean					-- Whether NPC or Player is currently covering

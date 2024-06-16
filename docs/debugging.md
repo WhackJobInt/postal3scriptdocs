@@ -6,7 +6,7 @@ Normally the game doesn't print out any errors, you need to have the
 
 Scrolling around in the console should show you which script are loaded and what lines have errors if there are any, **like here so:**
 
-![p3_fsm_spew 1](../images/p3_fsm_spew.png)
+![p3_fsm_spew 1](images/p3_fsm_spew.png)
 
 If you want to print out your own debug messages, you'll have to settle for doing <code>EntFireInput</code> on the <code>point_clientcommand</code> entity in the map by doing <code>EntFireInput pcc,Command: echo yourmessagehere</code> in p3s.  
 **Here's an example:**
@@ -28,7 +28,7 @@ pt_mypattern
 With <code>npc_fsminfo</code> you can display an NPC's attributes with values, timers, events, last executed action, and many more:  
 *You should point at an NPC before executing it.*
 
-![npc_fsminfo](../images/npc_fsminfo.png)
+![npc_fsminfo](images/npc_fsminfo.png)
 
 
 Here are a list of console commands that can be used in combination with that:
@@ -62,7 +62,7 @@ Must have <code>p3_fsm_spew 1</code> enabled to display use examples!
 **Note:**   
 Sometimes the console commands will not do anything, if that happens you need to load a different map!</p>
 
-![p3_fsm_execute](../images/p3_fsm_execute.png)
+![p3_fsm_execute](images/p3_fsm_execute.png)
 
 ## Syntax
 ```p3_fsm_execute [P3S function] [command]``` -- Will always execute for Players</p>
@@ -97,7 +97,7 @@ Alternatively, like we sometimes do, search through TM's Postal3Script files for
 
 I highly recommend to use a program like Notepad++ which is capable of searching through mass of files:  
 
-![notepadpp](../images/notepadpp2.png)
+![notepadpp](images/notepadpp2.png)
 
 That being said, hopefully this will give you less headache in understanding Postal3Script, and may help you modding the game.  
-Make sure to keep [Postal3Script's limitations](../whatispostal3script#limitations) in mind!
+Make sure to keep [Postal3Script's limitations](whatispostal3script.md#limitations) in mind!
