@@ -15,6 +15,9 @@ For example, preventing us from punching someone we dislike, and instead just sh
 	- There is an identification mismatch between source code and the Manner list, a dummy Manner should be added at the very top (first on the list) to avoid issues.  
 	- When checking for Manner, the Manner **MUST** exist in the list of Manners, otherwise Postal3Script will pass checks for that entity unknowingly.
 
+!!! tip "🆙🪽 Postal III Ultrapatch-only feature"
+	The '0 index' bug is fixed
+
 <pre><code class="language-js">
 st_MannerTutorial
 {

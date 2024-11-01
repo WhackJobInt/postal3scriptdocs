@@ -28,7 +28,7 @@ Sets Event's caller as target object
 
 Sets item in NPC's hand as target object
 
-!!! tip "🪽 Postal 3 Angel-only feature"
+!!! tip "🆙🪽 Postal III Ultrapatch-only feature"
 	- Works with Players
 	- Can be used to get the active weapon
 

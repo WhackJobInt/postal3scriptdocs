@@ -6,16 +6,34 @@
 <p>If you see a typo, <b>it's not a typo</b>, it's how they were programmed into the game.</p>
 </div>
 
-## 🪽 Postal 3 Angel Embedded Events
-!!! warning "🪽 Postal 3 Angel-only feature"
-	These embedded events below will only work with the Postal 3 Angel mod.
+## 🆙🪽 Ultrapatch Embedded Events
+!!! warning "🆙🪽 Postal III Ultrapatch-only feature"
+	These embedded events below will only work with Postal III Ultrapatch.
 ```
-OnPissed -- Called on P3 Item props when they were pissed on
+OnHit 					-- Helicopter
+OnDeath 				-- Helicopter
 
-OnPlayerCrosshairFocus -- (inside entity) Called when Player is focusing on this entity
-OnPlayerCrosshairLeft -- (inside entity) Called when Player is no longer focusing the entity
+OnTargetKilled 			-- Fixed buggy event
 
-OnApplyCatnipHead -- Called when Human NPC's head is catnip sprayed
+OnApplyCatnip 			-- Applied for all NPCs when using catnip weapon
+OnBlinded 				-- Applied for all NPCs when using Laserpen
+
+OnPlayerCrosshairFocus 	-- (inside entity) Called when Player is focusing on this entity
+OnPlayerCrosshairLeft 	-- (inside entity) Called when Player is no longer focusing the entity
+```	
+
+## 🪽 Angel Embedded Events
+!!! warning "🪽 Postal III Ultrapatch Angel-only feature"
+	These embedded events below will only work with Postal III Ultrapatch Angel.
+```
+OnUseCommand 		-- Interactable prop
+OnHurt 				-- Interactable prop
+OnTouch 			-- Interactable prop, touch must be setup
+OnStartTriggerTouch -- Interactable prop, touch must be setup
+OnEndTriggerTouch 	-- Interactable prop, touch must be setup
+
+OnASRestore 		-- Fired on save game load for restorable entities
+OnASTransition 		-- Fired on transition for restorable entities
 ```
 
 ## Act Busy (unused)
@@ -67,7 +85,7 @@ OnTargetReset
 OnEnemiesDead
 OnNewEnemy -- Note: This does not execute instantly
 OnNewFear -- Note: This does not execute instantly
-OnTargetKilled -- completely unused, Note: it is the same as 'OnDeath'
+OnTargetKilled -- completely unused, Note: buggy, acts like 'OnDeath'
 OnTargetArrested
 OnEnemySpoted -- unused, is in test script files
 OnTargetResistArrest -- unused, is in test script files (ArrestTarget, beta cop leftover)
@@ -120,6 +138,8 @@ OnTasingFinish
 OnUse -- unused, is in test script files
 OnDrop -- unused, is in test script files
 OnTake -- unused, is in test script files
+OnIgnite
+OnAcid
 </code></pre>
 
 ## Items (prop_p3_fsmitem) & Cat
@@ -176,5 +196,5 @@ OnUser3 -- Hammer
 OnUser4 -- Hammer
 OnDialogNo -- completely unused
 OnDialogYes -- completely unused
-OnFinaleWin
+OnFinaleWin -- Executed inside Player's behavior
 </code></pre>

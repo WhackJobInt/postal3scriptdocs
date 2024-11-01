@@ -104,12 +104,7 @@ pt_chase
 <br>
 ## MoveToTargetLKP
 
-Forces the NPC to move to it's target.
-
-<div class="admonition warning">
-<p class="admonition-title">TODO</p>
-<p>What does LKP mean? How much different is this from the plain MoveToTarget?</p>
-</div>
+Forces the NPC to move to it's target's Last Known Position from the NPC's memory.
 
 <h1>Syntax</h1>
 <p><code class="language-js">MoveToTargetLKP [run/walk/true]</code>

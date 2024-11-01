@@ -11,7 +11,7 @@ Sets NPC's current weapon state.
 <p><code class="language-js">Weapon disarm</code> -- Holsters active weapon</p>
 <p><code class="language-js">Weapon drop</code> -- Drops active weapon (won't drop if it's not out)</p>
 
-# 🪽 Postal 3 Angel Syntax
+# 🆙🪽 Postal III Ultrapatch Syntax
 `Weapon pickup` -- Attempts to pick up weapon off from the ground, if the target is a weapon and is dropped.
 
 <h1>Example</h1>

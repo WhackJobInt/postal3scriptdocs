@@ -11,9 +11,9 @@ There are a variety of attributes and they each serve their own purposes.
 </ul>
 </div>
 
-## 🪽 Postal 3 Angel Embedded Attributes
-!!! warning "🪽 Postal 3 Angel-only feature"
-	These embedded attributes below will only work with the Postal 3 Angel mod.
+## 🆙🪽 Ultrapatch Embedded Attributes
+!!! warning "🆙🪽 Postal III Ultrapatch-only feature"
+	These embedded attributes below will only work with Postal III Ultrapatch.
 ```
 ImAnAnimal				-- Entity is an animal NPC, if it exist
 ImAHuman				-- Entity is a Human NPC, if it exist
@@ -33,10 +33,28 @@ ImHugoChavez			-- Entity is Hugo Chavez Sim Driver NPC, if it exist
 ea_glow					-- Entity will glow if Player looks at it, if it exist
 active					-- (Weapon) If it's 1 they can be seen, not holstered
 dropped					-- (Weapon) By default (on spawn) is 0
+
+flag_boss				-- NPC is a boss, used for missions and achievements, if it exist
+```
+
+## 🪽 Angel Embedded Attributes
+!!! warning "🪽 Postal III Ultrapatch Angel-only feature"
+	These embedded attributes below will only work with Postal III Ultrapatch Angel.
+```
+ea_allowpickup			-- (Interactable prop) Pick up is allowed, if it exist
+ea_propMotion			-- (Interactable prop) Motion is enabled on hurt, if it exist
+ea_touch				-- (Interactable prop) Entity is able to feel, if it exist
+
+as_restore				-- Fires OnASRestore on save game load on the entity, if it exist
+as_transition			-- Fires OnASTransition on transition load on the entity, if it exist
 ```
 
 ## All Embedded Attributes
 <pre><code>
+flag_zombie				-- NPC is a boss, used for missions and achievements, if it exist
+flag_bystander			-- NPC is a bystander, used for missions and achievements, if it exist
+SnatchBiteDamage		-- Used for overriding snatch bite damage for animals
+
 ea_lean					-- Whether NPC or Player is currently covering
 ea_consciousness		-- Gets or sets the consciousness of an NPC, setting it to zero does nothing
 ea_health				-- Health

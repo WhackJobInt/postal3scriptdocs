@@ -3,11 +3,12 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This site is a Work in Progress! Many functions are still not covered yet, or those that are already covered, their documentation are subject to change!</p>
-<p><b>Last Update: <i>16.06.2024</i></b> (<a href="changelog.md">Changelog</a>)</p>
+<p><b>Last Update: <i>01.11.2024</i></b> (<a href="changelog.md">Changelog</a>)</p>
 </div>
 
 !!! tip "Did You Know?"
     - There are a total of 125 Postal3Script functions.
+	- NPCs/Entities with no P3S behavior defined will fallback to the `default_behavior` behavior
 
 ## Postal3Script
 <ul>

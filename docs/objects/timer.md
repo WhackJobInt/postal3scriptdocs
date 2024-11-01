@@ -13,7 +13,7 @@
 <p>The example below shows a piece of code that will always fail if <code>tCantHeal</code> doesn't exists, and instead of returning from it, it will continue to execute all the actions below it.
 </div>
 
-!!! tip "🪽 Postal 3 Angel-only feature"
+!!! tip "🆙🪽 Postal III Ultrapatch-only feature"
 	Timers can have longer names
 
 <h1>Example</h1>

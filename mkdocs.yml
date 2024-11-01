@@ -19,10 +19,16 @@ nav:
         - 'Debugging Postal3Script': 'debugging.md'
         - 'Development/WIP Files': 'wipp3sfiles.md'
         - 'Syntax Highlighter': 'syntaxhighlighter.md'
-    - '🪽 Postal 3 Angel':
-        - 'What is Postal 3 Angel?': 'p3angel/whatispostal3angel.md'
-        - 'AngelScript': 'p3angel/f_angelscript.md'
-        - 'UnlockHintNode': 'p3angel/f_unlockhintnode.md'
+    - '💀 Postal III Beta':
+        - '2009 P3S Files': '2009.md'
+        - '2010 "GamesCom" P3S Files': '2010.md'
+    - '🆙 Postal III Ultrapatch':
+        - '🆙 What is Postal III Ultrapatch?': 'ultrapatch/what_is_ultrapatch.md'
+    - '🪽 Postal III Ultrapatch Angel':
+        - '🪽 What is Postal III Ultrapatch Angel?': 'angel/what_is_angel.md'
+    - '🪽 Angel Functions':
+        - 'AngelScript': 'angel/f_angelscript.md'
+        - 'UnlockHintNode': 'angel/f_unlockhintnode.md'
     - '🛡 Embedded/Engine':
         - 'Embedded Attributes': 'attribchecking/embedattributes.md'
         - 'Embedded Events': 'embeddedevents.md'

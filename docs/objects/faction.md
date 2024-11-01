@@ -13,6 +13,9 @@ This is used for various things, such as checking for how NPC's should act towar
 	- There is an identification mismatch between source code and the Faction list, a dummy Faction should be added at the very top (first on the list) to avoid issues.  
 	- When checking for Faction, the Faction **MUST** exist in the list of Factions, otherwise Postal3Script will pass checks for that entity unknowingly.
 
+!!! tip "🆙🪽 Postal III Ultrapatch-only feature"
+	The '0 index' bug is fixed
+
 <pre><code class="language-js">
 st_FactionTutorial
 {

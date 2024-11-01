@@ -2,8 +2,8 @@
 
 Unlocks currently using hint node, then forgets about it.
 
-!!! warning "🪽 Postal 3 Angel-only feature"
-	This function will only work under Postal 3 Angel.
+!!! warning "🪽 Postal III Ultrapatch Angel-only feature"
+	This function will only work under Postal III Ultrapatch Angel.
 	
 ## Syntax
 `UnlockHintNode 1` -- Unlocks currently using/locked down hint node.

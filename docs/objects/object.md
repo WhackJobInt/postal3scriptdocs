@@ -17,7 +17,7 @@ Typically, the caller means something or someone that forced the Object to enter
 <p><code>Object:item</code> ; <code>Object:anchor</code> ; <code>Object:destination</code></p>
 </div>
 
-!!! tip "🪽 Postal 3 Angel-only feature"
+!!! tip "🆙🪽 Postal III Ultrapatch-only feature"
 	- `Object:item` on Players behaves the same like with NPCs.
 	- `Object:item` can be used to get the active weapon, including dismembered bodyparts and throwable objects on Players and NPCs.
 

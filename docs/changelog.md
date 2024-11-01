@@ -4,6 +4,12 @@ This is the changelog for Postal3Script docs.
 
 If you have any issues related to Postal3Script Docs, let us know <a href="https://github.com/WhackJobInt/Postal3ScriptDocsTracker/issues">here</a> by opening a new issue.
 
+## 01.11.2024
+
+- Removed old Postal 3 Angel mentions
+- Up to date with Postal III Ultrapatch and Ultrapatch Angel
+- Added Postal III Beta P3S files
+
 ## 16.06.2024
 
 - Added Postal 3 Angel-relevant information all over the docs

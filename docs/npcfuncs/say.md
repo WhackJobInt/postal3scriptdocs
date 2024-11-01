@@ -7,8 +7,8 @@ Uses the name of the sentence in the related NPC's sentence script located in
 
 <h2>Syntax</h2>
 <p><code class="language-js">Say [sentence_name]</code>
-<p><code class="language-js">Say [sentence_name, sentence_name, sentence_name]</code> -- Say a random sentence out of these (You can specify as many sentence parameters as you want)
-<p><code class="language-js">Say [sentence_name, priority, wait]</code> -- Say sentence with priority, and wait until the end
+<p><code class="language-js">Say [sentence_name,sentence_name,sentence_name]</code> -- Say a random sentence out of these (You can specify as many sentence parameters as you want)
+<p><code class="language-js">Say [sentence_name,priority,wait]</code> -- Say sentence with priority, and wait until the end
 
 <div class="admonition warning">
 <p class="admonition-title">TODO</p>

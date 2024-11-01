@@ -12,7 +12,7 @@
 <p>Using against corpses doesn't work, even though <code>IgnoreTarget</code> has proper coding for it.</p>
 </div>
 
-!!! tip "🪽 Postal 3 Angel-only feature"
+!!! tip "🆙🪽 Postal III Ultrapatch-only feature"
 	Bug fixed with not being able to use it with corpses.
 
 <h1>Syntax</h1>

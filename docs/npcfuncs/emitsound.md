@@ -11,7 +11,7 @@ Plays a sound from an NPC
 </div>
 </ul>
 
-!!! tip "🪽 Postal 3 Angel-only feature"
+!!! tip "🆙🪽 Postal III Ultrapatch-only feature"
 	Works with any entity that have Postal3Script scripting.
 
 <h2>Syntax</h2>

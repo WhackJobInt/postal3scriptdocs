@@ -24,7 +24,7 @@ the only attachment point bone direction that is actually used in the p3s script
 
 </div>
 
-!!! tip "🪽 Postal 3 Angel-only feature"
+!!! tip "🆙🪽 Postal III Ultrapatch-only feature"
 	Human NPCs can use `Item take` to *take* weapons.
 
 <h2>Example</h2>
