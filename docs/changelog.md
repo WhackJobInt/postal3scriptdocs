@@ -4,6 +4,12 @@ This is the changelog for Postal3Script docs.
 
 If you have any issues related to Postal3Script Docs, let us know <a href="https://github.com/WhackJobInt/Postal3ScriptDocsTracker/issues">here</a> by opening a new issue.
 
+## 09.07.2026
+
+- Added Postal III Ultrapatch+Angel v1.3.0 features (embedded events, attributes, functions)
+- Fixed the changelog page not working from index
+- Few grammar error fixes
+
 ## 01.11.2024
 
 - Removed old Postal 3 Angel mentions

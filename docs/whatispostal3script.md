@@ -126,10 +126,10 @@ behavior
 	
     * In Postal3Script, Attributes can only be whole numbers/integers, attributes can't be floats, doubles, or strings.  
 	However, the <code>Wait</code> and <code>Repeat</code> functions are the only exception where you can freely use floats.
-		* An Attribute must have a value initialized before checking it's value using <code>CheckAttr</code>, meaning an attribute that doesn't exist will never return a valid value.  
+		* An Attribute must have a value initialized before checking its value using <code>CheckAttr</code>, meaning an attribute that doesn't exist will never return a valid value.  
 		(Checking if it's zero/null doesn't work).<br>
 
-	* Extremely sensitive to spaces when using parameters for functions, this can lead to unexpected behavior.
+	* Extremely sensitive to spaces when using parameters for functions, this can lead to unexpected behavior. Each function has its own param rules which is not consistent.
 	<br><br>
 	* Errors in a script file won't show up without enabling a console command first, and most of the time it's not obvious if the code is working fine.
 	<br><br>

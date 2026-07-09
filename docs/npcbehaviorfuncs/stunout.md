@@ -6,7 +6,7 @@ Stuns an NPC, as if they were shot by a Taser, and causes them to collapse on th
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Uses an unused animation, after execution the NPC will no longer stand up or react to it's surroundings.</p>
+<p>Uses an unused animation, after execution the NPC will no longer stand up or react to its surroundings.</p>
 </div>
 
 <h1>Syntax</h1>

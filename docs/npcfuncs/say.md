@@ -30,6 +30,12 @@ Uses the name of the sentence in the related NPC's sentence script located in
 <p>If you want the PLAYER to say something you must <code>EntFireInput logic_playerproxy</code> to do a generic say instead, like so: <code>EntFireInput proxy,Say:SENTENCENAME</code>
 </div>
 
+<p></p>
+<div class="admonition tip">
+<p class="admonition-title">Postal III Ultrapatch+Angel v1.3.0+ Feature</p>
+<p>You can gag Players and NPCs by setting the <code>ea_gagged</code> attribute inside of them.</code>
+</div>
+
 <h1>Example</h1>
 <pre><code class="language-js">
 // Say a voice line...
