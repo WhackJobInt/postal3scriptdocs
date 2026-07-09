@@ -36,6 +36,40 @@ OnASRestore 		-- Fired on save game load for restorable entities
 OnASTransition 		-- Fired on transition for restorable entities
 ```
 
+## 🪽 Ultrapatch+Angel v1.3.0+ Embedded Events
+!!! warning "🪽 Postal III Ultrapatch Angel v1.3.0+ only feature"
+	These embedded events below will only work with Postal III Ultrapatch Angel v1.3.0 or higher.
+```
+OnTake				-- Fired when Player/NPC stores inventory item
+OnDrop				-- Fired when Player/NPC drops inventory item
+OnHeld				-- Fired when an (inventory) item is picked up in hands
+OnThrown			-- Fired when held item is thrown by NPC
+OnPickedUp			-- Fired when an item is picked up as a fake weapon
+OnUse				-- Fired inside inventory item when it was used by Player/NPC
+
+OnRiderKilled		-- Fired inside Rhino when its Rider dies
+OnRiderUnconscious	-- Fired inside Rhino when its Rider is knocked out
+OnRhinoKilled		-- Fired inside Rider when its Rhino dies
+
+OnTargetTeamChange	-- Fired when Player target changes team in Multiplayer
+OnCallerTeamChange	-- Fired when Player caller changes team in Multiplayer
+
+OnNewTarget			-- Fired when previous target is not the same as new target
+
+OnConsciousHit		-- Fired when NPC is taking damage that is able to k.o.
+
+OnBite				-- Fired inside animal when victim was bitten by it
+OnBitten			-- Fired inside victim when animal has bitten them
+
+OnScriptAttack		-- Fired when Human NPC fires/attacks with a weapon
+
+OnDetonate			-- Fired inside Tear Gas when it detonated
+OnVanish			-- Fired inside Tear Gas when it disappears
+
+OnInsideTransition	-- Fired when ea_transition attribute was present on transition
+OnOutsideTransition	-- Fired when ea_transition attribute was present on transition
+```
+
 ## Act Busy (unused)
 <pre><code class="language-js">
 OnStartBusyNode -- completely unused

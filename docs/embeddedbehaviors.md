@@ -5,6 +5,7 @@ These behaviors can be given an AI (if they are unused) providing an actual scri
 
 !!! tip "Tip"
     The '**?**' symbol in the tables mean they can be overridden by the entity's existing key values.  
+	
 	If there are no hardcoded default values, it'll fallback to the **Default AI**'s values.
 
 <br>
@@ -12,7 +13,9 @@ These behaviors can be given an AI (if they are unused) providing an actual scri
 ## Default AI (Error/Missing Behavior)
 
 !!! note "Note"
-    Postal 3 will fallback to this behavior if a behavior name couldn't be found, or it has too many errors in them.
+    Postal 3 will fallback to this behavior if a behavior name couldn't be found, or it has too many errors in them.  
+	
+	States and Patterns without a behavior attached to them will become part of this behavior.
 	
 !!! warning "Warning"
     - <code>default_behavior</code> won't override init and start states if they were pre-defined in some way.

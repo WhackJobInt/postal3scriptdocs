@@ -1,1 +1,1 @@
-python -m mkdocs serve
+python -m mkdocs serve --livereload

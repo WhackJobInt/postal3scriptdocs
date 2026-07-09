@@ -5,21 +5,35 @@ An object, such as an NPC, Player or a prop.
 
 In Postal3Script you have access to certain objects such as `target` or the behavior's host, and you can either manipulate or read from them.
 
-You don't always have access to the `caller`, as it's heavily dependent on the Event that caused the Object to enter the pattern.
-
-Typically, the caller means something or someone that forced the Object to enter a pattern.
-
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>All the objects in Postal3Script:</p>
-<p><code>Object:Caller</code> ; <code>Object:Target</code> ; <code>Object:Player</code></p>
-<p><code>Object:slot#0</code> ; <code>Object:null</code> ; <code>Object:self</code></p>
-<p><code>Object:item</code> ; <code>Object:anchor</code> ; <code>Object:destination</code></p>
-</div>
+| Object			| Description 		| 
+|-------------------|-------------------|
+| null				| Null pointer, used to check against for non-existent object		|
+| self				| 'self' pointer, used to refer to the actual host used inside script |
+| target			| Target pointer	|
+| caller			| Caller pointer, set by events |
+| player			| Global player pointer (Always gets Player 1) |
+| item				| Item pointer, refers to held item |
+| anchor			| Used by the anchor P3S function |
+| destination		| Pathfinding goal (Only Distance and Angle can be used) |
+| slot#0 -> #9		| Memory pointer(s), goes up to 9 (in code up to 16, restricted by P3S functions) |
 
 !!! tip "🆙🪽 Postal III Ultrapatch-only feature"
-	- `Object:item` on Players behaves the same like with NPCs.
-	- `Object:item` can be used to get the active weapon, including dismembered bodyparts and throwable objects on Players and NPCs.
+	- `item` on Players behaves the same like with NPCs.  
+	- `item` can be used to get the active weapon, including dismembered bodyparts and throwable objects on Players and NPCs. 
+	
+<br>
+	
+!!! note "🪽 Postal III Ultrapatch+Angel v1.3.0+ only feature"
+	| Object	| Description |
+	|-----------|-------------|
+	| weapon	| Weapon pointer, refers to held/active weapon. |
+	| inventory	| Inventory pointer, refers to active inventory item in Players and NPCs. |
+	| myowner	| Owner pointer (item/weapon only), refers to item/weapon's owner. |
+	| attacker 	| Attacker pointer, gets the Player/NPC's last attacker. |
+	
+!!! tip "🪽 Postal III Ultrapatch Angel v1.3.0+ only feature"
+	- `player` has been modified to grab closest Player in Multiplayer where applicable.
+	
 
 <h1>Syntax</h1>
 <p><code class="language-js">Object:[object]</code> -- Returns the Object specified</p>
@@ -49,11 +63,11 @@ Block End
 </code></pre>
 <br>
 ## Saving Objects To Memory
-<p>You are capable of saving an object to memory, with up to 10 slots.
+<p>You are capable of saving an object to memory, with up to 9 slots.
 <p>This feature is typically used for keeping track of progress on tasks and related to mission logic.
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The '6' and '7' memory slot was never used. Cannot be higher than 10 or lower than 0.</p>
+<p>The '6' and '7' memory slot was never used. Cannot be higher than 9 or lower than 0.</p>
 </div>
 
 <h1>Example</h1>

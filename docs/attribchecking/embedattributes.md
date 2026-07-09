@@ -49,6 +49,48 @@ as_restore				-- Fires OnASRestore on save game load on the entity, if it exist
 as_transition			-- Fires OnASTransition on transition load on the entity, if it exist
 ```
 
+## 🪽 Ultrapatch+Angel v1.3.0+ Embedded Attributes
+!!! warning "🪽 Postal III Ultrapatch Angel v1.3.0+ only feature"
+	These embedded attributes below will only work with Postal III Ultrapatch Angel v1.3.0 or higher.
+```
+ea_transition			-- Entity transfers with the Player on transition
+
+ea_rhinochain			-- If Rhino was knocked out the Rider also gets knocked out
+
+ea_noragdoll			-- Disables the creation of ragdoll
+
+ea_ignoreinvalidroute	-- Prevents the invalid route event firing
+
+ea_noknockout			-- Prevents knock out for NPCs
+ea_unconscious			-- NPC is knocked out
+
+ea_invulnerable			-- NPC cannot take any damage
+
+PlayerThrower			-- Sets inside the Cat with the Player's index if it was thrown by the Player
+
+ea_WeaponThrown			-- Sets inside the weapon when it was thrown (Baton, Nailbat)
+
+ea_forceOnSight			-- Always calls OnSight event even while in Combat state
+ea_NoTargetSenses		-- Sets the caller for OnSight event instead of the target
+
+ea_DropItemOnRagdoll	-- NPC drops held active weapon (non-human only)/item when ragdolled
+ea_DropWeaponOnRagdoll	-- NPC drops active weapon when ragdolled (Human NPCs only)
+
+ea_nopushing			-- NPC won't teleport away if the Player keeps bumping into them
+
+ea_bloodvomit			-- NPC vomits blood when vomiting
+
+ea_gagged				-- NPC and Player are muted and can't say anything
+
+voice_pitch				-- Set when the voice pitch for the NPC has been adjusted (can be set on init to disable voice pitch)
+
+ThrownByDude			-- Sets for Cats when a Player has thrown them
+
+ea_arrest				-- Sets arrest ability for the Player 
+
+ea_escort				-- Plays unique escort line for the Player when this entity dies
+```
+
 ## All Embedded Attributes
 <pre><code>
 flag_zombie				-- NPC is a boss, used for missions and achievements, if it exist

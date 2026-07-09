@@ -43,12 +43,12 @@ nav:
     - '🔎 Attribute Checking':
         - 'IfAttr, SetAttr, CheckAttr, ChangeAttr, RemoveAttr': 'attribchecking/attributes.md'
     - 'Object Categories':
+        - 'Object': 'objects/object.md'
         - 'Manner': 'objects/manner.md'
         - 'Faction': 'objects/faction.md'
         - 'ItemType': 'objects/itemtype.md'
         - 'String': 'objects/string.md'
         - 'Timer': 'objects/timer.md'
-        - 'Object': 'objects/object.md'
         - 'DistTo': 'objects/distto.md'
         - 'AngleTo': 'objects/angleto.md'
         - 'Visible': 'objects/visible.md'
